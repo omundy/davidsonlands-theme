@@ -20,7 +20,7 @@ Uses [understrap](https://github.com/understrap/understrap/), based on [underStr
 
 5. Install understrap main theme (get this from Owen) in `~/Sites/davidsonlands.org/wp-content/themes/`
 
-6. Clone this repo
+6. [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and clone this repo
 
 ```
 cd ~/Sites/davidsonlands.org/wp-content/themes/
