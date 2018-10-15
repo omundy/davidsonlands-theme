@@ -6,11 +6,9 @@ Uses [understrap](https://github.com/understrap/understrap/), based on [underStr
 
 ### Instructions for local Wordpress development
 
-1. Install Apache/PHP/MySQL
-
-* [Mac](https://coolestguidesontheplanet.com/?s=php+mysql+mac)
-* [Win](https://www.google.com/search?q=php+mysql+windows)
-* [Linux](https://www.google.com/search?q=install+php+mysql+linux+desktop)
+1. Install Apache/PHP/MySQL on your [Mac](https://coolestguidesontheplanet.com/?s=php+mysql+mac)
+| [Win](https://www.google.com/search?q=php+mysql+windows)
+| [Linux](https://www.google.com/search?q=install+php+mysql+linux+desktop)
 
 2. [Edit your Apache configuration file](https://stackoverflow.com/a/9625465/441878) so your user is the default server user.
 
