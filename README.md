@@ -1,8 +1,7 @@
 # davidsonlands-theme
 WP theme for the Davidson Lands Conservancy
 
-Uses [understrap](https://github.com/understrap/understrap/)
-Based on [underStrap-child](https://github.com/understrap/understrap-child)
+Uses [understrap](https://github.com/understrap/understrap/), based on [underStrap-child](https://github.com/understrap/understrap-child)
 
 
 ### Instructions for local Wordpress development
@@ -17,7 +16,9 @@ Based on [underStrap-child](https://github.com/understrap/understrap-child)
 
 3. [Install Wordpress](https://codex.wordpress.org/Installing_WordPress) in `Sites/davidsonlands.org/`
 
-4. Import sql data (get this from Owen)
+4. [Install Wordpress importer plugin](https://wordpress.org/plugins/wordpress-importer/)
+
+5. Import data from current site (get this from Owen)
 
 5. Install understrap main theme (get this from Owen) in `~/Sites/davidsonlands.org/wp-content/themes/`
 
