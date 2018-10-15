@@ -13,18 +13,17 @@ Based on [underStrap-child](https://github.com/understrap/understrap-child)
 * [Win](https://www.google.com/search?q=php+mysql+windows)
 * [Linux](https://www.google.com/search?q=install+php+mysql+linux+desktop)
 
-Then, [edit your Apache configuration file](https://stackoverflow.com/a/9625465/441878) so your user is the default server user.
+2. [Edit your Apache configuration file](https://stackoverflow.com/a/9625465/441878) so your user is the default server user.
 
+3. [Install Wordpress](https://codex.wordpress.org/Installing_WordPress) in `Sites/davidsonlands.org/`
 
-2. [Install Wordpress](https://codex.wordpress.org/Installing_WordPress) in `Sites/davidsonlands.org/`
+4. Import sql data (get this from Owen)
 
-3. Import sql data (get this from Owen)
+5. Install understrap main theme (get this from Owen) in `~/Sites/davidsonlands.org/wp-content/themes/`
 
-4. Install understrap main theme (get this from Owen) in `~/Sites/davidsonlands.org/wp-content/themes/`
-
-5. Clone this repo into ``
+6. Clone this repo
 
 ```
 cd ~/Sites/davidsonlands.org/wp-content/themes/
-git clone https://github.com/understrap/understrap-child.git
+git clone https://github.com/omundy/davidsonlands-theme.git
 ```
