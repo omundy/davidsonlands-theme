@@ -1,0 +1,31 @@
+
+
+/*
+
+NOTES ON EDITING EVENT CALENDAR
+
+Themers Guide > Customizing Styles
+https://theeventscalendar.com/knowledgebase/themers-guide/#customizing-styles
+
+Changing Fonts and Colors
+https://theeventscalendar.com/knowledgebase/changing-fonts-and-colours/
+
+Configuring the Events List Widget
+https://theeventscalendar.com/knowledgebase/configuring-the-list-widget/
+
+PHP Date Format
+http://php.net/manual/en/function.date.php
+
+ */
+
+
+
+.block-date {
+
+}
+.block-date .month {
+	background-color: purple !important;
+}
+.block-date .day {
+	background-color: red !important;
+}

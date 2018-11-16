@@ -1,0 +1,6 @@
+.ftpconfig
+.ftpignore
+.gitignore
+id_rsa
+.DS_Store
+.git
