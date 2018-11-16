@@ -7,9 +7,6 @@
     /* border: 1px solid #900; */
 }
 
-a {
-	color: green;
-}
 
 /* HEADER
 ******************************************************************************/
@@ -30,6 +27,7 @@ a {
 .tribe-events-list-widget > .tribe-event-title {
 	color: #d7dbc8;
 }
+
 
 
 /* HERO
