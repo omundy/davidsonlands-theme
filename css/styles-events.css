@@ -20,6 +20,21 @@ http://php.net/manual/en/function.date.php
 
 
 
+.tribe-events-list-widget {
+	background-color: #6d9f71;
+}
+
+.tribe-events-list-widget > .widget-title {
+	color: #347458;
+}
+
+.tribe-events-list-widget > .tribe-event-title {
+	color: #d7dbc8;
+}
+
+
+
+
 .block-date {
 
 }
