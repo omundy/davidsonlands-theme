@@ -16,10 +16,14 @@ function theme_enqueue_styles()
 {
     // Get the theme data
     $the_theme = wp_get_theme();
+
+    // styles
     wp_enqueue_style('child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get('Version'));
-    /* add our stylesheet */
+    /* add events stylesheet */
     wp_enqueue_style('critical-web-design-events-styles', get_stylesheet_directory_uri() . '/css/styles-events.css', $the_theme->get('Version'));
     wp_enqueue_style('critical-web-design-styles', get_stylesheet_directory_uri() . '/css/styles.css', $the_theme->get('Version'));
+
+    // scripts
     wp_enqueue_script('jquery');
     wp_enqueue_script('popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get('Version'), true);

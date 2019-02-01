@@ -1,38 +1,58 @@
-
 /* GLOBAL
 ******************************************************************************/
-
 /* testing */
 * {
     /* border: 1px solid #900; */
 }
-
-
+a {
+    color: #347458;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover {
+    color: #29634a;
+    text-decoration: underline;
+}
+.btn, button {
+    border-radius: 0;
+}
+.btn-primary, .btn-secondary {
+    background-color: #347458;
+    border-color: #347458;
+    color: #fff !important;
+}
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #29634a;
+    border-color: #29634a;
+    color: #fff !important;
+}
+.btn-info {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff
+}
+.btn-info:hover {
+    background-color: transparent;
+    color: #ddd;
+    border: 2px solid #ddd;
+}
 /* HEADER
 ******************************************************************************/
-
-
-
-
+.header-logo {
+    max-width: 250px !important;
+    height: 58px;
+}
+.bg-primary {
+    background-color: #fff !important;
+}
 /* CALENDAR > SEE SEPARATE CSS
 ******************************************************************************/
-
-
-
 /* HERO
 ******************************************************************************/
-
-
-
 /* SIDEBAR
 ******************************************************************************/
-
-
-
 /* FRONT PAGE
 ******************************************************************************/
-
-
-
 /* FOOTER
 ******************************************************************************/
