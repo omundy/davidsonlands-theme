@@ -18,29 +18,79 @@ http://php.net/manual/en/function.date.php
 
  */
 
+.tribe-events-list-widget .widget-title {
+	padding-top: 15px;
+}
 
+.tribe-events-list-widget .tribe-events-info-block {
+	padding-top: 15px;
+}
+
+.tribe-events-list-widget .block-date {
+	padding-left: 15px;
+}
+
+.tribe-events-list-widget .tribe-list-widget{
+ 	margin-left: -4rem !important;
+ }
 
 .tribe-events-list-widget {
 	background-color: #6d9f71;
+}
+
+.tribe-events-list-widget .tribe-events-list-widget-events {
+	padding: 0 0 !important;
+	margin-left: 1.5rem !important;
 }
 
 .tribe-events-list-widget > .widget-title {
 	color: #347458;
 }
 
+.event-info {
+	color: #ffffff;
+}
+
 .tribe-events-list-widget > .tribe-event-title {
+	color: #d7dbc8;
+
+}
+
+.tribe-event-title a:visited{
 	color: #d7dbc8;
 }
 
+.tribe-event-title a{
+	color:#d7dbc8;
+}
 
+.tribe-events-widget-link a{
+	color: #d7dbc8;
+}
 
+.footer-widget .tribe-events-list-widget .tribe-events-list-widget-events {
+	padding: 0 -.5rem !important;
+}
 
 .block-date {
+	background-color:#347458;
+	text-align: center;
+	width: 4rem;
+	height: 5rem;
+	padding: 10px;
+	margin-top: 0;
+}
+.block-date .event-month {
+	text-align: center;
+	margin: 10px;
+	/*background-color: purple !important;*/
+}
+.block-date .event-day {
+	text-align: center;
+	font-size: 24px;
+	/*background-color: red !important;*/
+}
 
-}
-.block-date .month {
-	background-color: purple !important;
-}
-.block-date .day {
-	background-color: red !important;
+.btn .btn-secondary .understrap-read-more-link {
+	background-color: black;
 }
