@@ -28,6 +28,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
+						<?php
+
+						$args = array(
+							'menu' => 'main-nav-2019'
+						);
+						wp_nav_menu( $args );
+
+						?>
+
 						<?php understrap_site_info(); ?>
 
 					</div><!-- .site-info -->

@@ -27,22 +27,15 @@ $container   = get_theme_mod('understrap_container_type');
 
 
 
-<div class="wrapper wrapper-dark wrapper-xxl wrapper-no-padding-bottom wrapper-hero home-hero-light">
-
-   <div class="container-fluid">
-
-        <div class="row vertical-center">
-
-            <div class="col-md-10 offset-md-1 text-center wrapper-sm vertical-center-div">
+<div class="wrapper wrapper-dark wrapper-xxl wrapper-no-padding-bottom wrapper-hero home-hero-light vertical-center-parent">
+   <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h1 class="hero-title">Protecting, exploring, and supporting<br>Davidson’s natural environments</h1>
-                <a class="btn btn-lg btn-info" href="#" target="_blank">JOIN US</a>
+                <a class="btn btn-info hero-title-btn" href="#" target="_blank">JOIN US</a>
             </div>
-
-
         </div>
-
     </div>
-
 </div>
 
 

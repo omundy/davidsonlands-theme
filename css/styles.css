@@ -1,55 +1,127 @@
 /* GLOBAL
 ******************************************************************************/
 /* testing */
-* {
+html {
     /* border: 1px solid #900; */
+    font-family: 'Lato', sans-serif !important;
 }
-a {
-    color: #347458;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+#page a {
+    color: #347458 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
 }
-a:hover {
+#page a:hover {
     color: #29634a;
     text-decoration: underline;
 }
-.btn, button {
+#page .btn, button {
     border-radius: 0;
 }
-.btn-primary, .btn-secondary {
-    background-color: #347458;
-    border-color: #347458;
+#page .btn-primary, .btn-secondary {
+    background-color: #347458 !important;
+    border-color: #347458 !important;
     color: #fff !important;
 }
-.btn-primary:hover, .btn-secondary:hover {
-    background-color: #29634a;
-    border-color: #29634a;
+#page .btn-primary:hover, .btn-secondary:hover {
+    background-color: #29634a !important;
+    border-color: #29634a !important;
     color: #fff !important;
 }
-.btn-info {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff
+#page .btn-info {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 3px solid #fff !important;
 }
-.btn-info:hover {
-    background-color: transparent;
-    color: #ddd;
-    border: 2px solid #ddd;
+#page .btn-info:hover {
+    background-color: transparent !important;
+    color: #eee !important;
+    border: 3px solid #ddd !important;
 }
-/* HEADER
+/* HEADER / NAVBAR
 ******************************************************************************/
+.navbar {
+    margin: 10px auto;
+}
+/* .navbar a {
+    color: #347458 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+} */
 .header-logo {
-    max-width: 250px !important;
-    height: 58px;
+    width: 230px !important;
+    height: 54px !important;
 }
 .bg-primary {
     background-color: #fff !important;
+}
+.navbar-nav>.dropdown {
+    font-size: 18px;
+    padding: 10px;
+}
+@media only screen and (min-width: 768px) {
+    /* make page dropdown parents into a link */
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+    .header-search-btn {
+        margin-right: 10px;
+    }
+    .header-join-btn {
+        /* margin-left: 20px; */
+    }
+}
+/* hide dropdown arrows */
+a.menu:after, .dropdown-toggle:after {
+    content: none;
+}
+/* search show/hide */
+.headerSearchInput {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    display: none;
+}
+.headerCloseSearch {
+    margin: -27px auto auto 270px;
+    z-index: -10;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.form-control:focus {
+    border-color: #347458;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(109, 159, 113, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(109, 159, 113, 0.25);
 }
 /* CALENDAR > SEE SEPARATE CSS
 ******************************************************************************/
 /* HERO
 ******************************************************************************/
+.home-hero-light {
+    color: #fff;
+    /* background-image: url("../img/hero-Kids-Looking-in-Water.jpg"); */
+    background-image: url("../../../uploads/2019/01/Kids-Looking-in-Water.jpg");
+    height: 700px;
+    background-position: center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+.hero-title-btn {
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.vertical-center-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* SIDEBAR
 ******************************************************************************/
 /* FRONT PAGE
