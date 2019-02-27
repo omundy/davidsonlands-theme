@@ -24,7 +24,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 	<?php wp_head(); ?>
@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<h1 class="navbar-brand mb-0">
 								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
 									<!-- <?php bloginfo( 'name' ); ?> -->
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" class="header-logo">
+									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.svg" alt="Davidson Lands Conservancy logo" class="header-logo">
 								</a>
 							</h1>
 
@@ -95,16 +95,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<ul class="nav nabar-nav mr-auto">
 
 					<li class="menu-item headerOpenSearch">
-	                    <a class="nav-link header-search-btn" href="#"><i class="fa fa-search"></i></a>
+	                    <a class="nav-link header-search-btn" href="#"><i class="fa fa-search headerSearchIcon"></i></a>
 	                </li>
 
-					<div class="headerSearchInput">
-						<form method="get" id="searchform" action="http://www.owenmundy.net/davidsonlands/" role="search">
-							<input class="field form-control" id="s" name="s" type="text" placeholder="Search …" value="">
-						</form>
-						<div class="headerCloseSearch">X</div>
-					</div>
-
+					<li>
+						<div class="headerSearchDiv">
+							<form method="get" id="searchform" class="headerSearchForm" action="http://www.owenmundy.net/davidsonlands/" role="search">
+								<input class="field form-control headerSearchFormInput" id="s" name="s" type="text" placeholder="Search …" value="">
+							</form>
+							<div class="headerCloseSearch">X</div>
+						</div>
+					</li>
 					<li><a class="btn btn-primary nav-link header-join-btn" href="<?php echo esc_url( home_url( '/' ) ); ?>join-us">GIVE TODAY</a></li>
 				</ul>
 

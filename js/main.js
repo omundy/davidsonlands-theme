@@ -3,28 +3,33 @@ $ = jQuery.noConflict();
 
 $(document).ready(function() {
 
-	$(document).on("click", ".headerOpenSearch", function() {
-		event.preventDefault();
-		if ($(".headerSearchInput").css("display") == "none") {
-			$(".headerSearchInput").css("display", "block");
-			$(".headerSearchInput input").focus();
+
+
+	$(".headerOpenSearch").on("click" , function() {
+		if ($(".headerSearchDiv").css("display") == "none") {
+			$(".headerSearchDiv").css("display", "block");
+			$(".headerSearchDiv input").focus();
 		} else
-			$(".headerSearchInput").css("display", "none");
+			$(".headerSearchDiv").css("display", "none");
+		event.preventDefault();
 	});
-	$(document).on("click", ".headerCloseSearch", function() {
+	$(".headerCloseSearch").on("click", function() {
 		hideHeaderSearch();
 	});
-	$(document).on("click",function(e) {
-        //console.log(e.target);
-        if (!$(e.target).hasClass('fa-search') && !$(e.target).hasClass('header-search-btn'))
-            hideHeaderSearch();
+	// click outside of the form
+	$(document).on("click", function(e) {
+		//console.log(e.target);
+		if (!$(e.target).hasClass('headerSearchIcon') && !$(e.target).hasClass('headerOpenSearch') &&
+			!$(e.target).hasClass('header-search-btn') && !$(e.target).hasClass('headerSearchForm') &&
+			!$(e.target).hasClass('headerSearchFormInput')){
+				hideHeaderSearch();
+			}
 	});
 
 	function showHeaderSearch() {}
 
 	function hideHeaderSearch() {
-        event.preventDefault();
-		$(".headerSearchInput").fadeOut("2000");
-    }
+		$(".headerSearchDiv").fadeOut("2000");
+	}
 
 });
