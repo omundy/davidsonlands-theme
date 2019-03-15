@@ -67,10 +67,10 @@ http://php.net/manual/en/function.date.php
 .tribe-events-widget-link a{
 	color: #d7dbc8;
 }
-
+/*
 .footer-widget .tribe-events-list-widget .tribe-events-list-widget-events {
 	padding: 0 -.5rem !important;
-}
+} */
 
 .block-date {
 	background-color:#347458;
