@@ -30,15 +30,81 @@ $events_label_plural_lowercase = tribe_get_event_label_plural_lowercase();
 
 $posts = tribe_get_list_widget_events();
 
+
+
+
 // Check if any event posts are found.
 if ( $posts ) : ?>
+
+list-widget
+
+<?php
+print_r($posts);
+
+/*
+
+
+<div class="wrapper wrapper-light-green wrapper-events-section">
+   <div class="container-fluid">
+        <div class="row">
+            <div class="col-8"></div>
+            <div class="col-4">
+
+                <h3>DLC Events</h3>
+
+                <div class="events-section-events">
+
+                    <div class="events-section-event">
+
+                        <div class="event-date">
+                            <div class="event-date-number">28</div>
+                            <div class="event-date-month">SEP</div>
+                        </div>
+
+                        <div class="event-title">
+                            Run for Green
+                        </div>
+                        <div class="event-description">
+                            Register today for the 13th annual Run for Green 5K, 10K or half marathon.
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+*/  ?>
+
+
+
 
 	<ol class="tribe-list-widget">
 		<?php
 			// Setup the post data for each event.
 			foreach ( $posts as $post ) :
 				setup_postdata( $post );
+
+			//	print_r($post);
+
 		?>
+
+
+
+
+
+
 		<li class="tribe-events-list-widget-events <?php tribe_events_event_classes() ?>">
 
 			<?php do_action( 'tribe_events_list_widget_before_the_event_title' ); ?>
@@ -80,7 +146,7 @@ if ( $posts ) : ?>
 
 			<?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>
 
-			<!-- here we're trying a regular expression to find and replace 
+			<!-- here we're trying a regular expression to find and replace
 			the big annoying 'read more' button -->
 			<?php $map = preg_replace('/<a class="btn btn-secondary understrap-read-more-link"[^>]*>.*?</a>/s','',$map); ?>
 		</li>
