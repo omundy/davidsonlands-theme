@@ -96,7 +96,7 @@ $container   = get_theme_mod('understrap_container_type');
 
 
         <div class="row">
-            <div class="col-sm-3 col-xs-6 text-center mt-4">
+            <div class="col-6 col-sm-3 text-center mt-4">
                 <div class="circle-callout-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-conserving.jpg" alt="Conserving Land">
                 </div>
@@ -104,7 +104,7 @@ $container   = get_theme_mod('understrap_container_type');
                     Conserving Land
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center mt-4">
+            <div class="col-6 col-sm-3 text-center mt-4">
                 <div class="circle-callout-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-wildlife.jpg" alt="Wildlife & Habitats">
                 </div>
@@ -112,7 +112,7 @@ $container   = get_theme_mod('understrap_container_type');
                     Wildlife & Habitats
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center mt-4">
+            <div class="col-6 col-sm-3 text-center mt-4">
                 <div class="circle-callout-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-teaching.jpg" alt="Teaching & Learning">
                 </div>
@@ -120,7 +120,7 @@ $container   = get_theme_mod('understrap_container_type');
                     Teaching & Learning
                 </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center mt-4">
+            <div class="col-6 col-sm-3 text-center mt-4">
                 <div class="circle-callout-image">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-trails.jpg" alt="Trails & Greenways">
                 </div>
@@ -142,24 +142,24 @@ $container   = get_theme_mod('understrap_container_type');
    <div class="container">
 
         <div class="row">
-            <div class="col-sm-4 col-xs-12 text-center">
+            <div class="col-12 col-sm-4 text-center">
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-join.jpg" alt="Help us protect the land you love." class="img-fluid">
                     <div class="callout-text">Help us protect the land you love.</div>
                     <button class="btn btn-primary btn-callout">BECOME A MEMBER</button>
                 </div>
             </div>
-            <div class="col-sm-4 col-xs-12 text-center">
+            <div class="col-12 col-sm-4 text-center">
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-gift.jpg" alt="Honor someone who loves nature." class="img-fluid">
                     <div class="callout-text">Honor someone who loves nature.</div>
                     <button class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</button>
                 </div>
             </div>
-            <div class="col-sm-4 col-xs-12 text-center">
+            <div class="col-12 col-sm-4 text-center">
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-volunteer.jpg" alt="Find your calling at DLC." class="img-fluid">
-                    <div class="callout-text">Find your calling at DLC.</div>
+                    <div class="callout-text">Find your calling at the DLC.</div>
                     <button class="btn btn-primary btn-callout">VOLUNTEER TODAY</button>
                 </div>
             </div>
