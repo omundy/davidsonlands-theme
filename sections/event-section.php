@@ -27,11 +27,13 @@ $posts = $query->posts;
 if (count($posts) > 0){ ?>
 
     <div class="wrapper-hero wrapper-light-green px-0">
-       <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 col-lg-7 col-xl-8 d-none d-md-block pl-0 section-events-image"></div>
+       <div class="container">
+            <div class="row py-3">
+                <div class="col-md-6 col-lg-7 col-xl-8 d-none d-md-block pl-0">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Protect-Monarch-Butterflies-1500w.jpg" alt="">
+                </div>
                 <div class="col-12 col-md-6 col-lg-5 col-xl-4">
-                    <div class="row mt-4">
+                    <div class="row mt-2">
                         <div class="col-12">
                             <h3>DLC Events</h3>
                         </div>
@@ -58,12 +60,12 @@ if (count($posts) > 0){ ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-10">
+                            <div class="col-10 pl-md-4">
                                 <div class="event-title">
                                     <?php the_title(); ?>
                                 </div>
                                 <div class="event-content">
-                                    <?php echo sentenceTrim($post->post_content); ?>
+                                    <?php echo sentenceTrim($post->post_content,100); ?>
                                 </div>
                                 <?php /*echo print_r($post);*/ ?>
                             </div>
