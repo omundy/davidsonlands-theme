@@ -77,7 +77,7 @@ function sentenceTrim($string, $maxLength = 300) {
     if (mb_strlen($string) >= $maxLength) {
         $string = mb_substr($string, 0, $maxLength);
 
-        $puncs  = array('. ', '! ', '? '); // Possible endings of sentence
+        $puncs  = array('. ','.<', '! ', '? '); // Possible endings of sentence
         $maxPos = 0;
 
         foreach ($puncs as $punc) {

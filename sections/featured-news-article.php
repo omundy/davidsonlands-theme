@@ -2,9 +2,9 @@
 // query for feature posts
 $args = array(
     'numberposts' => '1',
-    'category' => 384,
 	'post_type' => 'post',
     'post_status' => 'publish',
+    'tag' => 'feature'
 );
 $recent_posts = wp_get_recent_posts( $args );
 if(count($recent_posts) > 0):
