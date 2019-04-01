@@ -218,6 +218,15 @@ a.menu:after, .dropdown-toggle:after {
     /* background-image: url("../img/hero-Kids-Looking-in-Water.jpg"); */
     background-image: url("../../../uploads/2019/01/Kids-Looking-in-Water.jpg");
 }
+.conserve-hero {
+    background-image:url("../../../uploads/2016/07/Mott-landscape.jpg")
+}
+.conserve-map-hero {
+    background-image:url("../../../uploads/2019/01/davidson-hall.jpg")
+}
+.conserve-map-section {
+    background-image:url("../img/davidsonmap.png")
+}
 .join-hero {
     background-image:url("../../../uploads/2019/03/people-on-dock-hero.jpg")
 }
@@ -239,6 +248,16 @@ a.menu:after, .dropdown-toggle:after {
     flex-direction: column;
     justify-content: center;
 }
+
+
+
+.conserve-map-section .text-background-light {
+    background-color: rgb(255,255,255,.5);
+}
+.conserve-map-section .map-description {
+    color: #000;
+}
+
 
 /* NUMBER ROW
 ******************************************************************************/
