@@ -27,12 +27,12 @@ $container   = get_theme_mod('understrap_container_type');
 
 
 
-<div class="wrapper wrapper-xxl wrapper-no-padding-bottom wrapper-hero home-hero-light vertical-center-parent">
+<div class="wrapper wrapper-xxl wrapper-no-padding-bottom wrapper-hero hero-light home-hero vertical-center-parent">
    <div class="container-fluid ">
         <div class="row">
             <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h1 class="hero-title">Protecting, exploring, and supporting<br>Davidson’s natural environments</h1>
-                <a class="btn btn-info hero-title-btn" href="#">JOIN US</a>
+                <a class="btn btn-info hero-title-btn" href="<?php echo get_site_url(); ?>/join-us">JOIN US</a>
             </div>
         </div>
     </div>
@@ -146,21 +146,21 @@ $container   = get_theme_mod('understrap_container_type');
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-join.jpg" alt="Help us protect the land you love." class="img-fluid">
                     <div class="callout-text">Help us protect the land you love.</div>
-                    <button class="btn btn-primary btn-callout">BECOME A MEMBER</button>
+                    <a href="<?php echo home_url(); ?>/join-us/become-a-member/" class="btn btn-primary btn-callout">BECOME A MEMBER</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 text-center">
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-gift.jpg" alt="Honor someone who loves nature." class="img-fluid">
                     <div class="callout-text">Honor someone who loves nature.</div>
-                    <button class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</button>
+                    <a href="<?php echo home_url(); ?>/join-us/tribute-gift" class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 text-center">
                 <div class="callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-volunteer.jpg" alt="Find your calling at DLC." class="img-fluid">
                     <div class="callout-text">Find your calling at the DLC.</div>
-                    <button class="btn btn-primary btn-callout">VOLUNTEER TODAY</button>
+                    <a href="<?php echo home_url(); ?>/join-us/volunteer/" class="btn btn-primary btn-callout">VOLUNTEER TODAY</a>
                 </div>
             </div>
         </div>

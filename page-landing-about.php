@@ -37,7 +37,6 @@ while ( have_posts() ) : the_post(); ?>
 endwhile;
 wp_reset_query();
 ?>
-
 -->
 
 
@@ -130,7 +129,7 @@ wp_reset_query();
 	                  Looking for hiking or biking trails? Are you a watersports buff?
 					  Get some fresh air - our trails map shows you where!
 	                </div>
-				</a>	
+				</a>
             </div>
         </div>
     </div>

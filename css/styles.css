@@ -66,6 +66,16 @@ h3.callout, h4.callout { font-weight: normal; }
     color: #eee !important;
     border: 3px solid #ddd !important;
 }
+.btn-info-dark-green {
+    background-color: transparent !important;
+    color: #347458 !important;
+    border: 3px solid #347458 !important;
+}
+.btn-info-dark-green:hover {
+    background-color: transparent !important;
+    color: #29634a !important;
+    border: 3px solid #29634a !important;
+}
 
 
 
@@ -277,7 +287,7 @@ a.menu:after, .dropdown-toggle:after {
 }
 .wrapper-tan {
     background-color: #f4f3e7;
-    color: #ffffff;
+    color: #337357;
     font-family: 'Lato', sans-serif !important;
 }
 .wrapper-signup-section {

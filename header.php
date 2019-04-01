@@ -37,7 +37,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
+		<a class="skip-link sr-only sr-only-focusable" href="#content">
+			<?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
 		<nav class="navbar navbar-expand-md navbar-light">
 
@@ -45,32 +46,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="container" >
 		<?php endif; ?>
 
-					<!-- Your site title as branding in the menu -->
-					<?php if ( ! has_custom_logo() ) { ?>
-
-						<?php
-						//if ( is_front_page() && is_home() ) :
-							?>
-
-							<h1 class="navbar-brand mb-0">
-								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
-									<!-- <?php bloginfo( 'name' ); ?> -->
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-green.svg" alt="Davidson Lands Conservancy logo" class="header-logo">
-								</a>
-							</h1>
-
-						<?php /*
-						else : ?>
-
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
-
-						<?php endif;
-						*/ ?>
 
 
-					<?php } else {
-						the_custom_logo();
-					} ?><!-- end custom logo -->
+				<h1 class="navbar-brand mb-0 ">
+					<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+						<!-- <?php bloginfo( 'name' ); ?> -->
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-green.svg" alt="Davidson Lands Conservancy logo" class="header-logo">
+					</a>
+				</h1>
+
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
