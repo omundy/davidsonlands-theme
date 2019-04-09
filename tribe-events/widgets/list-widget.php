@@ -31,23 +31,23 @@ $events_label_plural_lowercase = tribe_get_event_label_plural_lowercase();
 $posts = tribe_get_list_widget_events();
 
 
+?>
 
+<div class="event-sidebar">
+
+
+	<div class="row mt-4">
+		<div class="col-12">
+			<h3>DLC Events</h3>
+		</div>
+	</div>
+
+<?php
 
 // Check if any event posts are found.
 if ( $posts ) :
 	//print_r($posts);
-	?>
 
-	<div class="event-sidebar">
-
-
-		<div class="row mt-4">
-			<div class="col-12">
-				<h3>DLC Events</h3>
-			</div>
-		</div>
-
-	<?php
 
 	// Setup the post data for each event.
 	foreach ( $posts as $post ) :
@@ -124,11 +124,15 @@ if ( $posts ) :
 		</div>
 	</div>
 
+
+
 <?php // No events were found
 else : ?>
 	<p><?php printf( esc_html__( 'There are no upcoming %s at this time.', 'the-events-calendar' ), $events_label_plural_lowercase ); ?></p>
 
-	</div>
+
 
 <?php
 endif;
+?>
+</div>

@@ -71,17 +71,19 @@ add_action('after_setup_theme', 'add_child_theme_textdomain');
  *  Trim string to nearest sentence based on limit
  *  Source: https://stackoverflow.com/a/42613482/441878
  */
-function sentenceTrim($string, $maxLength = 300) {
-    $string = preg_replace('/\s+/', ' ', trim($string)); // Replace new lines (optional)
+function sentenceTrim($str, $maxLength = 300) {
+    $str = preg_replace('/\s+/', ' ', trim($str)); // Replace new lines (optional)
 
-    if (mb_strlen($string) >= $maxLength) {
-        $string = mb_substr($string, 0, $maxLength);
+    $str = removeTags($str);
+
+    if (mb_strlen($str) >= $maxLength) {
+        $str = mb_substr($str, 0, $maxLength);
 
         $puncs  = array('. ','.<', '! ', '? '); // Possible endings of sentence
         $maxPos = 0;
 
         foreach ($puncs as $punc) {
-            $pos = mb_strrpos($string, $punc);
+            $pos = mb_strrpos($str, $punc);
 
             if ($pos && $pos > $maxPos) {
                 $maxPos = $pos;
@@ -89,14 +91,23 @@ function sentenceTrim($string, $maxLength = 300) {
         }
 
         if ($maxPos) {
-            return mb_substr($string, 0, $maxPos + 1);
+            return mb_substr($str, 0, $maxPos + 1);
         }
 
-        return rtrim($string) . '&hellip;';
+        return rtrim($str) . '&hellip;';
     } else {
-        return $string;
+        return $str;
     }
 }
+
+function removeTags($str){
+    // remove all link and link content
+    $str = preg_replace('#<a.*?>.*?</a>#i','', $str);
+    // remove all tags
+    $str = strip_tags($str);
+    return $str;
+}
+
 
 
 function getYear($date){
