@@ -126,7 +126,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 			<div class="col-12 mt-5 text-center">
 
-<p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-tan.svg" alt="Davidson Lands Conservancy logo" class="header-logo"></p>
+<p>
+	<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-tan.svg" alt="Davidson Lands Conservancy logo" class="header-logo">
+	</a>
+</p>
 
 <p>© <?php echo date("Y"); ?> Davidson Lands Conservancy, PO Box 1952, Davidson, North Carolina 28036 | 704-892-1910 | <a href="<?php echo esc_url( home_url( '/' ) ); ?>about/contact-us/">Contact us</a></p>
 
