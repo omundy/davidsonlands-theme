@@ -434,6 +434,13 @@ a.menu:after, .dropdown-toggle:after {
 
 
 
+/* BLOG POSTS
+******************************************************************************/
+
+
+.entry-footer { float: none; clear: both; padding-top: 20px; }
+.edit-link { display: block; padding-top: 20px; }
+
 
 /* FOOTER
 ******************************************************************************/
