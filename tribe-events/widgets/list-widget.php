@@ -30,20 +30,59 @@ $events_label_plural_lowercase = tribe_get_event_label_plural_lowercase();
 
 $posts = tribe_get_list_widget_events();
 
+
+?>
+
+<div class="event-sidebar">
+
+
+	<div class="row mt-4">
+		<div class="col-12">
+			<h3>DLC Events</h3>
+		</div>
+	</div>
+
+<?php
+
 // Check if any event posts are found.
-if ( $posts ) : ?>
+if ( $posts ) :
+	//print_r($posts);
 
-	<ol class="tribe-list-widget">
-		<?php
-			// Setup the post data for each event.
-			foreach ( $posts as $post ) :
-				setup_postdata( $post );
-		?>
-		<li class="tribe-events-list-widget-events <?php tribe_events_event_classes() ?>">
 
-			<?php do_action( 'tribe_events_list_widget_before_the_event_title' ); ?>
+	// Setup the post data for each event.
+	foreach ( $posts as $post ) :
+		//setup_postdata( $post );
+		//print_r($post);
+?>
 
-			<!-- BOOTSTRAP SNIPPET | EVENT INFO SIDEBAR AND FOOTER SETUP-->
+
+			<a href="<?php the_permalink(); ?>" class="event-link" title="<?php the_title(); ?>">
+				<div class="row mt-4 date-event">
+					<div class="col-3 col-sm-2 col-md-12 col-lg-3">
+						<div class="date-box float-left">
+							<div class="date-day text-center">
+								<?php echo getDayWithZero($post->EventStartDate); ?>
+							</div>
+							<div class="date-month text-center">
+								<?php echo getMonthShort($post->EventStartDate); ?>
+							</div>
+						</div>
+					</div>
+					<div class="col-9 col-sm-10 col-md-12 col-lg-9">
+						<div class="event-title">
+							<?php the_title(); ?>
+						</div>
+						<div class="event-content">
+							<?php echo sentenceTrim($post->post_content); ?>
+						</div>
+						<?php /*echo print_r($post);*/ ?>
+					</div>
+				</div>
+			</a>
+
+
+
+			<!-- BOOTSTRAP SNIPPET | EVENT INFO SIDEBAR AND FOOTER SETUP
 			<div class="container tribe-events-info-block">
 				<div class="row">
 					<div class="col-3">
@@ -55,7 +94,7 @@ if ( $posts ) : ?>
 					<div class="col-9">
 						<div class="event-info">
 
-							<!-- Event Title -->
+
 							<h4 class="tribe-event-title">
 								<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" rel="bookmark"><?php the_title(); ?></a>
 							</h4>
@@ -64,38 +103,36 @@ if ( $posts ) : ?>
 
 							<?php do_action( 'tribe_events_list_widget_before_the_meta' ) ?>
 
-							<!-- Event Time -->
 							<span class="time"><?php echo tribe_get_start_time ( $event_id, 'g:i A'); ?></span>
 
-							<!-- Event description (which adds the 'read more' button) -->
 							<?php the_excerpt(); ?>
 						</div>
 					</div>
 				</div>
 			</div>
+-->
 
-			<!-- <div class="tribe-event-duration">
-				<?php echo tribe_events_event_schedule_details(); ?>
-			</div> -->
 
-			<?php do_action( 'tribe_events_list_widget_after_the_meta' ) ?>
 
-			<!-- here we're trying a regular expression to find and replace 
-			the big annoying 'read more' button -->
-			<?php $map = preg_replace('/<a class="btn btn-secondary understrap-read-more-link"[^>]*>.*?</a>/s','',$map); ?>
-		</li>
 		<?php
 		endforeach;
 		?>
-	</ol><!-- .tribe-list-widget -->
 
-	<p class="tribe-events-widget-link">
-		<a href="<?php echo esc_url( tribe_get_events_link() ); ?>" rel="bookmark"><?php printf( esc_html__( 'See All %s', 'the-events-calendar' ), $events_label_plural ); ?></a>
-	</p>
+	<div class="row my-4">
+		<div class="col-12 d-flex justify-content-center">
+			<a class="btn btn-primary" href="<?php echo esc_url( home_url( '/' ) ); ?>events" title="Events">SEE ALL EVENTS</a>
+		</div>
+	</div>
 
-<?php
-// No events were found.
+
+
+<?php // No events were found
 else : ?>
 	<p><?php printf( esc_html__( 'There are no upcoming %s at this time.', 'the-events-calendar' ), $events_label_plural_lowercase ); ?></p>
+
+
+
 <?php
 endif;
+?>
+</div>
