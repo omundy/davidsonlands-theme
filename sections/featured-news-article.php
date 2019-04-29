@@ -29,7 +29,8 @@ if(count($recent_posts) > 0):
             <?php echo '<h3><a href="' . get_permalink($recent['url']) . '">'. $recent['post_title'] .'</a></h3>'; ?>
             <?php echo '<p>'. sentenceTrim($recent['post_content']) .'</p>'; ?>
             <?php echo '<a class="btn btn-info" href="' . get_permalink($recent['ID']) . '">CONTINUE READING</a>'; ?>
-            <a class="btn btn-info" href="">MORE NEWS</a>
+            <?php echo '<a class="btn btn-info" href="' . get_site_url() . '/?post_type=post">MORE NEWS</a>'; ?>
+
 
             </div>
             <div class="col-2"></div>
