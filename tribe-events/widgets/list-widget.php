@@ -36,7 +36,7 @@ $posts = tribe_get_list_widget_events();
 <div class="event-sidebar">
 
 
-	<div class="row mt-4">
+	<div class="row mt-3">
 		<div class="col-12">
 			<h3>DLC Events</h3>
 		</div>
@@ -61,19 +61,19 @@ if ( $posts ) :
 					<div class="col-3 col-sm-2 col-md-12 col-lg-3">
 						<div class="date-box float-left">
 							<div class="date-day text-center">
-								<?php echo getDayWithZero($post->EventStartDate); ?>
+								<?php echo getDayWithZero($post->event_date);  ?>
 							</div>
 							<div class="date-month text-center">
-								<?php echo getMonthShort($post->EventStartDate); ?>
+								<?php echo getMonthShort($post->event_date); ?>
 							</div>
 						</div>
 					</div>
 					<div class="col-9 col-sm-10 col-md-12 col-lg-9">
 						<div class="event-title">
-							<?php the_title(); ?>
+							<?php echo removeTags($post->post_title); ?>
 						</div>
 						<div class="event-content">
-							<?php echo sentenceTrim($post->post_content); ?>
+							<?php echo sentenceTrim($post->post_content,100); ?>
 						</div>
 						<?php /*echo print_r($post);*/ ?>
 					</div>

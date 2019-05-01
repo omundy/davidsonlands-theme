@@ -1,7 +1,7 @@
 <?php
 /**
 
- * Template Name: Conserve Map
+ * Template Name: Explore Map
  * Template Post Type: post, page, event
 
  * The template for displaying all pages.

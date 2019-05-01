@@ -33,6 +33,9 @@ $container = get_theme_mod('understrap_container_type');
 			<?php
 
             $items = wp_get_nav_menu_items('main-nav-2019');
+            // print "<pre>";
+            // print_r($items);
+            // print "</pre>";
             if ($items) {
                 $first_run = true;
                 $parent = null;
@@ -69,7 +72,7 @@ $container = get_theme_mod('understrap_container_type');
                             // add header class
                             echo ' footer-menu-item-header';
                         }
-                        echo '"><a href="' . get_permalink($item->url) .'" title="'. $item->title .'">';
+                        echo '"><a href="' . $item->url .'" title="'. $item->title .'">';
                         echo $item->title . '</a></li>';
                     }
 
