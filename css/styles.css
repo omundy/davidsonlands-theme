@@ -5,15 +5,26 @@ html {
     /* border: 1px solid #900; */
     font-family: 'Lato', sans-serif !important;
 }
-a {
+.site a {
+    color: #347458;
+    text-decoration: underline;
+    background-color: transparent;
+}
+.site a:hover {
+    color: #29634a;
+    text-decoration: underline;
+}
+.navbar-light a {
     color: #347458 !important;
     text-decoration: underline !important;
     background-color: transparent !important;
 }
-a:hover {
+.navbar-light a:hover {
     color: #29634a;
     text-decoration: underline;
 }
+
+
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Lato', sans-serif !important; font-weight: 700; line-height: normal;}
 h3.callout, h4.callout { font-weight: normal; }
@@ -23,9 +34,9 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 
-.dark-green { color: #337357 !important; }
-.light-green { color: #6d9f71 !important; }
-.tan { color: #f4f3e7 !important; }
+.site .dark-green { color: #337357 !important; }
+.site .light-green { color: #6d9f71 !important; }
+.site .tan { color: #f4f3e7 !important; }
 
 
 
@@ -34,49 +45,49 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /* FORM ELEMENTS
 ******************************************************************************/
 
-.btn {
+.site .btn {
     text-decoration: none !important;
     white-space:normal !important; /* make buttons wrap */
 }
-.btn, button, input, .form-control {
+.site .btn, button, input, .form-control {
     border-radius: 0;
 }
-.btn-primary {
+.site .btn-primary {
     background-color: #347458 !important;
     border-color: #347458 !important;
     color: #fff !important;
 }
-.btn-primary:hover {
+.site .btn-primary:hover {
     background-color: #29634a !important;
     border-color: #29634a !important;
     color: #fff !important;
 }
-.btn-secondary {
+.site .btn-secondary {
     background-color: #6d9f71 !important;
     border-color: #6d9f71 !important;
     color: #fff !important;
 }
-.btn-secondary:hover {
+.site .btn-secondary:hover {
     background-color: #5b9060 !important;
     border-color: #5b9060 !important;
     color: #fff !important;
 }
-.btn-info {
+.site .btn-info {
     background-color: transparent !important;
     color: #fff !important;
     border: 3px solid #fff !important;
 }
-.btn-info:hover {
+.site .btn-info:hover {
     background-color: transparent !important;
     color: #eee !important;
     border: 3px solid #ddd !important;
 }
-.btn-info-dark-green {
+.site .btn-info-dark-green {
     background-color: transparent !important;
     color: #347458 !important;
     border: 3px solid #347458 !important;
 }
-.btn-info-dark-green:hover {
+.site .btn-info-dark-green:hover {
     background-color: transparent !important;
     color: #29634a !important;
     border: 3px solid #29634a !important;
@@ -271,6 +282,28 @@ a.menu:after, .dropdown-toggle:after {
 .conserve-map-section .map-description {
     color: #000;
 }
+
+
+
+
+
+
+
+
+
+/* EXPLORE MAP
+******************************************************************************/
+
+.explore-map {
+	height:650px;
+}
+
+.explore-map a {
+	text-decoration: none !important;
+}
+
+
+
 
 
 /* NUMBER ROW

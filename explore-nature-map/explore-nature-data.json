@@ -53,14 +53,14 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/LakeDavidson-Nature-Preserve.jpg",
                     "name": "Lake Davidson Nature Preserve",
-                    "unique characteristics": "Rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River ",
-                    "access": "Public[Link to trail map with presettings?]",
-                    "year conserved": "",
+                    "unique": "Rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River ",
+                    "access": "Public",
+                    "year": "",
                     "size": "7 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Town of Davidson Park & Recreation Department ",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/LakeDavidson-Nature-Preserve.jpg",
+                    "conservation": "Conservation Easement held by Town of Davidson Park & Recreation Department ",
                     "text": "Lake Davidson is a pristine body of water adjacent to Lake Norman, separated from its larger neighbor by the I-77 causeway and regulations that prohibit the motorcraft commonly populating Lake Norman. It is a favorite for those who canoe or kayak. Davidson Lands Conservancy manages The Lake Norman Nature Preserve in conjunction with the Town of Davidson, which holds a conservation easement on the property through its department of Parks and Recreation. Amenities. In 2011, Davidson Lands Conservancy received a grant from REI to build an access trail and canoe/kayak launch on Lake Davidson. This project was realized in cooperation with the Town of Davidson and Davidson Day School. You can access the trail [link to trails map with presettings] on Jetton Street by the Davidson Day athletic fields. It winds about 900 feet through a mature hardwood forest until it reaches the launch point at Lake Davidson. Along the way, rest at benches constructed in the style made famous by environmentalist Aldo Leopold. [Mouse-over info? Aldo Leopold (January 11, 1887 – April 21, 1948) was an American author, philosopher, scientist, ecologist, forester, conservationist, and environmentalist. He is best known for his book A Sand County Almanac (1949), which sold more than two million copies. The Leopold-designed bench is simple to construct and surprisingly sturdy.] At the midway point along the trail, those carrying a canoe or kayak will be happy to find a rack – perfect for literally taking a load off! Permanent canoe/kayak rackstorage is available from The Town of Davidson. Learn how to enter the lottery for available storage space. [http://www.ci.davidson.nc.us/836/Watercraft-Rack-Leasing-Program]"
                 },
                 "OBJECTID": 1,
@@ -224,14 +224,15 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Fisher_Farm_Bike_Trail.jpg",
                     "name": " Fisher Farm Park",
+                    "unique": "wildlife habitat, water-quality protection, open space for scenic enjoyment, and public outdoor recreation resources",
                     "access": "Private",
-                    "unique characteristics": "wildlife habitat, water-quality protection, open space for scenic enjoyment, and public outdoor recreation resources",
-                    "year conserved": "2002",
+                    "year": "2002",
                     "size": "200 acres",
                     "location": " Mecklenburg County",
-                    "conservation tool": " Owned by the Town of Davidson; Conservation Easement held by Mecklenburg County, which contracts with Davidson Lands Conservancy to manage the easement",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Fisher_Farm_Bike_Trail.jpg"
+                    "conservation": " Owned by the Town of Davidson; Conservation Easement held by Mecklenburg County, which contracts with Davidson Lands Conservancy to manage the easement",
+                    "text": ""
                 },
                 "OBJECTID": 1,
                 "ALTPARNO": "00311104",
@@ -308,14 +309,16 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                     "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
+                    "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
                     "access": "Private",
-                    "unique characteristics": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
-                    "year conserved": "2013",
+                    "year": "2013",
                     "size": "27.8 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg"
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
+                    "text": ""
+
                 },
                 "OBJECTID_1": 1,
                 "OBJECTID": 47857,
@@ -363,14 +366,15 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                     "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
+                    "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
                     "access": "Private",
-                    "unique characteristics": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
-                    "year conserved": "2013",
+                    "year": "2013",
                     "size": "27.8 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg"
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
+                    "text": ""
                 },
                 "OBJECTID_1": 2,
                 "OBJECTID": 87473,
@@ -606,14 +610,15 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
+                  "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                     "name": "Batchelor Easement",
                     "access": "Private",
-                    "unique characteristics": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
-                    "year conserved": "2012",
+                    "year": "2012",
                     "size": "6.8 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg"
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
+                    "text": ""
                 },
                 "OBJECTID_1": 1,
                 "pid": "00308171",
@@ -691,14 +696,15 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                     "name": "Batchelor Easement",
+                    "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                     "access": "Private",
-                    "unique characteristics": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
-                    "year conserved": "2012",
+                    "year": "2012",
                     "size": "6.8 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg"
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
+                    "text": ""
                 },
                 "OBJECTID_1": 2,
                 "pid": "00308170",
@@ -873,14 +879,14 @@
             },
             "properties": {
                 "website": {
+                  "image": "",
                     "name": "Rocky River Bluff Nature Preserve",
+                    "unique": "A regionally significant natural heritage site with a mature hardwood forest on a steep bluff that arcs along the Rocky River bottom. Features diverse plant species uncommon in the Charlotte area.",
                     "access": "Public",
-                    "unique characteristics": "A regionally significant natural heritage site with a mature hardwood forest on a steep bluff that arcs along the Rocky River bottom. Features diverse plant species uncommon in the Charlotte area.",
-                    "year conserved": "2002",
+                    "year": "2002",
                     "size": "60.6 acres",
                     "location": "Mecklenburg County",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "Image": "",
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                     "text": "'I have always thought this was a special place. It’s just beautiful. You would expect to see this in the mountains, but not right here in the Piedmont.' – property owner Mary Brackett. Davidson Lands Conservancy monitors this property and advises on its use.Catawba Lands Conservancy[https: //catawbalands.org/] generously contributed to an endowment fund for stewardship and legal defense of the property. The Elmer Brown Endowment Fund at Davidson College, which assures area sites for student research in field biology, also provided funding for initial monitoring expenses."
                 },
                 "OBJECTID": 1,
@@ -946,14 +952,14 @@
             },
             "properties": {
                 "website": {
-                    "name": "Mott Easement ",
-                    "unique characteristics": "685 feet along the West Branch of the Rocky River and is approximately 40% woodland and 60% pasture land",
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2011/11/MottProperty.jpg",
+                    "name": "Mott Easement",
+                    "unique": "685 feet along the West Branch of the Rocky River and is approximately 40% woodland and 60% pasture land",
                     "access": "Private",
-                    "year conserved": "2008",
+                    "year": "2008",
                     "size": "8.6 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy ",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2011/11/MottProperty.jpg",
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy ",
                     "text": "We love the natural aspects of our land as much as we do the house and outbuildings. We are grateful the easement gives us the flexibility to prescribe what can and cannot be changed about it in the future.- former property owner Joe Mott "
                 },
                 "OBJECTID": 1,
@@ -997,14 +1003,15 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Grey-RoadEasement.jpg",
                     "name ": "Grey Road Easement",
-                    "unique characteristics": "rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River",
+                    "unique": "rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River",
                     "access": "Private",
-                    "year conserved": "2012",
+                    "year": "2012",
                     "size": "9.5 acres",
                     "location": "Davidson",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Grey-RoadEasement.jpg"
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
+                    "text": ""
                 },
                 "stroke": "#555555",
                 "stroke-width": 2,
@@ -1058,14 +1065,14 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
                     "name": "Runneymede Woods",
                     "access": "Private",
-                    "unique characteristics": "Rich, mature woodlands; a historic mill site ruin and quarry; impressive rock formations, including the Whale Rock, one of the largest granite outcrops in Cabarrus County.One in a series of linked and protected parcels along the Rocky River that assure it remains a largely green corridor in the future.",
-                    "year conserved": "2013",
+                    "unique": "Rich, mature woodlands; a historic mill site ruin and quarry; impressive rock formations, including the Whale Rock, one of the largest granite outcrops in Cabarrus County.One in a series of linked and protected parcels along the Rocky River that assure it remains a largely green corridor in the future.",
+                    "year": "2013",
                     "size": "50.8 acres",
                     "location": "Cabarrus & Mecklenburg Counties",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "Image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                     "text": "The property’s equestrian and pedestrian trails are maintained for the private enjoyment of Runneymede residents and their guests. From time to time, Davidson Lands Conservancy offers guided tours and nature walks of the area."
                 },
                 "OBJECTID": 1,
@@ -1128,14 +1135,14 @@
             },
             "properties": {
                 "website": {
+                  "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2016/07/West-Branch-RR-sign.jpg",
                     "name": "West Branch Nature Preserve",
                     "access": "Public",
-                    "unique characteristics": "Extensive wetland and surrounding areas on the West Branch of the Rocky River featuring thirty-five species of reptiles and amphibian, including salamanders, frogs, toads, turtles",
-                    "year conserved": "",
+                    "unique": "Extensive wetland and surrounding areas on the West Branch of the Rocky River featuring thirty-five species of reptiles and amphibian, including salamanders, frogs, toads, turtles",
+                    "year": "",
                     "size": "23 acres",
                     "location": "Mecklenburg County",
-                    "conservation tool": "Conservation Easement held by Davidson Lands Conservancy",
-                    "Image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2016/07/West-Branch-RR-sign.jpg",
+                    "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                     "text": "Wetlands are nature’s sponges, absorbing stormwater runoff and releasing it gradually to reduce downstream flooding. When wetlands are healthy ecosystems, complete with all their living organisms, they filter surface water, reducing the need for water treatment plants. Supporting the Wetlands Ecosystem While the defined wetland of the West Branch Nature Preserve is precluded by law from development, the surrounding area is a vulnerable ecosystem threatened by nearby residential development According to the Davidson College Biology Department, numerous species of salamanders, frogs, toads, and turtles are found in the West Branch Wetland - to a degree unequalled in any other wetland in this area.Studies show that these species range in a natural area extending 900 feet beyond the edge of the wetland.Several of the salamander species spend the majority of each year living in the leaves and soil of the woods beyond the wetland. They return to the wetland pool in the winter to breed and lay eggs.Without suitable territory for each year’ s hatchlings to spread out, these populations would have been lost.Their absence from the food web would ultimately lead to the loss of the wetland ecosystem. A botanical inventory commissioned by Davidson Lands Conservancy and funded by the Davidson Garden Club and the South Lake Norman Garden Club also points to its rich diversity by identifying 114 species of plants."
                 },
                 "OBJECTID": 1,

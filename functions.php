@@ -28,9 +28,9 @@ function theme_enqueue_styles()
     // styles
     wp_enqueue_style('child-understrap-styles', get_stylesheet_directory_uri() . '/css/child-theme.min.css', array(), $the_theme->get('Version'));
     /* add events stylesheet */
-    wp_enqueue_style('critical-web-design-events-styles', get_stylesheet_directory_uri() . '/css/styles-events.css', $the_theme->get('Version'));
-    wp_enqueue_style('critical-web-design-styles', get_stylesheet_directory_uri() . '/css/styles.css', $the_theme->get('Version'));
-    //wp_enqueue_style('critical-web-design-icons', get_stylesheet_directory_uri() . '/css/fontawesome-all.css', $the_theme->get('Version'));
+    wp_enqueue_style('cwd-events-styles', get_stylesheet_directory_uri() . '/css/styles-events.css', $the_theme->get('Version'));
+    wp_enqueue_style('cwd-styles', get_stylesheet_directory_uri() . '/css/styles.css', $the_theme->get('Version'));
+    //wp_enqueue_style('cwd-icons', get_stylesheet_directory_uri() . '/css/fontawesome-all.css', $the_theme->get('Version'));
 
 
 
@@ -38,11 +38,25 @@ function theme_enqueue_styles()
     wp_enqueue_script('jquery');
     wp_enqueue_script('popper-scripts', get_stylesheet_directory_uri() . '/js/popper.min.js', array(), false);
     wp_enqueue_script('child-understrap-scripts', get_stylesheet_directory_uri() . '/js/child-theme.min.js', array(), $the_theme->get('Version'), true);
-    wp_enqueue_script('critical-web-design-scripts', get_stylesheet_directory_uri() . '/js/main.js', array(), $the_theme->get('Version'), true);
+    wp_enqueue_script('cwd-scripts', get_stylesheet_directory_uri() . '/js/main.js', array(), $the_theme->get('Version'), true);
 
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
+
+    $id = $post->ID;
+    $template_name = get_page_template_slug( $id );
+
+
+    if ($template_name == "page-explore-map.php"){
+        wp_enqueue_style('cwd-leaflet-styles', get_stylesheet_directory_uri() . '/explore-nature-map/leaflet/leaflet.css', $the_theme->get('Version'));
+        wp_enqueue_script('cwd-leaflet-script', get_stylesheet_directory_uri() . '/explore-nature-map/leaflet/leaflet.js', array(), $the_theme->get('Version'), true);
+        wp_enqueue_script('cwd-explore-nature-map-script', get_stylesheet_directory_uri() . '/explore-nature-map/explore-nature-map.js', array(), $the_theme->get('Version'), true);
+    }
+
+
+
+
 }
 
 
