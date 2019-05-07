@@ -215,6 +215,7 @@ a.menu:after, .dropdown-toggle:after {
     right: 15%;
     top: 80px;
     display: none;
+    z-index: 99999;
 }
 .headerCloseSearch {
     margin: -27px auto auto 270px;
@@ -295,12 +296,61 @@ a.menu:after, .dropdown-toggle:after {
 ******************************************************************************/
 
 .explore-map {
-	height:650px;
+	height:600px;
 }
 
 .explore-map a {
 	text-decoration: none !important;
 }
+
+.leaflet-interactive {
+  cursor: pointer;
+}
+.behind {
+	position: absolute;
+	z-index: -100;
+}
+.background-white {
+	background-color: rgba(255,255,255,0.75);
+}
+.map-data-image {
+	width:100%;
+}
+.explore-map-data {
+	padding: 18px;
+	box-sizing: border-box;
+    position: absolute;
+	z-index: 99998;
+	overflow-y: scroll; overflow-x:hidden;
+}
+
+
+@media (min-width: 0px) {
+	.explore-map-data {
+	    width: 50%;
+	    top: 155px;
+	    right: 0;
+		height: 565px;
+	}
+}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {
+	.explore-map-data {
+	    width: 40%;
+	    top: 145px;
+	    right: 3%;
+		height: 560px;
+	}
+}
+@media (min-width: 992px) {
+	.explore-map-data {
+	    width: 30%;
+	    top: 145px;
+	    right: 6%;
+		height: 560px;
+	}
+}
+@media (min-width: 1200px) {}
 
 
 

@@ -53,11 +53,13 @@ wp_reset_query();
 
 				<div id="map" class="explore-map"></div>
 
-
 			</div>
 
 		</div>
 	</div>
+
+	<div class="background-white explore-map-data"></div>
+	   
 </div>
 
 

@@ -1,142 +1,149 @@
-var map = L.map('map').setView([35.499249,-80.848488], 14);
 
+// create map
+var map = L.map('map').setView([35.488571, -80.802308], 13);
+
+// add tiles
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 18,
-	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-	id: 'mapbox.light'
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox.light'
 }).addTo(map);
 
-	
-
-var dataUrl = "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/explore-nature-data.json";
-function getData(url){
-	$.getJSON(url,function(data) { 
-		console.log(data);
-		addDataToMap(data); 
-	});
+// load geojson data
+function getData(url) {
+    $.getJSON(url, function(data) {
+        //console.log(data);
+        // after loading data, load public data
+        addDataToMap(data);
+    });
 }
-getData(dataUrl);
-function addDataToMap(data){
-	var dataLayer = L.geoJson(data,{
-		style: msaStyle,
-		onEachFeature: onEachFeature,
-	});
-    // var map = L.mapbox.map('map', 'mapbox.streets',{
-    //     zoom: 5
-    //     }).fitBounds(dataLayer.getBounds());
+getData("http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/explore-nature-data.json");
+
+// add data to map
+function addDataToMap(data) {
+    var dataLayer = L.geoJson(data, {
+        style: propertyStyle,
+        //filter: publicAccessFilter,
+        onEachFeature: onEachFeature,
+    });
     dataLayer.addTo(map)
+    //map.fitBounds(dataLayer.getBounds());
+}
+// style for polygons
+var propertyStyle = {
+    "fillColor": "#6d9f71",
+    "fillOpacity": 0.5,
+    "color": "#337357", // stroke
+    "weight": 2,
+    "opacity": 0.65
+};
+
+// only show "Public" properties (not in use)
+function publicAccessFilter(feature, layer) {
+    //console.log(feature)
+    if (feature.properties.website.access == "Public") return true;
+}
+
+// marker icon for "Private" properties
+var markerIcon = L.icon({
+    iconUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/marker.svg",
+    shadowUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/leaflet/images/marker-shadow.png",
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    shadowSize: [41, 41],
+    shadowAnchor: [13, 46],
+    popupAnchor: [1, -34],
+    tooltipAnchor: [16, -28]
+});
+
+var trackDuplicates = [];
 
 
+// show the data for a property
+function showPropertyData(feature, layer) {
 
+    var data = feature.properties.website,
+        str = "";
+
+    if (data.image)
+        str += '<img src="' + data.image + '" class="map-data-image pb-2 img-fluid">';
+    if (data.name)
+        str += '<h5>' + data.name + '</h5>';
+    if (data.unique)
+        str += '<div>' + data.unique + '</div>';
+    // list
+    if (data.access || data.year || data.size || data.location)
+        str += '<table class="table table-sm table-hover mt-2 mb-1">';
+    if (data.access)
+        str += '<tr><th>Access</th><td>' + data.access + '</td></tr>';
+    if (data.year)
+        str += '<tr><th>Year</th><td>' + data.year + '</td></tr>';
+    if (data.size)
+        str += '<tr><th>Size</th><td>' + data.size + '</td></tr>';
+    if (data.location)
+        str += '<tr><th>Location</th><td>' + data.location + '</td></tr>';
+    if (data.access || data.year || data.size || data.location)
+        str += '</table>';
+
+    if (data.conservation)
+        str += '<div>' + data.conservation + '</div>';
+    // if (data.text)
+    // 	str += '<div>'+ data.text +'</div>';
+
+    if (data.link)
+        str += '<a class="btn" href="http://davidsonlands.dreamhosters.com' + data.link + '"></a>';
+
+    $('.explore-map-data').html(str);
 
 }
-	var msaStyle = {
-		"fillColor": "#337357",
-		"fillOpacity": 0.5,
-		"color": "#6d9f71", // stroke
-		"weight": 2,
-		"opacity": 0.65
-	};
 
 
 
-	function onEachFeature(feature, layer) {
-		var popupContent = "<p>" + feature.properties.website.name + "</p>";
-	
-		if (feature.properties && feature.properties.popupContent) {
-			popupContent += feature.properties.popupContent;
-		}
-	
-		layer.bindPopup(popupContent);
-	}
-	
-	
+function onEachFeature(feature, layer) {
+
+	var data = feature.properties.website;
+    if (!data.name) return;
 
 
-    // function addDataToMap1(data, map) {
-    //         var dataLayer = L.geoJson(data);
-    //         var map = L.mapbox.map('map', 'mapbox.streets',{
-    //             zoom: 5
-    //             }).fitBounds(dataLayer.getBounds());
-    //         dataLayer.addTo(map)
-    //     }
-    
-    // function addDataToMap1(data, map) {
-    //     var dataLayer = L.geoJson(data, {
-    //         onEachFeature: function(feature, layer) {            var popupText = "<table><tr><th>COUNT: </th><td>" + feature.properties['COUNT']+"</td></tr>";             var popupText = popupText+ "<tr><th>LAT4: </th><td>" + feature.properties['LAT4']+"</td></tr>";             var popupText = popupText+ "<tr><th>LAT1: </th><td>" + feature.properties['LAT1']+"</td></tr>";             var popupText = popupText+ "<tr><th>LAT3: </th><td>" + feature.properties['LAT3']+"</td></tr>";             var popupText = popupText+ "<tr><th>LAT2: </th><td>" + feature.properties['LAT2']+"</td></tr>";             var popupText = popupText+ "<tr><th>LONG3: </th><td>" + feature.properties['LONG3']+"</td></tr>";             var popupText = popupText+ "<tr><th>LONG2: </th><td>" + feature.properties['LONG2']+"</td></tr>";             var popupText = popupText+ "<tr><th>LONG1: </th><td>" + feature.properties['LONG1']+"</td></tr>";             var popupText = popupText+ "<tr><th>LONG4: </th><td>" + feature.properties['LONG4']+"</td></tr>";             var popupText = popupText+ "<tr><th>HASH: </th><td>" + feature.properties['HASH']+"</td></tr>"; 
-    //             layer.setStyle({color: '#1766B5', weight: 3, opacity: 1});
-    //                     layer.bindPopup(popupText, {autoPan:false, maxHeight:500, maxWidth:350} ); }
-    //             });
-    //         dataLayer.addTo(map);
-    //     console.log(map.fitBounds(dataLayer.getBounds()))};
-    // };
+	if (trackDuplicates.indexOf(data.name) > -1){
+		// hide layer, don't add marker or make it clickable
+		layer.setStyle({
+            'weight': 0,
+            'fillOpacity': 0
+        });
+	} else {
+		// not a duplicate
+	    trackDuplicates.push(data.name);
 
 
+	    if (data.access == "Private" && feature.geometry.type === 'Polygon') {
+	        // Don't stroke and do opaque fill
+	        layer.setStyle({
+	            'weight': 0,
+	            'fillOpacity': 0
+	        });
+	        // Get bounds of polygon
+	        var bounds = layer.getBounds();
+	        // Get center of bounds
+	        var center = bounds.getCenter();
+	        // Use center to put marker on map
+	        var marker = L.marker(center, { 
+	        	icon: markerIcon 
+	        }).addTo(map).on('click', function(ev) {
+	            //console.log(ev);
+	            showPropertyData(feature, layer);
+	        });
 
+	    } else {
+	        layer.on({
+	            click: (function(ev) {
+	                showPropertyData(feature, layer);
+	            }).bind(this)
+	        });
+	    }
 
-
-
-
-	// var baseballIcon = L.icon({
-	// 	iconUrl: 'baseball-marker.png',
-	// 	iconSize: [32, 37],
-	// 	iconAnchor: [16, 37],
-	// 	popupAnchor: [0, -28]
-	// });
-	//
-	// function onEachFeature(feature, layer) {
-	// 	var popupContent = "<p>I started out as a GeoJSON " +
-	// 			feature.geometry.type + ", but now I'm a Leaflet vector!</p>";
-	//
-	// 	if (feature.properties && feature.properties.popupContent) {
-	// 		popupContent += feature.properties.popupContent;
-	// 	}
-	//
-	// 	layer.bindPopup(popupContent);
-	// }
-
-	// L.geoJSON([bicycleRental, campus], {
-	//
-	// 	style: function (feature) {
-	// 		return feature.properties && feature.properties.style;
-	// 	},
-	//
-	// 	onEachFeature: onEachFeature,
-	//
-	// 	pointToLayer: function (feature, latlng) {
-	// 		return L.circleMarker(latlng, {
-	// 			radius: 8,
-	// 			fillColor: "#ff7800",
-	// 			color: "#000",
-	// 			weight: 1,
-	// 			opacity: 1,
-	// 			fillOpacity: 0.8
-	// 		});
-	// 	}
-	// }).addTo(map);
-
-	// L.geoJSON(freeBus, {
-	//
-	// 	filter: function (feature, layer) {
-	// 		if (feature.properties) {
-	// 			// If the property "underConstruction" exists and is true, return false (don't render features under construction)
-	// 			return feature.properties.underConstruction !== undefined ? !feature.properties.underConstruction : true;
-	// 		}
-	// 		return false;
-	// 	},
-	//
-	// 	onEachFeature: onEachFeature
-	// }).addTo(map);
-
-	// var coorsLayer = L.geoJSON(coorsField, {
-	//
-	// 	pointToLayer: function (feature, latlng) {
-	// 		return L.marker(latlng, {icon: baseballIcon});
-	// 	},
-	//
-	// 	onEachFeature: onEachFeature
-	// }).addTo(map);
-	// 
-	// 
+    }
+	//console.log(trackDuplicates);
+}
