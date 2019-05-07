@@ -28,7 +28,12 @@ function addDataToMap(data) {
         //filter: publicAccessFilter,
         onEachFeature: onEachFeature,
     });
-    dataLayer.addTo(map)
+    dataLayer.addTo(map);
+    // show a random default
+
+
+showRandomProperty(data.features);
+
     //map.fitBounds(dataLayer.getBounds());
 }
 // style for polygons
@@ -60,6 +65,13 @@ var markerIcon = L.icon({
 
 var trackDuplicates = [];
 
+
+function showRandomProperty(data){
+	var keys = Object.keys(data);
+    var randomProp = data[keys[ keys.length * Math.random() << 0]];
+    //console.log(randomProp)
+    showPropertyData(randomProp);
+}
 
 // show the data for a property
 function showPropertyData(feature, layer) {

@@ -296,7 +296,7 @@ a.menu:after, .dropdown-toggle:after {
 ******************************************************************************/
 
 .explore-map {
-	height:600px;
+	height:650px;
 }
 
 .explore-map a {
@@ -330,7 +330,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 50%;
 	    top: 155px;
 	    right: 0;
-		height: 565px;
+		height: 615px;
 	}
 }
 @media (min-width: 576px) {}
@@ -339,7 +339,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 40%;
 	    top: 145px;
 	    right: 3%;
-		height: 560px;
+		height: 610px;
 	}
 }
 @media (min-width: 992px) {
@@ -347,7 +347,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 30%;
 	    top: 145px;
 	    right: 6%;
-		height: 560px;
+		height: 610px;
 	}
 }
 @media (min-width: 1200px) {}
