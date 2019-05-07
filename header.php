@@ -84,7 +84,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<li>
 						<div class="headerSearchDiv">
-							<form method="get" id="searchform" class="headerSearchForm" action="post" role="search">
+							<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>" role="search">
 								<input class="field form-control headerSearchFormInput" id="s" name="s" type="text" placeholder="Search …" value="">
 							</form>
 							<div class="headerCloseSearch">X</div>

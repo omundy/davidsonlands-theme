@@ -320,7 +320,7 @@ a.menu:after, .dropdown-toggle:after {
 	padding: 18px;
 	box-sizing: border-box;
     position: absolute;
-	z-index: 99998;
+	z-index: 998;
 	overflow-y: scroll; overflow-x:hidden;
 }
 
