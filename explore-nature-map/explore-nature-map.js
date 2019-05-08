@@ -41,7 +41,7 @@ var propertyStyle = {
     "fillColor": "#6d9f71",
     "fillOpacity": 0.5,
     "color": "#337357", // stroke
-    "weight": 2,
+    "weight": 1.5,
     "opacity": 0.65
 };
 

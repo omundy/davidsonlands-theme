@@ -260,6 +260,13 @@ a.menu:after, .dropdown-toggle:after {
     background-image:url("../img/about-page-butterfly-1800w.jpg")
 }
 
+.explore-nature-health-hero {
+    background-image:url("../img/explore-nature-Rock-Climbers.png")
+}
+
+
+
+
 
 .hero-content {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
