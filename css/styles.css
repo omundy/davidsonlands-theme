@@ -24,6 +24,18 @@ html {
     text-decoration: underline;
 }
 
+/*links appearing on a dk green background*/
+a.link-on-dk-green, .wrapper-dark-green a, .wrapper-dark-green a:visited {
+    color: #e4e3d3 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+a.site:hover, .wrapper-dark-green a:hover {
+    color: #e4e3d3;
+    text-decoration: underline;
+}
+
+
 
 
 h1,h2,h3,h4,h5,h6 { font-family: 'Lato', sans-serif !important; font-weight: 700; line-height: normal;}

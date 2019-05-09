@@ -88,15 +88,15 @@ wp_reset_query();
 
         <div class="row">
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green" href="<?php echo home_url(); ?>/conserve-land/map-of-conserved-land/">
-	                <div class="circle-callout-image">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Lake-Davidson-Nature-Preserve.jpg" alt="Conserving Land">
-	                </div>
-	                <div class="circle-callout-text">
-	                  We are helping protect more than 450 acres of public and private land in the Davidson area.
-					  Check the map!
-	                </div>
-				</a>
+      				<a class="link-on-dk-green" href="<?php echo home_url(); ?>/conserve-land/map-of-conserved-land/">
+      	                <div class="circle-callout-image">
+      	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Lake-Davidson-Nature-Preserve.jpg" alt="Conserving Land">
+      	                </div>
+      	                <div class="circle-callout-text">
+      	                  We are helping protect more than 450 acres of public and private land in the Davidson area.
+      					  Check the map!
+      	                </div>
+      				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
 				<a href="<?php echo home_url(); ?>/conserve-land/land-conservation-offers-big-benefits/">
