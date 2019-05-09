@@ -1,4 +1,5 @@
 <?php
+
 // query for feature posts
 $args = array(
     'numberposts' => '1',
@@ -6,7 +7,14 @@ $args = array(
     'post_status' => 'publish',
     'tag' => 'feature'
 );
+if (isset($include_vars['tag']))
+    $args['tag'] = $include_vars['tag'];
+if (isset($include_vars['category']))
+    $args['category'] = $include_vars['category'];
+
 $recent_posts = wp_get_recent_posts( $args );
+
+
 if(count($recent_posts) > 0):
     foreach( $recent_posts as $recent ){
         // the background image from the post

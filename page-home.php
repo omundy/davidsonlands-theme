@@ -170,7 +170,10 @@ $container   = get_theme_mod('understrap_container_type');
 
 
 
-<?php include(get_theme_file_path() . '/sections/featured-news-article.php'); ?>
+<?php 
+    $include_vars = array("tag"=>"feature"); 
+    include(get_theme_file_path() . '/sections/featured-news-article.php'); 
+?>
 <?php include(get_theme_file_path() . '/sections/email-signup.php'); ?>
 <?php include(get_theme_file_path() . '/sections/event-section.php'); ?>
 
