@@ -15,7 +15,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+    exit; // Exit if accessed directly.
 }
 
 get_header();
@@ -52,11 +52,38 @@ wp_reset_query();
         <div class="row">
             <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h1 class="hero-title">Studies show time in nature is often the best medicine.</h1>
-				<a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/outdoor-resources/a-mind-is-a-terrible-thing-to-waste/">Read More</a>
+                <a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/outdoor-resources/a-mind-is-a-terrible-thing-to-waste/">Read More</a>
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+<?php 
+    $include_vars = array("tag"=>"","category"=>"World of Wonder"); 
+    include(get_theme_file_path() . '/sections/featured-articles-3xcallouts.php'); 
+?>
+
+
+
+
+<div class="wrapper wrapper-tan">
+   <div class="container">
+        <div class="row mb-2">
+            <div class="col-12 col-md-8">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explore-nature-map-feature.png" alt="Map">
+            </div>
+
+            <div class="col-12 col-md-4 vertical-center-parent">
+                <h2>We’ve conserved more than 400 acres of land in the Davidson area.</h2>
+                <a href="<?php echo home_url(); ?>/explore-nature/quizzes" class="btn btn-primary mx-2">Explore each property</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -139,36 +166,19 @@ wp_reset_query();
 <div class="wrapper wrapper-white">
    <div class="container">
         <div class="row mb-2">
-            <div class="col-12 col-md-8">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/quiz-section-image.png" alt="Quizzes">
-            </div>
-
             <div class="col-12 col-md-4 vertical-center-parent">
                 <h2>Can you ace our Nature Quizzes?</h2>
                 <a href="<?php echo home_url(); ?>/explore-nature/quizzes" class="btn btn-primary mx-2">Take a quiz!</a>
             </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-<div class="wrapper wrapper-white">
-   <div class="container">
-        <div class="row mb-2">
             <div class="col-12 col-md-8">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explore-nature-map-feature.png" alt="Map">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/quiz-section-image.png" alt="Quizzes">
             </div>
 
-            <div class="col-12 col-md-4 vertical-center-parent">
-                <h2>Check out the properties we have preserved</h2>
-                <a href="<?php echo home_url(); ?>/explore-nature/quizzes" class="btn btn-primary mx-2">View the map</a>
-            </div>
         </div>
     </div>
 </div>
+
+
 
 
 

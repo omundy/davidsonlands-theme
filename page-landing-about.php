@@ -139,8 +139,10 @@ wp_reset_query();
 
 
 
-<?php include(get_theme_file_path() . '/sections/featured-news-article.php'); ?>
-
+<?php 
+    $include_vars = array("tag"=>"feature"); 
+    include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+?>
 
 
 

@@ -136,27 +136,54 @@ $container   = get_theme_mod('understrap_container_type');
 
 
 
+<?php
 
+$arr = array(
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/home-callout-join.jpg", 
+        'text' => "Help us protect the land you love.",
+        'btn-link' => '/join-us/become-a-member/',
+        'btn-text' => 'BECOME A MEMBER'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/home-callout-gift.jpg", 
+        'text' => "Honor someone who loves nature.",
+        'btn-link' => '/join-us/tribute-gift',
+        'btn-text' => 'MAKE A TRIBUTE GIFT'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/home-callout-volunteer.jpg", 
+        'text' => "Find your calling at DLC.",
+        'btn-link' => '/join-us/volunteer/',
+        'btn-text' => 'VOLUNTEER TODAY'
+    ),
+);
+write_3x_callouts($arr,"wrapper-tan");
+
+?>
+
+<!-- 
 <div class="wrapper wrapper-tan">
    <div class="container">
 
         <div class="row">
             <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-join.jpg" alt="Help us protect the land you love." class="img-fluid">
+                <div class="callout-wrapper callout-wrapper-light-green">
+                    <div class="callout-image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-join.jpg')"></div>
+                    
                     <div class="callout-text">Help us protect the land you love.</div>
                     <a href="<?php echo home_url(); ?>/join-us/become-a-member/" class="btn btn-primary btn-callout">BECOME A MEMBER</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
+                <div class="callout-wrapper callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-gift.jpg" alt="Honor someone who loves nature." class="img-fluid">
                     <div class="callout-text">Honor someone who loves nature.</div>
                     <a href="<?php echo home_url(); ?>/join-us/tribute-gift" class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</a>
                 </div>
             </div>
             <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
+                <div class="callout-wrapper callout-wrapper-light-green">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-volunteer.jpg" alt="Find your calling at DLC." class="img-fluid">
                     <div class="callout-text">Find your calling at the DLC.</div>
                     <a href="<?php echo home_url(); ?>/join-us/volunteer/" class="btn btn-primary btn-callout">VOLUNTEER TODAY</a>
@@ -165,14 +192,14 @@ $container   = get_theme_mod('understrap_container_type');
         </div>
     </div>
 </div>
-
+ -->
 
 
 
 
 <?php 
     $include_vars = array("tag"=>"feature"); 
-    include(get_theme_file_path() . '/sections/featured-news-article.php'); 
+    include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
 ?>
 <?php include(get_theme_file_path() . '/sections/email-signup.php'); ?>
 <?php include(get_theme_file_path() . '/sections/event-section.php'); ?>

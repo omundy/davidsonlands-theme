@@ -81,6 +81,47 @@ add_action('after_setup_theme', 'add_child_theme_textdomain');
 
 
 
+
+/**
+ * Prints HTML for three callouts
+ */
+
+function write_3x_callouts($arr,$wrapper_color="tan",$callout_color="black",$headline="",$subheadline=""){
+
+    $str = '<div class="wrapper '. $wrapper_color .'">';
+    $str .= '<div class="container">';
+
+
+if ($headline != ""){
+    $str .= '<div class="row">';
+    $str .= '<div class="col-12 text-center">';
+    $str .= '<h3>'. $headline .'</h3>';
+    $str .= '<div>'. $subheadline .'</div>';
+    $str .= '</div>';
+    $str .= '</div>';
+}
+
+
+    $str .= '<div class="row">';
+    foreach($arr as $callout){
+        $str .= '<div class="col-12 col-sm-4 text-center">';
+        $str .= '<div class="callout-wrapper callout-wrapper-'. $callout_color .'">';
+        $str .= '<div class="callout-image" style="background-image: url('. $callout['image'] .')"></div>';
+        //$str .= '<img src="'. $callout['image'] .'" alt="'. $callout['text'] .'" class="img-fluid">';
+        $str .= '<div class="callout-text">'. $callout['text'] .'</div>';
+        $str .= '<a href="'. home_url() . $callout['btn-link'] .'" class="btn btn-primary btn-callout">'. $callout['btn-text'] .'</a>';
+        $str .= '</div>';
+        $str .= '</div>';
+    }
+    $str .= '</div>';
+    $str .= '</div>';
+    $str .= '</div>';
+
+    print $str;
+}
+
+
+
 /**
  * Prints HTML with meta information for the current post-date/time and author. Copied from parent/inc/template-tags.php
  */

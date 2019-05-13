@@ -5,7 +5,13 @@ $args = array(
     'numberposts' => '1',
 	'post_type' => 'post',
     'post_status' => 'publish',
-    'tag' => 'feature'
+    'tag' => 'feature',
+    'meta_query' => array(
+        array(
+         'key' => '_thumbnail_id',
+         'compare' => 'EXISTS'
+        ),
+    )
 );
 if (isset($include_vars['tag']))
     $args['tag'] = $include_vars['tag'];
