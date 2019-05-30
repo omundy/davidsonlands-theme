@@ -44,21 +44,28 @@ wp_reset_query();
 
 
 
-<div class="wrapper wrapper-hero">
-	<div class="container-fluid">
+<div class="wrapper wrapper-hero ">
+	<div class="container-fluid ">
+
 
 		<div class="row">
-
 			<div class="col-12 text-center px-0">
+				<h3>Davidson's Conserved Land</h3>
+			</div>
+		</div>
 
+
+		<div class="row wrapper-explore-map">
+			<div class="col-12 text-center px-0">
 				<div id="map" class="explore-map"></div>
-
 			</div>
 
+			<div class="background-white explore-map-data"></div>
 		</div>
+
 	</div>
 
-	<div class="background-white explore-map-data"></div>
+	
 	   
 </div>
 
