@@ -1,43 +1,17 @@
 <?php
 /**
-
  * Template Name: Landing > About
  * Template Post Type: post, page, event
-
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+  exit; // Exit if accessed directly.
 }
-
 get_header();
-
 $container   = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
 
-<!--
-<h1 class="entry-title"><?php the_title(); ?></h1>
-<?php
-while ( have_posts() ) : the_post(); ?>
-    <div class="entry-content-page">
-        <?php the_content(); ?>
-    </div>
-
-<?php
-endwhile;
-wp_reset_query();
-?>
--->
 
 
 
@@ -51,6 +25,10 @@ wp_reset_query();
         </div>
     </div>
 </div>
+
+
+
+
 
 
 <div class="wrapper wrapper-white">
@@ -75,6 +53,11 @@ wp_reset_query();
     </div>
 </div>
 
+
+
+
+
+
 <div class="wrapper wrapper-dark-green">
    <div class="container">
 
@@ -88,48 +71,44 @@ wp_reset_query();
 
         <div class="row">
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-      				<a class="link-on-dk-green" href="<?php echo home_url(); ?>/conserve-land/map-of-conserved-land/">
-      	                <div class="circle-callout-image">
-      	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Lake-Davidson-Nature-Preserve.jpg" alt="Conserving Land">
-      	                </div>
-      	                <div class="circle-callout-text">
-      	                  We are helping protect more than 450 acres of public and private land in the Davidson area.
-      					  Check the map!
-      	                </div>
+      				<a class="link-on-dk-green" href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/">
+                <div class="circle-callout-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Lake-Davidson-Nature-Preserve.jpg" alt="Conserving Land">
+                </div>
+                <div class="circle-callout-text">
+                  We are helping protect more than 450 acres of public and private land in the Davidson area. Check the map!
+                </div>
       				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="<?php echo home_url(); ?>/conserve-land/land-conservation-offers-big-benefits/">
-					<div class="circle-callout-image">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-grey-road-easement.png" alt="Teaching & Learning">
-	                </div>
-	                <div class="circle-callout-text">
-	                  We work closely with landowners to preserve the land they love.
-					  Is conservation right for you?
-	                </div>
-				</a>
+        				<a class="link-on-dk-green" href="<?php echo home_url(); ?>/conserve-land/land-conservation-offers-big-benefits/">
+        					<div class="circle-callout-image">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-grey-road-easement.png" alt="Teaching & Learning">
+                  </div>
+                  <div class="circle-callout-text">
+                    We work closely with landowners to preserve the land they love. Is conservation right for you?
+                  </div>
+        				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="#">
-	                <div class="circle-callout-image">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-two-women-and-a-tree.jpg" alt="Wildlife & Habitats">
-	                </div>
-	                <div class="circle-callout-text">
-	                  We're proud of our financial stewardship and transparency too.
-					  Take a look at our latest financial statements.
-	                </div>
-				</a>
+        				<a class="link-on-dk-green" href="http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/2017-Financial-Review.pdf">
+                  <div class="circle-callout-image">
+                      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-two-women-and-a-tree.jpg" alt="Wildlife & Habitats">
+                  </div>
+                  <div class="circle-callout-text">
+                    We're proud of our financial stewardship and transparency too. Take a look at our latest financial statements.
+                  </div>
+        				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="<?php echo home_url(); ?>/explore-nature/map-of-public-parks-preserves/">
-	                <div class="circle-callout-image">
-	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Bikers-on-Path.jpg" alt="Trails & Greenways">
-	                </div>
-	                <div class="circle-callout-text">
-	                  Looking for hiking or biking trails? Are you a watersports buff?
-					  Get some fresh air - our trails map shows you where!
-	                </div>
-				</a>
+      				<a class="link-on-dk-green" href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/">
+                <div class="circle-callout-image">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-Bikers-on-Path.jpg" alt="Trails & Greenways">
+                </div>
+                <div class="circle-callout-text">
+                  Looking for hiking or biking trails? Are you a watersports buff? Get some fresh air - our trails map shows you where!
+                </div>
+      				</a>
             </div>
         </div>
     </div>
@@ -139,9 +118,17 @@ wp_reset_query();
 
 
 
+
 <?php 
-    $include_vars = array("tag"=>"feature"); 
-    include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
+$search_params_1x = array(
+    'numberposts' => 1,
+    'tag' => "feature",
+    'category' => "",
+    'featureimage' => true
+);
+include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
 ?>
 
 

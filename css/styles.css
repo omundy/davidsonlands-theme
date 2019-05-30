@@ -30,6 +30,14 @@ a.link-on-dk-green, .wrapper-dark-green a, .wrapper-dark-green a:visited {
     text-decoration: none !important;
     background-color: transparent !important;
 }
+/*links appearing on a light background*/
+a.link-on-light-bg, .wrapper-tan a, .wrapper-tan a:visited {
+    color: #347458 !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+
+
 a.site:hover, .wrapper-dark-green a:hover {
     color: #e4e3d3;
     text-decoration: underline;
@@ -266,10 +274,8 @@ a.menu:after, .dropdown-toggle:after {
     background-image:url("../../../uploads/2016/07/Mott-landscape.jpg")
 }
 .conserve-map-hero {
-    background-image:url("../../../uploads/2019/01/davidson-hall.jpg")
-}
-.conserve-map-section {
-    background-image:url("../img/davidsonmap.png")
+    background-image:url("../../../uploads/2019/01/davidson-hall.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
 }
 .join-hero {
     background-image:url("../../../uploads/2019/03/people-on-dock-hero.jpg")
@@ -281,7 +287,6 @@ a.menu:after, .dropdown-toggle:after {
 .explore-nature-health-hero {
     background-image:url("../img/explore-nature-Rock-Climbers.png")
 }
-
 
 
 
@@ -302,13 +307,6 @@ a.menu:after, .dropdown-toggle:after {
 
 
 
-.conserve-map-section .text-background-light {
-    background-color: rgb(255,255,255,.5);
-}
-.conserve-map-section .map-description {
-    color: #000;
-}
-
 
 
 
@@ -320,17 +318,17 @@ a.menu:after, .dropdown-toggle:after {
 /* EXPLORE MAP
 ******************************************************************************/
 
-.explore-map {
-	height:650px;
-}
 
-.explore-map a {
-	text-decoration: none !important;
+.wrapper-explore-map {
+    position:relative;
 }
+.explore-map-data { position:absolute; right:20px; top:20px; }
 
-.leaflet-interactive {
-  cursor: pointer;
-}
+.explore-map { height:640px; }
+.explore-map a { text-decoration: none !important; }
+.leaflet-interactive { cursor: pointer; }
+
+
 .behind {
 	position: absolute;
 	z-index: -100;
@@ -353,8 +351,6 @@ a.menu:after, .dropdown-toggle:after {
 @media (min-width: 0px) {
 	.explore-map-data {
 	    width: 50%;
-	    top: 155px;
-	    right: 0;
 		height: 585px;
 	}
 }
@@ -362,16 +358,12 @@ a.menu:after, .dropdown-toggle:after {
 @media (min-width: 768px) {
 	.explore-map-data {
 	    width: 40%;
-	    top: 145px;
-	    right: 3%;
 		height: 580px;
 	}
 }
 @media (min-width: 992px) {
 	.explore-map-data {
 	    width: 30%;
-	    top: 145px;
-	    right: 6%;
 		height: 580px;
 	}
 }

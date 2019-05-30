@@ -1,44 +1,18 @@
 <?php
 /**
-
  * Template Name: Landing > Join Us
  * Template Post Type: post, page, event
-
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
 get_header();
-
 $container   = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
 
-<!--
-<h1 class="entry-title"><?php the_title(); ?></h1>
-<?php
-// TO SHOW THE PAGE CONTENTS
-while ( have_posts() ) : the_post(); ?>
-    <div class="entry-content-page">
-        <?php the_content(); ?>
-    </div>
 
-<?php
-endwhile; //resetting the page loop
-wp_reset_query(); //resetting the page query
-?>
--->
 
 
 <div class="wrapper wrapper-xxl wrapper-no-padding-bottom wrapper-hero hero-light join-hero vertical-center-parent">
@@ -69,7 +43,7 @@ wp_reset_query(); //resetting the page query
 
         <div class="row">
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-lenny-with-frog-600sq.jpg" alt="Education & Outreach">
 	                </div>
@@ -79,7 +53,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/join-us/run-for-green/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/join-us/run-for-green/">
 					<div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-run-for-green-600sq.jpg" alt="Run for Green">
 	                </div>
@@ -89,7 +63,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/explore-nature/trees-davidson/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/explore-nature/trees-davidson/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-Tree-Planting6-427sq.jpg" alt="TreesDavidson">
 	                </div>
@@ -99,7 +73,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-img_4959-600sq.jpg" alt="Communications">
 	                </div>
@@ -125,50 +99,65 @@ wp_reset_query(); //resetting the page query
 
 
 
-
-
-
-
 <?php include(get_theme_file_path() . '/sections/event-section.php'); ?>
 
 
 
-<div class="wrapper wrapper-tan">
-   <div class="container">
 
-        <div class="row">
-            <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-volunteer.jpg" alt="Help us protect the land you love." class="img-fluid">
-                    <div class="callout-text">Honor someone who loves nature</div>
-                    <a href="<?php echo home_url(); ?>/join-us/tribute-gift/" class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</a>
-                </div>
-            </div>
-	        <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-gift.jpg" alt="Honor someone who loves nature." class="img-fluid">
-                    <div class="callout-text">Time to balance your portfolio</div>
-                    <a href="<?php echo home_url(); ?>/join-us/gifts-of-stock/" class="btn btn-primary btn-callout">MAKE A GIFT OF STOCK</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-callout-bonfire.jpg" alt="Find your calling at DLC." class="img-fluid">
-                    <div class="callout-text">Protect natural space forever</div>
-                    <a href="<?php echo home_url(); ?>/join-us/forever-fund/" class="btn btn-primary btn-callout">SUPPORT LAND ACQUISITION</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<?php
+
+// data for a 3x callout section
+$data_params_3x = array(
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/home-callout-volunteer.jpg", 
+        'text' => "Honor someone who loves nature",
+        'btn-link' => '/join-us/tribute-gift/',
+        'btn-text' => 'MAKE A TRIBUTE GIFT'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/home-callout-gift.jpg", 
+        'text' => "Time to balance your portfolio",
+        'btn-link' => '/join-us/gifts-of-stock/',
+        'btn-text' => 'MAKE A GIFT OF STOCK'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/join-page-callout-bonfire.jpg", 
+        'text' => "Protect natural space forever",
+        'btn-link' => '/join-us/forever-fund/',
+        'btn-text' => 'SUPPORT LAND ACQUISITION'
+    ),
+);
+// display parameters for callout section
+$display_params_3x = array(
+    'wrapper_bg_color' => "tan",
+    'callout_bg_color' => "light-green",
+    'heading' => "",
+    'subheading' => ""
+);
+// write a 3x callout section
+write_3x_callouts($data_params_3x, $display_params_3x);
+
+?>
+
+
 
 
 
 
 
 <?php 
-    $include_vars = array("tag"=>"feature"); 
-    include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
+$search_params_1x = array(
+    'numberposts' => 1,
+    'tag' => "feature",
+    'category' => "",
+    'featureimage' => true
+);
+include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
 ?>
+
+
+
 
 <?php get_footer(); ?>

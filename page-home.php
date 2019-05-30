@@ -1,21 +1,12 @@
 <?php
 /**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
-
+ *  The main template file.
  */
 
 if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
-
 get_header();
-
 $container   = get_theme_mod('understrap_container_type');
 ?>
 
@@ -96,7 +87,7 @@ $container   = get_theme_mod('understrap_container_type');
 
         <div class="row">
             <div class="col-6 col-sm-3 text-center mt-4">
-                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/conserve-land">
+                <a class="link-on-dk-green" href="<?php echo home_url(); ?>/conserve-land">
                     <div class="circle-callout-image">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-conserving.jpg" alt="Conserving Land">
                     </div>
@@ -106,7 +97,7 @@ $container   = get_theme_mod('understrap_container_type');
                 </a> 
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/category/wildlife/">
+                <a class="link-on-dk-green" href="<?php echo home_url(); ?>/category/wildlife/">
                     <div class="circle-callout-image">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-wildlife.jpg" alt="Wildlife & Habitats">
                     </div>
@@ -116,7 +107,7 @@ $container   = get_theme_mod('understrap_container_type');
                 </a>    
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/category/worldofwonder/">
+                <a class="link-on-dk-green" href="<?php echo home_url(); ?>/category/worldofwonder/">
                     <div class="circle-callout-image">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-teaching.jpg" alt="Teaching & Learning">
                     </div>
@@ -126,7 +117,7 @@ $container   = get_theme_mod('understrap_container_type');
                 </a>
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/">
+                <a class="link-on-dk-green" href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/">
                     <div class="circle-callout-image">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-trails.jpg" alt="Trails & Greenways">
                     </div>
@@ -146,11 +137,12 @@ $container   = get_theme_mod('understrap_container_type');
 
 <?php
 
-$arr = array(
+// data for a 3x callout section
+$data_params_3x = array(
     array(
         'image' => get_stylesheet_directory_uri() . "/img/home-callout-join.jpg", 
         'text' => "Help us protect the land you love.",
-        'btn-link' => '/join-us/give_today/',
+        'btn-link' => '/join-us/give-today/',
         'btn-text' => 'GIVE TODAY'
     ),
     array(
@@ -161,79 +153,44 @@ $arr = array(
     ),
     array(
         'image' => get_stylesheet_directory_uri() . "/img/home-callout-volunteer.jpg", 
-        'text' => "Find your calling at DLC.",
+        'text' => "Find your calling at DLC",
         'btn-link' => '/join-us/volunteer/',
         'btn-text' => 'VOLUNTEER TODAY'
     ),
 );
-
-$display_params = array(
+// display parameters for 3x callout section
+$display_params_3x = array(
     'wrapper_bg_color' => "tan",
     'callout_bg_color' => "light-green",
     'heading' => "",
     'subheading' => ""
 );
-write_3x_callouts($arr,$display_params);
-
+// write a 3x callout section
+write_3x_callouts($data_params_3x, $display_params_3x);
 
 ?>
 
-<!-- 
-<div class="wrapper wrapper-tan">
-   <div class="container">
 
-        <div class="row">
-            <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper callout-wrapper-light-green">
-                    <div class="callout-image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-join.jpg')"></div>
-                    
-                    <div class="callout-text">Help us protect the land you love.</div>
-                    <a href="<?php echo home_url(); ?>/join-us/become-a-member/" class="btn btn-primary btn-callout">BECOME A MEMBER</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-gift.jpg" alt="Honor someone who loves nature." class="img-fluid">
-                    <div class="callout-text">Honor someone who loves nature.</div>
-                    <a href="<?php echo home_url(); ?>/join-us/tribute-gift" class="btn btn-primary btn-callout">MAKE A TRIBUTE GIFT</a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4 text-center">
-                <div class="callout-wrapper callout-wrapper-light-green">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-callout-volunteer.jpg" alt="Find your calling at DLC." class="img-fluid">
-                    <div class="callout-text">Find your calling at the DLC.</div>
-                    <a href="<?php echo home_url(); ?>/join-us/volunteer/" class="btn btn-primary btn-callout">VOLUNTEER TODAY</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
- -->
 
 
 
 
 <?php 
-    $post_params = array(
-        'numberposts' => 1,
-        'tag' => "feature",
-        'category' => "",
-        'featureimage' => true
-    );
-    include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
+$search_params_1x = array(
+    'numberposts' => 1,
+    'tag' => "feature",
+    'category' => "",
+    'featureimage' => true
+);
+include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
+
 ?>
+
+
+
 <?php include(get_theme_file_path() . '/sections/email-signup.php'); ?>
 <?php include(get_theme_file_path() . '/sections/event-section.php'); ?>
-
-
-
-
-
-
-
-
-
-
-
-
 <?php get_footer(); ?>
+
+

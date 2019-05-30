@@ -1,47 +1,15 @@
 <?php
 /**
-
  * Template Name: Landing > Explore Nature
  * Template Post Type: post, page, event
-
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
-
 get_header();
-
 $container   = get_theme_mod( 'understrap_container_type' );
-
 ?>
-
-
-
-<!--
-<h1 class="entry-title"><?php the_title(); ?></h1>
-<?php
-while ( have_posts() ) : the_post(); ?>
-    <div class="entry-content-page">
-        <?php the_content(); ?>
-    </div>
-
-<?php
-endwhile;
-wp_reset_query();
-?>
--->
-
-
-
 
 
 
@@ -62,20 +30,26 @@ wp_reset_query();
 
 
 <?php 
-    $post_params = array(
-        'numberposts' => 3,
-        'tag' => "",
-        'category' => "worldofwonder",
-        'featureimage' => true
-    );
-    $display_params = array(
-        'wrapper_bg_color' => "dark",
-        'callout_bg_color' => "light-green",
-        'heading' => "World of Wonder",
-        'subheading' => "Check out our kids programs!"
-    );
-    include(get_theme_file_path() . '/sections/featured-articles-3xcallouts.php'); 
+
+// search parameters for a 3x callout section
+$search_params_3x = array(
+    'numberposts' => 3,
+    'tag' => "",
+    'category' => "worldofwonder",
+    'featureimage' => true
+);
+// display parameters for a 3x callout section
+$display_params_3x = array(
+    'wrapper_bg_color' => "dark",
+    'callout_bg_color' => "light-green",
+    'heading' => "World of Wonder",
+    'subheading' => "Check out our kids programs!"
+);
+include(get_theme_file_path() . '/sections/featured-articles-3xcallouts.php'); 
+
 ?>
+
+
 
 
 
@@ -89,7 +63,7 @@ wp_reset_query();
 
             <div class="col-12 col-md-4 vertical-center-parent">
                 <h2>We’ve conserved more than 400 acres of land in the Davidson area.</h2>
-                <a href="<?php echo home_url(); ?>/explore-nature/map-of-public-parks-preserves/" class="btn btn-primary mx-2">Explore each property</a>
+                <a href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/" class="btn btn-primary mx-2">Explore each property</a>
             </div>
         </div>
     </div>

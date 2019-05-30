@@ -1,44 +1,18 @@
 <?php
 /**
-
  * Template Name: Landing > Conserve Land
  * Template Post Type: post, page, event
-
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
- *
- * @package understrap
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
-
 get_header();
-
 $container   = get_theme_mod( 'understrap_container_type' );
-
 ?>
 
 
 
-<!--
-<h1 class="entry-title"><?php the_title(); ?></h1>
-<?php
-while ( have_posts() ) : the_post(); ?>
-    <div class="entry-content-page">
-        <?php the_content(); ?>
-    </div>
-
-<?php
-endwhile;
-wp_reset_query();
-?>
--->
 
 
 
@@ -57,31 +31,28 @@ wp_reset_query();
 
 
 
-<div class="wrapper wrapper-xxl wrapper-no-padding-bottom wrapper-hero hero-light conserve-map-section">
-	<div class="container-fluid h-100">
-		<div class="row h-100 ">
-			<div class="col-12 col-md-7"></div>
-			<div class="col-12 col-md-5 text-background-light h-100 vertical-center-parent">
 
-				<div class="map-description">
-					<h1 style="color:#337357">Find Our Lands</h1>
 
-					<h5>Davidson Lands Conservancy currently stewards
-						463 acres of land in the Davidson area that has been protected from the
-						pressures of future development. Some of these lands are open to the public.</h5>
+<div class="wrapper wrapper-tan">
+   <div class="container">
+        <div class="row mb-2">
+            <div class="col-12 col-md-8">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/explore-nature-map-feature.png" alt="Map">
+            </div>
 
-					<button class="btn btn-primary btn-callout">LEARN MORE</button>
-				</div>
-			</div>
-		</div>
-
-	</div>
+            <div class="col-12 col-md-4 vertical-center-parent">
+                <h2>We’ve conserved more than 400 acres of land in the Davidson area.</h2>
+                <a href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/" class="btn btn-primary mx-2">Explore each property</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 
 
+
 <div class="wrapper wrapper-xxl wrapper-no-padding-bottom wrapper-hero vertical-center-parent hero-light conserve-map-hero">
-   <div class="container-fluid ">
+   <div class="container-fluid">
         <div class="row">
             <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h2>Forests, farm land, and natural spaces are disappearing quickly in the Davidson area, as new roads are built, new houses rise, new schools fill, and commercial areas bustle with business. Do you have land you want to protect from development pressures?</h2>
@@ -98,43 +69,40 @@ wp_reset_query();
 
 
 
-<div class="wrapper wrapper-tan">
-	<div class="container">
-		<div class="row">
-			<div class="text-center">
-				<h3>You don’t have to own acres of land to support land conservation in the Davidson area. Support The Cause in the ways that work for you!</h3>
-			</div>
-		</div>
+<?php
 
+// data for a 3x callout section
+$data_params_3x = array(
+    array(
+        'image' => get_stylesheet_directory_uri() . "/../../uploads/2019/01/2019-Board-Retreat-Group-Shot.jpg", 
+        'text' => "With your help we can do more",
+        'btn-link' => '/join-us/become-a-member/',
+        'btn-text' => 'BECOME A MEMBER'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/img/conserve-page-tree-planting.jpg", 
+        'text' => "Dig deep and get involved",
+        'btn-link' => '/join-us/volunteer/',
+        'btn-text' => 'VOLUNTEER TODAY'
+    ),
+    array(
+        'image' => get_stylesheet_directory_uri() . "/../../uploads/2011/03/Kayakers-in-Lake-Davidson-1.jpg", 
+        'text' => "Share your love of nature",
+        'btn-link' => '/events',
+        'btn-text' => 'ATTEND AN EVENT'
+    ),
+);
+// display parameters for 3x callout section
+$display_params_3x = array(
+    'wrapper_bg_color' => "tan",
+    'callout_bg_color' => "light-green",
+    'heading' => "You don’t have to own acres of land to support land conservation in the Davidson area. ",
+    'subheading' => "Support The Cause in the ways that work for you!"
+);
+// write a 3x callout section
+write_3x_callouts($data_params_3x, $display_params_3x);
 
-		<div class="row">
-			<div class="col-sm-4 col-xs-12 text-center">
-				<div id="calloutnk" class="callout-wrapper-light-green">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/../../uploads/2019/01/2019-Board-Retreat-Group-Shot.jpg" alt="With your help, we can do so much more" class="img-fluid">
-					<div class="callout-text">With your help we can do more</div>
-					<a class="btn btn-primary btn-callout" href="<?php echo home_url(); ?>/join-us/become-a-member/">BECOME A MEMBER</a>
-				</div>
-			</div>
-			<div class="col-sm-4 col-xs-12 text-center">
-				<div class="callout-wrapper-light-green">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/conserve-page-tree-planting.jpg" alt="Dig deep and get involved" class="img-fluid">
-					<div class="callout-text">Dig deep and get involved</div>
-					<a class="btn btn-primary btn-callout" href="<?php echo home_url(); ?>/join-us/volunteer/">VOLUNTEER TODAY</a>
-				</div>
-			</div>
-			<div class="col-sm-4 col-xs-12 text-center">
-				<div class="callout-wrapper-light-green">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/../../uploads/2011/03/Kayakers-in-Lake-Davidson-1.jpg" alt="Find others who share your love of nature" class="img-fluid">
-					<div class="callout-text">Share your love of nature</div>
-					<a class="btn btn-primary btn-callout" href="<?php echo home_url(); ?>/events/">ATTEND AN EVENT</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-
+?>
 
 
 
