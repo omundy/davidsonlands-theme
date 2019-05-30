@@ -82,36 +82,101 @@ add_action('after_setup_theme', 'add_child_theme_textdomain');
 
 
 
+
+
+
+
+
+
 /**
- * Prints HTML for three callouts
+ *  Returns array of posts with images based on parameters
  */
 
-function write_3x_callouts($arr,$wrapper_color="tan",$callout_color="black",$headline="",$subheadline=""){
+// query for feature posts
+function om_query_image_posts($post_params){
 
-    $str = '<div class="wrapper '. $wrapper_color .'">';
-    $str .= '<div class="container">';
+    // testing
+    // print "<pre>";
+    // print_r($post_params);
+    // print "</pre>";
 
+    $args = array(
+        // only return posts
+        'post_type' => 'post',
+        // only return published posts
+        'post_status' => 'publish', 
+        // number of posts to return, or default
+        'numberposts' => !empty($post_params['numberposts']) ? (int)$post_params['numberposts'] : 1, 
+        // which tags to return, or default
+        'tag' => !empty($post_params['tag']) ? $post_params['tag'] : '',
+        // which categories to return, or default
+        'category_name' => !empty($post_params['category']) ? $post_params['category'] : '',
+        // only return posts with featured images
+        'meta_query' => array(
+            array(
+                'key' => '_thumbnail_id',
+                'compare' => 'EXISTS'
+            )
+        )
+    );
+    // testing
+    // print "<pre>";
+    // print_r($args);
+    // print "</pre>";
 
-if ($headline != ""){
-    $str .= '<div class="row">';
-    $str .= '<div class="col-12 text-center">';
-    $str .= '<h3>'. $headline .'</h3>';
-    $str .= '<div>'. $subheadline .'</div>';
-    $str .= '</div>';
-    $str .= '</div>';
+    $posts = wp_get_recent_posts( $args );
+
+    // this also mostly works but returns objects instead of arrays
+    // $query = new WP_Query( $args );
+    // $posts = $query->posts;
+
+    // testing
+    // print "<pre>";
+    // print_r($posts);
+    // print "</pre>";
+    
+    // foreach( $posts as $recent ){
+    //     print $i .". ".  $recent['ID'] ." ". $recent['post_title'] ."<br>";
+    // }  
+
+    return $posts;
 }
 
 
+
+
+/**
+ * Prints HTML for 3x callouts
+ */
+
+function write_3x_callouts($arr,$display_params){
+
+    $str = '<div class="wrapper wrapper-'. $display_params['wrapper_bg_color'] .'">';
+    $str .= '<div class="container">';
+
+    if ($display_params['heading'] != ""){
+        $str .= '<div class="row">';
+        $str .= '<div class="col-12 text-center">';
+        $str .= '<h3>'. $display_params['heading'] .'</h3>';
+        $str .= '<div>'. $display_params['subheading'] .'</div>';
+        $str .= '</div>';
+        $str .= '</div>';
+    }
+
+    $count = 0;
     $str .= '<div class="row">';
     foreach($arr as $callout){
         $str .= '<div class="col-12 col-sm-4 text-center">';
-        $str .= '<div class="callout-wrapper callout-wrapper-'. $callout_color .'">';
+        $str .= '<div class="callout-wrapper callout-wrapper-'. $display_params['callout_bg_color'] .'">';
         $str .= '<div class="callout-image" style="background-image: url('. $callout['image'] .')"></div>';
         //$str .= '<img src="'. $callout['image'] .'" alt="'. $callout['text'] .'" class="img-fluid">';
         $str .= '<div class="callout-text">'. $callout['text'] .'</div>';
-        $str .= '<a href="'. home_url() . $callout['btn-link'] .'" class="btn btn-primary btn-callout">'. $callout['btn-text'] .'</a>';
+        $str .= '<a href="'. $callout['btn-link'] .'" class="btn btn-primary btn-callout">'. $callout['btn-text'] .'</a>';
         $str .= '</div>';
         $str .= '</div>';
+
+        // only allow 3
+        if (++$count >= 3) break;
     }
     $str .= '</div>';
     $str .= '</div>';
@@ -155,8 +220,6 @@ function understrap_posted_on() {
     );
     echo $posted_on . $byline; // WPCS: XSS OK.
 }
-
-
 
 
 

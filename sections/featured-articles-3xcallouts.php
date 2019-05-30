@@ -1,67 +1,67 @@
 <?php
 
-// query for feature posts
-$args = array(
-    'numberposts' => '3',
-	'post_type' => 'post',
-    'post_status' => 'publish',
-    'tag' => 'feature',
-    'meta_query' => array(
+/**
+ *  The following writes a "3x callout section"
+ */
+
+// get the posts using the params from the including file
+$recent_posts = om_query_image_posts($search_params_3x);
+
+// if there are at least three posts
+if(count($recent_posts) >= 3):
+
+    // testing
+    // print "<pre>";
+    // print_r($recent_posts);
+    // print "</pre>";
+
+    // set up array for the 3x
+    $data_params_3x = array(
         array(
-         'key' => '_thumbnail_id',
-         'compare' => 'EXISTS'
+            'image' => "", 
+            'text' => "",
+            'btn-link' => '',
+            'btn-text' => ''
         ),
-    )
-);
-if (isset($include_vars['tag']))
-    $args['tag'] = $include_vars['tag'];
-if (isset($include_vars['category']))
-    $args['category'] = $include_vars['category'];
+        array(
+            'image' => "", 
+            'text' => "",
+            'btn-link' => '',
+            'btn-text' => ''
+        ),
+        array(
+            'image' => "", 
+            'text' => "",
+            'btn-link' => '',
+            'btn-text' => ''
+        ),
+    );
 
-$recent_posts = wp_get_recent_posts( $args );
+    // track the post num
+    $i = 0;
 
-
-$arr = array(
-    array(
-        'image' => "", 
-        'text' => "",
-        'btn-link' => '',
-        'btn-text' => ''
-    ),
-    array(
-        'image' => "", 
-        'text' => "",
-        'btn-link' => '',
-        'btn-text' => ''
-    ),
-    array(
-        'image' => "", 
-        'text' => "",
-        'btn-link' => '',
-        'btn-text' => ''
-    ),
-);
-
-$i = 0;
-
-if(count($recent_posts) > 0){
+    // loop through posts and build array
     foreach( $recent_posts as $recent ){
+        //print_r($recent);
+        //print $i .". ".  $recent['ID'] ." ". $recent['post_title'] ."<br>";
+      
         // check if the post has a Post Thumbnail assigned to it.
         if ( has_post_thumbnail($recent['ID']) ) {
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent['ID'] ), 'single-post-thumbnail' );
             //print_r($image);
-            $arr[$i]['image'] = $image[0];
+            $data_params_3x[$i]['image'] = $image[0];
+            $data_params_3x[$i]['text'] = sentenceTrim($recent['post_title'],40);
+            $data_params_3x[$i]['btn-link'] = get_permalink($recent['ID']);
+            $data_params_3x[$i]['btn-text'] = "CONTINUE READING";
+
+            $i++;
         }
-
-        $arr[$i]['text'] = sentenceTrim($recent['post_title'],40);
-        $arr[$i]['btn-link'] = get_permalink($recent['url']);
-        $arr[$i]['btn-text'] = "CONTINUE READING";
-
-        $i++;
     }
+    write_3x_callouts($data_params_3x,$display_params_3x);
 
-    write_3x_callouts($arr,"wrapper-dark","light-green","World of Wonder","Check out our kids programs!");
-}
 
 ?>
+<?php endif; ?>
+
+
 
