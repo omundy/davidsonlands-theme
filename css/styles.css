@@ -34,7 +34,13 @@ a.site:hover, .wrapper-dark-green a:hover {
     color: #e4e3d3;
     text-decoration: underline;
 }
-
+a.no-decoration {
+    text-decoration: none;
+}
+/* hide read more button */
+a.read-more {
+    display:none;
+ }
 
 
 
@@ -349,7 +355,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 50%;
 	    top: 155px;
 	    right: 0;
-		height: 615px;
+		height: 585px;
 	}
 }
 @media (min-width: 576px) {}
@@ -358,7 +364,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 40%;
 	    top: 145px;
 	    right: 3%;
-		height: 610px;
+		height: 580px;
 	}
 }
 @media (min-width: 992px) {
@@ -366,7 +372,7 @@ a.menu:after, .dropdown-toggle:after {
 	    width: 30%;
 	    top: 145px;
 	    right: 6%;
-		height: 610px;
+		height: 580px;
 	}
 }
 @media (min-width: 1200px) {}
@@ -439,6 +445,7 @@ a.menu:after, .dropdown-toggle:after {
 .circle-callout-text {
     margin-top: 10px;
 }
+
 
 .callout-wrapper {
     padding: 0 0 20px 0;
