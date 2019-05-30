@@ -96,36 +96,44 @@ $container   = get_theme_mod('understrap_container_type');
 
         <div class="row">
             <div class="col-6 col-sm-3 text-center mt-4">
-                <div class="circle-callout-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-conserving.jpg" alt="Conserving Land">
-                </div>
-                <div class="circle-callout-text">
-                    Conserving Land
-                </div>
+                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/conserve-land">
+                    <div class="circle-callout-image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-conserving.jpg" alt="Conserving Land">
+                    </div>
+                    <div class="circle-callout-text">
+                        Conserving Land
+                    </div>
+                </a> 
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <div class="circle-callout-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-wildlife.jpg" alt="Wildlife & Habitats">
-                </div>
-                <div class="circle-callout-text">
-                    Wildlife & Habitats
-                </div>
+                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/category/wildlife/">
+                    <div class="circle-callout-image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-wildlife.jpg" alt="Wildlife & Habitats">
+                    </div>
+                    <div class="circle-callout-text">
+                        Wildlife & Habitats
+                    </div>
+                </a>    
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <div class="circle-callout-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-teaching.jpg" alt="Teaching & Learning">
-                </div>
-                <div class="circle-callout-text">
-                    Teaching & Learning
-                </div>
+                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/category/worldofwonder/">
+                    <div class="circle-callout-image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-teaching.jpg" alt="Teaching & Learning">
+                    </div>
+                    <div class="circle-callout-text">
+                        Teaching & Learning
+                    </div>
+                </a>
             </div>
             <div class="col-6 col-sm-3 text-center mt-4">
-                <div class="circle-callout-image">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-trails.jpg" alt="Trails & Greenways">
-                </div>
-                <div class="circle-callout-text">
-                    Trails & Greenways
-                </div>
+                <a class="light-green no-decoration" href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/">
+                    <div class="circle-callout-image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/home-conserve-circle-trails.jpg" alt="Trails & Greenways">
+                    </div>
+                    <div class="circle-callout-text">
+                        Trails & Greenways
+                    </div>
+                </a>    
             </div>
         </div>
     </div>
@@ -142,8 +150,8 @@ $arr = array(
     array(
         'image' => get_stylesheet_directory_uri() . "/img/home-callout-join.jpg", 
         'text' => "Help us protect the land you love.",
-        'btn-link' => '/join-us/become-a-member/',
-        'btn-text' => 'BECOME A MEMBER'
+        'btn-link' => '/join-us/give_today/',
+        'btn-text' => 'GIVE TODAY'
     ),
     array(
         'image' => get_stylesheet_directory_uri() . "/img/home-callout-gift.jpg", 
@@ -158,7 +166,15 @@ $arr = array(
         'btn-text' => 'VOLUNTEER TODAY'
     ),
 );
-write_3x_callouts($arr,"wrapper-tan");
+
+$display_params = array(
+    'wrapper_bg_color' => "tan",
+    'callout_bg_color' => "light-green",
+    'heading' => "",
+    'subheading' => ""
+);
+write_3x_callouts($arr,$display_params);
+
 
 ?>
 
@@ -198,7 +214,12 @@ write_3x_callouts($arr,"wrapper-tan");
 
 
 <?php 
-    $include_vars = array("tag"=>"feature"); 
+    $post_params = array(
+        'numberposts' => 1,
+        'tag' => "feature",
+        'category' => "",
+        'featureimage' => true
+    );
     include(get_theme_file_path() . '/sections/featured-articles-1xhero.php'); 
 ?>
 <?php include(get_theme_file_path() . '/sections/email-signup.php'); ?>

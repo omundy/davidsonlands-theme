@@ -46,7 +46,7 @@ wp_reset_query(); //resetting the page query
         <div class="row">
             <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h1 class="hero-title">Davidson Lands Conservancy is protecting the natural environments you love. With your help, we can do more!</h1>
-				<a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/join-us/become-a-member/">BECOME A MEMBER</a>
+				<a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/join-us/give_today/">GIVE TODAY</a>
             </div>
         </div>
     </div>
@@ -69,7 +69,7 @@ wp_reset_query(); //resetting the page query
 
         <div class="row">
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="light-green" href="<?php echo home_url(); ?>/">
+				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-lenny-with-frog-600sq.jpg" alt="Education & Outreach">
 	                </div>
@@ -79,7 +79,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="<?php echo home_url(); ?>/join-us/run-for-green/">
+				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/join-us/run-for-green/">
 					<div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-run-for-green-600sq.jpg" alt="Run for Green">
 	                </div>
@@ -89,7 +89,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="<?php echo home_url(); ?>/explore-nature/trees-davidson/">
+				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/explore-nature/trees-davidson/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-Tree-Planting6-427sq.jpg" alt="TreesDavidson">
 	                </div>
@@ -99,7 +99,7 @@ wp_reset_query(); //resetting the page query
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a href="<?php echo home_url(); ?>/">
+				<a class="light-green no-decoration" href="<?php echo home_url(); ?>/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-img_4959-600sq.jpg" alt="Communications">
 	                </div>
@@ -114,7 +114,7 @@ wp_reset_query(); //resetting the page query
 
 		<div class="row">
 			<div class="col-md-10 offset-md-1 text-center wrapper-sm">
-				<a class="btn btn-info-dark-green hero-title-btn" href="<?php echo home_url(); ?>/join-us/volunteer/" target="_blank">VOLUNTEER TODAY</a>
+				<a class="btn btn-info-dark-green hero-title-btn" href="<?php echo home_url(); ?>/join-us/volunteer/">VOLUNTEER TODAY</a>
 			</div>
 		</div>
 

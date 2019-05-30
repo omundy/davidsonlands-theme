@@ -62,7 +62,18 @@ wp_reset_query();
 
 
 <?php 
-    $include_vars = array("tag"=>"","category"=>"World of Wonder"); 
+    $post_params = array(
+        'numberposts' => 3,
+        'tag' => "",
+        'category' => "worldofwonder",
+        'featureimage' => true
+    );
+    $display_params = array(
+        'wrapper_bg_color' => "dark",
+        'callout_bg_color' => "light-green",
+        'heading' => "World of Wonder",
+        'subheading' => "Check out our kids programs!"
+    );
     include(get_theme_file_path() . '/sections/featured-articles-3xcallouts.php'); 
 ?>
 
@@ -78,7 +89,7 @@ wp_reset_query();
 
             <div class="col-12 col-md-4 vertical-center-parent">
                 <h2>We’ve conserved more than 400 acres of land in the Davidson area.</h2>
-                <a href="<?php echo home_url(); ?>/explore-nature/quizzes" class="btn btn-primary mx-2">Explore each property</a>
+                <a href="<?php echo home_url(); ?>/explore-nature/map-of-public-parks-preserves/" class="btn btn-primary mx-2">Explore each property</a>
             </div>
         </div>
     </div>
