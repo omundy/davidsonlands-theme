@@ -324,7 +324,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                 "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
                 "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2013",
                 "size": "27.8 acres",
                 "location": "Davidson",
@@ -385,7 +385,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                 "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
                 "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2013",
                 "size": "27.8 acres",
                 "location": "Davidson",
@@ -434,9 +434,15 @@
         {
             "website":
             {
-                "public": 0,
-                "name": "Wilson Property?",
-                "access": "Private"
+                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "name": "Ault Property",
+                "unique": "",
+                "access": "Not publicly accessible",
+                "year": "",
+                "size": "",
+                "location": "Davidson",
+                "conservation": "",
+                "text": ""
             },
             "OBJECTID": 1,
             "objectid_1": 306846,
@@ -533,9 +539,15 @@
         {
             "website":
             {
-                "public": 0,
-                "name": "Wilson Property?",
-                "access": "Private"
+                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "name": "Ault Property",
+                "unique": "",
+                "access": "Not publicly accessible",
+                "year": "",
+                "size": "",
+                "location": "Davidson",
+                "conservation": "",
+                "text": ""
             },
             "OBJECTID": 2,
             "objectid_1": 305560,
@@ -643,7 +655,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                 "name": "Batchelor Easement",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2012",
                 "size": "6.8 acres",
                 "location": "Davidson",
@@ -733,7 +745,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                 "name": "Batchelor Easement",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2012",
                 "size": "6.8 acres",
                 "location": "Davidson",
@@ -998,7 +1010,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Mott-Easement-e1557245240850.jpg",
                 "name": "Mott Easement",
                 "unique": "685 feet along the West Branch of the Rocky River and is approximately 40% woodland and 60% pasture land",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2008",
                 "size": "8.6 acres",
                 "location": "Davidson",
@@ -1053,7 +1065,7 @@
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Grey-Road-Easement.jpg",
                 "name": "Grey Road Easement",
                 "unique": "rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "year": "2012",
                 "size": "9.5 acres",
                 "location": "Davidson",
@@ -1112,7 +1124,7 @@
             {
                 "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
                 "name": "Runneymede Woods",
-                "access": "Private",
+                "access": "Not publicly accessible",
                 "unique": "Rich, mature woodlands; a historic mill site ruin and quarry; impressive rock formations, including the Whale Rock, one of the largest granite outcrops in Cabarrus County.One in a series of linked and protected parcels along the Rocky River that assure it remains a largely green corridor in the future.",
                 "year": "2013",
                 "size": "50.8 acres",

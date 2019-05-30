@@ -51,7 +51,7 @@ function publicAccessFilter(feature, layer) {
     if (feature.properties.website.access == "Public") return true;
 }
 
-// marker icon for "Private" properties
+// marker icon for "Not publicly accessible" properties
 var markerIcon = L.icon({
     iconUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/marker.svg",
     shadowUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/leaflet/images/marker-shadow.png",
@@ -130,7 +130,7 @@ function onEachFeature(feature, layer) {
 	    trackDuplicates.push(data.name);
 
 
-	    if (data.access == "Private" && feature.geometry.type === 'Polygon') {
+	    if (data.access == "Not publicly accessible" && feature.geometry.type === 'Polygon') {
 	        // Don't stroke and do opaque fill
 	        layer.setStyle({
 	            'weight': 0,
