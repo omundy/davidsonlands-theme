@@ -108,7 +108,7 @@ function showPropertyData(feature, layer) {
     // 	str += '<div>'+ data.text +'</div>';
 
     if (data.link)
-        str += '<div class="mt-4 vertical-center-parent text-center"><a class="btn btn-primary" href="' + baseUrl + data.link + '">More information</a></div>';
+        str += '<div class="mt-3 vertical-center-parent text-center"><a class="btn btn-primary" href="' + baseUrl + data.link + '">More information</a></div>';
 
 
 
@@ -116,6 +116,9 @@ function showPropertyData(feature, layer) {
 
 }
 
+
+
+  
 
 
 function onEachFeature(feature, layer) {
