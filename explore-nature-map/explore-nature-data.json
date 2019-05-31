@@ -57,7 +57,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2016/07/Canoers-at-LDNP-2015-summer-768x576.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/lake-davidson-nature-preserve/",
+                "image": "/wp/wp-content/uploads/2016/07/Canoers-at-LDNP-2015-summer-768x576.jpg",
                 "name": "Lake Davidson Nature Preserve",
                 "unique": "Rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River ",
                 "access": "Public",
@@ -232,7 +233,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2015/06/fisher-farm.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/fisher-farm/",
+                "image": "/wp/wp-content/uploads/2015/06/fisher-farm.jpg",
                 "name": " Fisher Farm Park",
                 "unique": "wildlife habitat, water-quality protection, open space for scenic enjoyment, and public outdoor recreation resources",
                 "access": "Public",
@@ -321,7 +323,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/archer-property/",
+                "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                 "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
                 "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
                 "access": "Not publicly accessible",
@@ -382,7 +385,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/archer-property/",
+                "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                 "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
                 "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
                 "access": "Not publicly accessible",
@@ -434,7 +438,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "link": "",
+                "image": "",
                 "name": "Ault Property",
                 "unique": "",
                 "access": "Not publicly accessible",
@@ -539,7 +544,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
+                "link": "",
+                "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
                 "name": "Ault Property",
                 "unique": "",
                 "access": "Not publicly accessible",
@@ -652,7 +658,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/batchelor-easement/",
+                "image": "/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                 "name": "Batchelor Easement",
                 "access": "Not publicly accessible",
@@ -742,7 +749,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/batchelor-easement/",
+                "image": "/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                 "name": "Batchelor Easement",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                 "access": "Not publicly accessible",
@@ -929,7 +937,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/05/Unknown-1-e1557261188435.jpeg",
+                "link": "/explore-nature/map-of-conserved-lands/rocky-river-bluff-nature-preserve/",
+                "image": "/wp/wp-content/uploads/2019/05/Unknown-1-e1557261188435.jpeg",
                 "name": "Rocky River Bluff Nature Preserve",
                 "link": "/explore-nature/map-of-public-parks-preserves/rocky-river-bluff-nature-preserve/", 
                 "unique": "A regionally significant natural heritage site with a mature hardwood forest on a steep bluff that arcs along the Rocky River bottom. Features diverse plant species uncommon in the Charlotte area.",
@@ -1007,7 +1016,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Mott-Easement-e1557245240850.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/old-mott-easement/",
+                "image": "/wp/wp-content/uploads/2019/01/Mott-Easement-e1557245240850.jpg",
                 "name": "Mott Easement",
                 "unique": "685 feet along the West Branch of the Rocky River and is approximately 40% woodland and 60% pasture land",
                 "access": "Not publicly accessible",
@@ -1062,7 +1072,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Grey-Road-Easement.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/grey-road-easement/",
+                "image": "/wp/wp-content/uploads/2019/01/Grey-Road-Easement.jpg",
                 "name": "Grey Road Easement",
                 "unique": "rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River",
                 "access": "Not publicly accessible",
@@ -1122,7 +1133,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/runneymede-woods/",
+                "image": "/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
                 "name": "Runneymede Woods",
                 "access": "Not publicly accessible",
                 "unique": "Rich, mature woodlands; a historic mill site ruin and quarry; impressive rock formations, including the Whale Rock, one of the largest granite outcrops in Cabarrus County.One in a series of linked and protected parcels along the Rocky River that assure it remains a largely green corridor in the future.",
@@ -1195,7 +1207,8 @@
         {
             "website":
             {
-                "image": "http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2016/07/West-Branch-RR-sign.jpg",
+                "link": "/explore-nature/map-of-conserved-lands/west-branch-nature-preserve/",
+                "image": "/wp/wp-content/uploads/2016/07/West-Branch-RR-sign.jpg",
                 "name": "West Branch Nature Preserve",
                 "access": "Public",
                 "unique": "Extensive wetland and surrounding areas on the West Branch of the Rocky River featuring thirty-five species of reptiles and amphibian, including salamanders, frogs, toads, turtles",

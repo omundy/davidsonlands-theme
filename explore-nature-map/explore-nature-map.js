@@ -1,4 +1,7 @@
 
+var baseUrl = 'http://davidsonlands.dreamhosters.com';
+
+
 // create map
 var map = L.map('map').setView([35.488571, -80.802308], 13);
 
@@ -19,7 +22,7 @@ function getData(url) {
         addDataToMap(data);
     });
 }
-getData("http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/explore-nature-data.json");
+getData( baseUrl + "/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/explore-nature-data.json");
 
 // add data to map
 function addDataToMap(data) {
@@ -53,8 +56,8 @@ function publicAccessFilter(feature, layer) {
 
 // marker icon for "Not publicly accessible" properties
 var markerIcon = L.icon({
-    iconUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/marker.svg",
-    shadowUrl: "http://davidsonlands.dreamhosters.com/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/leaflet/images/marker-shadow.png",
+    iconUrl: baseUrl + "/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/marker.svg",
+    shadowUrl: baseUrl + "/wp/wp-content/themes/davidsonlands-theme/explore-nature-map/leaflet/images/marker-shadow.png",
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     shadowSize: [41, 41],
@@ -80,7 +83,7 @@ function showPropertyData(feature, layer) {
         str = "";
 
     if (data.image)
-        str += '<img src="' + data.image + '" class="map-data-image pb-2 img-fluid">';
+        str += '<img src="' + baseUrl + data.image + '" class="map-data-image pb-2 img-fluid">';
     if (data.name)
         str += '<h5>' + data.name + '</h5>';
     if (data.unique)
@@ -105,7 +108,9 @@ function showPropertyData(feature, layer) {
     // 	str += '<div>'+ data.text +'</div>';
 
     if (data.link)
-        str += '<a class="btn" href="http://davidsonlands.dreamhosters.com' + data.link + '"></a>';
+        str += '<div class="mt-4 vertical-center-parent text-center"><a class="btn btn-primary" href="' + baseUrl + data.link + '">More information</a></div>';
+
+
 
     $('.explore-map-data').html(str);
 
