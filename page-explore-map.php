@@ -50,7 +50,7 @@ wp_reset_query();
 
 		<div class="row">
 			<div class="col-12 text-center px-0">
-				<h3>Davidson's Conserved Land</h3>
+				<h3>Davidson's Conserved Lands</h3>
 			</div>
 		</div>
 
