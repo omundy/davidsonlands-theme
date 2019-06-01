@@ -57,9 +57,10 @@
         {
             "website":
             {
+                "name": "Lake Davidson Nature Preserve",
+                "slug": "lake-davidson-nature-preserve",
                 "link": "/explore-nature/map-of-conserved-lands/lake-davidson-nature-preserve/",
                 "image": "/wp/wp-content/uploads/2016/07/Canoers-at-LDNP-2015-summer-768x576.jpg",
-                "name": "Lake Davidson Nature Preserve",
                 "unique": "Rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River ",
                 "access": "Public",
                 "year": "",
@@ -233,9 +234,10 @@
         {
             "website":
             {
+                "name": "Fisher Farm Park",
+                "slug": "fisher-farm-park",
                 "link": "/explore-nature/map-of-conserved-lands/fisher-farm/",
                 "image": "/wp/wp-content/uploads/2015/06/fisher-farm.jpg",
-                "name": " Fisher Farm Park",
                 "unique": "wildlife habitat, water-quality protection, open space for scenic enjoyment, and public outdoor recreation resources",
                 "access": "Public",
                 "year": "2002",
@@ -323,16 +325,17 @@
         {
             "website":
             {
+                "name": "Archer Property",
+                "slug": "archer-property",
                 "link": "/explore-nature/map-of-conserved-lands/archer-property/",
                 "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
-                "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
-                "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
+                "unique": "Features natural area of mixed-age woodland with small stream on eastern edge",
                 "access": "Not publicly accessible",
                 "year": "2013",
                 "size": "27.8 acres",
                 "location": "Davidson",
                 "conservation": "Conservation Easement held by Davidson Lands Conservancy",
-                "text": ""
+                "text": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring."
 
             },
             "OBJECTID_1": 1,
@@ -385,16 +388,17 @@
         {
             "website":
             {
+                "name": "Archer Property",
+                "slug": "archer-property",
                 "link": "/explore-nature/map-of-conserved-lands/archer-property/",
                 "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
-                "name": "Archer Property – Features natural area of mixed-age woodland with small stream on eastern edge",
                 "unique": "Pink Lady Slippers – estimated population of 100 stems, uncommon native orchid that blooms once a year in spring.",
                 "access": "Not publicly accessible",
                 "year": "2013",
                 "size": "27.8 acres",
                 "location": "Davidson",
                 "conservation": "Conservation Easement held by Davidson Lands Conservancy",
-                "text": ""
+                "text": "Features natural area of mixed-age woodland with small stream on eastern edge"
             },
             "OBJECTID_1": 2,
             "OBJECTID": 87473,
@@ -438,9 +442,10 @@
         {
             "website":
             {
+                "name": "Ault Property",
+                "slug": "ault-property",
                 "link": "",
                 "image": "",
-                "name": "Ault Property",
                 "unique": "",
                 "access": "Not publicly accessible",
                 "year": "",
@@ -544,9 +549,10 @@
         {
             "website":
             {
+                "name": "Ault Property",
+                "slug": "ault-property",
                 "link": "",
                 "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
-                "name": "Ault Property",
                 "unique": "",
                 "access": "Not publicly accessible",
                 "year": "",
@@ -658,10 +664,11 @@
         {
             "website":
             {
+                "name": "Batchelor Easement",
+                "slug": "batchelor-easement",
                 "link": "/explore-nature/map-of-conserved-lands/batchelor-easement/",
                 "image": "/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
-                "name": "Batchelor Easement",
                 "access": "Not publicly accessible",
                 "year": "2012",
                 "size": "6.8 acres",
@@ -749,9 +756,10 @@
         {
             "website":
             {
+                "name": "Batchelor Easement",
+                "slug": "batchelor-easement",
                 "link": "/explore-nature/map-of-conserved-lands/batchelor-easement/",
                 "image": "/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
-                "name": "Batchelor Easement",
                 "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                 "access": "Not publicly accessible",
                 "year": "2012",
@@ -937,9 +945,10 @@
         {
             "website":
             {
+                "name": "Rocky River Bluff Nature Preserve",
+                "slug": "rocky-river-bluff-nature-preserve",
                 "link": "/explore-nature/map-of-conserved-lands/rocky-river-bluff-nature-preserve/",
                 "image": "/wp/wp-content/uploads/2019/05/Unknown-1-e1557261188435.jpeg",
-                "name": "Rocky River Bluff Nature Preserve",
                 "link": "/explore-nature/map-of-public-parks-preserves/rocky-river-bluff-nature-preserve/", 
                 "unique": "A regionally significant natural heritage site with a mature hardwood forest on a steep bluff that arcs along the Rocky River bottom. Features diverse plant species uncommon in the Charlotte area.",
                 "access": "Public",
@@ -1016,9 +1025,10 @@
         {
             "website":
             {
+                "name": "Mott Easement",
+                "slug": "mott-easement",
                 "link": "/explore-nature/map-of-conserved-lands/old-mott-easement/",
                 "image": "/wp/wp-content/uploads/2019/01/Mott-Easement-e1557245240850.jpg",
-                "name": "Mott Easement",
                 "unique": "685 feet along the West Branch of the Rocky River and is approximately 40% woodland and 60% pasture land",
                 "access": "Not publicly accessible",
                 "year": "2008",
@@ -1072,9 +1082,10 @@
         {
             "website":
             {
+                "name": "Grey Road Easement",
+                "slug": "grey-road-easement",
                 "link": "/explore-nature/map-of-conserved-lands/grey-road-easement/",
                 "image": "/wp/wp-content/uploads/2019/01/Grey-Road-Easement.jpg",
-                "name": "Grey Road Easement",
                 "unique": "rich woodland, 1520 feet of stream bank, approximately 2 acres of water-quality buffer, and one acre of floodplain on a tributary of the West Branch of the Rocky River",
                 "access": "Not publicly accessible",
                 "year": "2012",
@@ -1133,9 +1144,10 @@
         {
             "website":
             {
+                "name": "Runneymede Woods",
+                "slug": "runneymede-woods",
                 "link": "/explore-nature/map-of-conserved-lands/runneymede-woods/",
                 "image": "/wp/wp-content/uploads/2019/01/Rock-Exploration.jpg",
-                "name": "Runneymede Woods",
                 "access": "Not publicly accessible",
                 "unique": "Rich, mature woodlands; a historic mill site ruin and quarry; impressive rock formations, including the Whale Rock, one of the largest granite outcrops in Cabarrus County.One in a series of linked and protected parcels along the Rocky River that assure it remains a largely green corridor in the future.",
                 "year": "2013",
@@ -1207,9 +1219,10 @@
         {
             "website":
             {
+                "name": "West Branch Nature Preserve",
+                "slug": "west-branch-nature-preserve",
                 "link": "/explore-nature/map-of-conserved-lands/west-branch-nature-preserve/",
                 "image": "/wp/wp-content/uploads/2016/07/West-Branch-RR-sign.jpg",
-                "name": "West Branch Nature Preserve",
                 "access": "Public",
                 "unique": "Extensive wetland and surrounding areas on the West Branch of the Rocky River featuring thirty-five species of reptiles and amphibian, including salamanders, frogs, toads, turtles",
                 "year": "",
@@ -1217,6 +1230,47 @@
                 "location": "Mecklenburg County",
                 "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                 "text": "Wetlands are nature’s sponges, absorbing stormwater runoff and releasing it gradually to reduce downstream flooding. When wetlands are healthy ecosystems, complete with all their living organisms, they filter surface water, reducing the need for water treatment plants. Supporting the Wetlands Ecosystem While the defined wetland of the West Branch Nature Preserve is precluded by law from development, the surrounding area is a vulnerable ecosystem threatened by nearby residential development According to the Davidson College Biology Department, numerous species of salamanders, frogs, toads, and turtles are found in the West Branch Wetland - to a degree unequalled in any other wetland in this area.Studies show that these species range in a natural area extending 900 feet beyond the edge of the wetland.Several of the salamander species spend the majority of each year living in the leaves and soil of the woods beyond the wetland. They return to the wetland pool in the winter to breed and lay eggs.Without suitable territory for each year’ s hatchlings to spread out, these populations would have been lost.Their absence from the food web would ultimately lead to the loss of the wetland ecosystem. A botanical inventory commissioned by Davidson Lands Conservancy and funded by the Davidson Garden Club and the South Lake Norman Garden Club also points to its rich diversity by identifying 114 species of plants."
+            },
+            "OBJECTID": 1,
+            "park_type": "NATURE PRESERVE",
+            "status": "DEVELOPED",
+            "park_id": "WBNP",
+            "property": "WEST BRANCH NATURE PRESERVE",
+            "sum_acres": 90.60370529,
+            "shape_Leng": 8414.48832772,
+            "Shape_Length": 0.025891028007885036,
+            "Shape_Area": 0.00003641280104509863
+        }
+    },
+    {
+        "type": "Feature",
+        "id": 1,
+        "geometry":
+        {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-80.8781, 35.5071],
+                    [-80.8783, 35.5042],
+                    [-80.8786, 35.5045]
+                ]
+            ]
+        },
+        "properties":
+        {
+            "website":
+            {
+                "name": "Wilson Property",
+                "slug": "wilson-property",
+                "link": "/explore-nature/map-of-conserved-lands/wilson-property/",
+                "image": "/wp/wp-content/uploads/2016/08/Wilson-S-to-73.jpg",
+                "access": "Not publicly accessible",
+                "unique": "wooded, north-facing slope and former farmland",
+                "year": "2014",
+                "size": "10.2 acres",
+                "location": "Cabarrus County",
+                "conservation": "Land Donated to Davidson Lands Conservancy",
+                "text": ""
             },
             "OBJECTID": 1,
             "park_type": "NATURE PRESERVE",
