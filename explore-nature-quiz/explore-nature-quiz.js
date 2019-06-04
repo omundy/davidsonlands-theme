@@ -33,6 +33,7 @@ var animalsQuestionObj = {
         "name":"What is the name of this animal?",
     },
     "hard": {
+        "name":"What is the name of this animal?",
         "food":"Which of the following describes the eating habit of this animal?",
         "true":"Which of the following is true about this animal?"
     }
@@ -42,8 +43,9 @@ var butterfliesQuestionObj = {
         "name":"What is the name of this butterfly?",
     },
     "hard": {
-        "plant":"Which is the following is a host plant of this butterfly",
-        "flight":"During when is this butterfly's flight period?",
+        "name":"What is the name of this butterfly?",
+        "hostplant":"Which of the following is a host plant of this butterfly",
+        // "flightperiod":"What is the flight period of this butterfly?",
         "true":"Which of the following is true about this butterfly?"
     }
 };
@@ -185,18 +187,26 @@ function selectQuestions(count) {
             // if butterflies
             q.questionKey = getRandomKeyFromObj(butterfliesQuestionObj[current.difficulty]);
             q.question = butterfliesQuestionObj[current.difficulty][q.questionKey];
+
         } else {
             // all other animals
             q.questionKey = getRandomKeyFromObj(animalsQuestionObj[current.difficulty]);
             q.question = animalsQuestionObj[current.difficulty][q.questionKey];
+
         }
 
-        // update "this animal" in question
-        q.question = q.question.replace("this animal","the "+ q.name);
+        if (current.difficulty == "hard" && q.questionKey != "name"){
+            // update "this butterfly" in question
+            q.question = q.question.replace("this butterfly","the "+ q.name);
+            // update "this animal" in question
+            q.question = q.question.replace("this animal","the "+ q.name);
+        }
 
-        // console.log("\n###############################################"); 
-        // console.log("INDEX =",i); 
-        // console.log("NAME =",q.data.name);
+
+
+        console.log("\n###############################################"); 
+        console.log("INDEX =",i); 
+        console.log("NAME =",q.data.name);
 
         // *** ANSWERS ***
         // 
@@ -221,20 +231,20 @@ function selectQuestions(count) {
             q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].food;
         } 
         // plants from other animals (BUTTERFLIES ONLY)
-        else if (q.questionKey === "plant"){
+        else if (q.questionKey === "hostplant"){
             // set answer, then others
-            q.possibleAnswers.answer = randomAnimals[otherAnimals[0]].plant;
-            q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].plant;
-            q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].plant;
-            q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].plant;
+            q.possibleAnswers.answer = randomAnimals[otherAnimals[0]].hostplant;
+            q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].hostplant;
+            q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].hostplant;
+            q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].hostplant;
         } 
         // flight from other animals (BUTTERFLIES ONLY)
-        else if (q.questionKey === "plant"){
+        else if (q.questionKey === "flightperiod"){
             // set answer, then others
-            q.possibleAnswers.answer = randomAnimals[otherAnimals[0]].flight;
-            q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].flight;
-            q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].flight;
-            q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].flight;
+            q.possibleAnswers.answer = randomAnimals[otherAnimals[0]].flightperiod;
+            q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].flightperiod;
+            q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].flightperiod;
+            q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].flightperiod;
         } 
         // funfacts of other animals (ALL ANIMALS)
         else if (q.questionKey === "true"){
@@ -257,11 +267,13 @@ function selectQuestions(count) {
         // save back into current
         current.questions[i] = q;
 
-        // console.log("%cQUESTION = " + q.question + " ( questionKey=" + q.questionKey + ")</b>", 'font-weight: bold; color: #327357');
-        // console.log("q.possibleAnswers.answer",JSON.stringify(q.possibleAnswers.answer));    
-        // console.log("q.possibleAnswers.a2",JSON.stringify(q.possibleAnswers.a2));    
-        // console.log("q.possibleAnswers.a3",JSON.stringify(q.possibleAnswers.a3));    
-        // console.log("q.possibleAnswers.a4",JSON.stringify(q.possibleAnswers.a4));   
+        console.log("%cQUESTION = " + q.question + " ( questionKey=" + q.questionKey + ")</b>", 'font-weight: bold; color: #327357');
+        console.log("q.possibleAnswers.answer",JSON.stringify(q.possibleAnswers.answer));    
+        console.log("q.possibleAnswers.a2",JSON.stringify(q.possibleAnswers.a2));    
+        console.log("q.possibleAnswers.a3",JSON.stringify(q.possibleAnswers.a3));    
+        console.log("q.possibleAnswers.a4",JSON.stringify(q.possibleAnswers.a4));   
+
+        // all data
         // console.log("current.questions",JSON.stringify(current.questions[i]));    
     }    
     showQuestion(0);
