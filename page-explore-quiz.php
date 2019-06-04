@@ -89,12 +89,6 @@ $container   = get_theme_mod( 'understrap_container_type' );
                     <div class="col-md-6"> 
 
                         <h2 id="question">Question...</h2>
-                       
-                        <div class="alerts">
-                            <div class="alert alert-success" role="alert"></div>
-                            <div class="alert alert-danger" role="alert"></div>
-                        </div>
-
 
                         <div class="buttons">
                             <a class="btn btn-secondary quiz-choice" id="choice1"></a> 
@@ -104,6 +98,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                         </div>
 
                         <div class="alerts">
+                            <div class="alert alert-success" role="alert"></div>
+                            <div class="alert alert-danger" role="alert"></div>
                             <div class="alert alert-info" role="alert"></div>
                         </div>
 
@@ -115,7 +111,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
                 <div class="row mt-4" id="quizFooter">
                     <div class="col-12 text-center">
                         <div>
-                            <a class="btn btn-secondary" id="back"><h4>Back</h4></a>
+                            <!-- <a class="btn btn-secondary" id="back"><h4>Back</h4></a> -->
                             <span id="progress" class="mx-3">Question x of y</span>
                             <a class="btn btn-secondary" id="next"><h4>Next</h4></a>
                         </div>
@@ -138,6 +134,8 @@ $container   = get_theme_mod( 'understrap_container_type' );
                     <h4 class="outcome"></h4>
 
                     <a class="btn btn-secondary mt-4" id="restart"><h4>Try again?</h4></a>
+
+                    <p>Note: Each time you start a new quiz the questions are completely new!</p>
 
                 </div>
             </div>

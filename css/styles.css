@@ -118,7 +118,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #29634a !important;
     border: 3px solid #29634a !important;
 }
-
+.site .btn-danger {
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+    color: #fff !important;
+}
+.site .btn-danger:hover {
+    background-color: #c12c3a !important;
+    border-color: #c12c3a !important;
+    color: #fff !important;
+}
 
 
 .page-link.current {
