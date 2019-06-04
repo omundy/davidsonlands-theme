@@ -154,7 +154,7 @@ $data_params_3x = array(
     array(
         'image' => get_stylesheet_directory_uri() . "/img/home-callout-volunteer.jpg", 
         'text' => "Find your calling at DLC",
-        'btn-link' => '/join-us/volunteer/',
+        'btn-link' => '/join-us/volunteer',
         'btn-text' => 'VOLUNTEER TODAY'
     ),
 );
