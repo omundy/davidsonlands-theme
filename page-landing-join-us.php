@@ -43,7 +43,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
         <div class="row">
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/join-us/volunteer/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-lenny-with-frog-600sq.jpg" alt="Education & Outreach">
 	                </div>
@@ -73,7 +73,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/">
+				<a class="link-on-light-bg" href="<?php echo home_url(); ?>/join-us/volunteer/">
 	                <div class="circle-callout-image">
 	                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/join-page-img_4959-600sq.jpg" alt="Communications">
 	                </div>
