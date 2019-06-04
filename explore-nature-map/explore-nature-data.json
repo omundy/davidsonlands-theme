@@ -1250,9 +1250,7 @@
             "type": "Polygon",
             "coordinates": [
                 [
-                    [-80.8781, 35.5071],
-                    [-80.8783, 35.5042],
-                    [-80.8786, 35.5045]
+                    [-80.7396, 35.4420]
                 ]
             ]
         },
@@ -1265,7 +1263,7 @@
                 "link": "/explore-nature/map-of-conserved-lands/wilson-property/",
                 "image": "/wp/wp-content/uploads/2016/08/Wilson-S-to-73.jpg",
                 "access": "Not publicly accessible",
-                "unique": "Wooded, north-facing slope and former farmland. The property is for sale, contact dave@davidsonlands.org for more information.",
+                "unique": "Wooded, north-facing slope and former farmland. The property is for sale. Contact dave@davidsonlands.org for more information.",
                 "year": "2014",
                 "size": "10.2 acres",
                 "location": "Cabarrus County",
