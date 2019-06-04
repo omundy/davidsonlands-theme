@@ -1,0 +1,415 @@
+{
+  "num_entries": "27",
+  "data": [
+    {
+      "name": "Eastern Tiger Swallowtail",
+      "wingspan:": "2.5 - 4.5 inches",
+      "hostplant": "Many including poplar, willow, maple, elm, sassafras",
+      "habitat": "Prefers open areas near water, fields, roadsides, backyards",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "North Carolina’s state butterfly; our most common swallowtail",
+        "Like other swallowtails, females have more blue on hindwing",
+        "Females can have either a light or a dark form",
+        "In photo from left to right: female dark form, male, female light (yellow) form"
+      ],
+      "image": "butterflies/butterfly_1.jpg" 
+    },
+    {
+      "name": "Black Swallowtail",
+      "wingspan": "2.7 - 3.5 inches",
+      "hostplant": "Members of the parsley family such as Queen Anne’s lace, carrot, celery, dill, fennel",
+      "habitat": "Open sunny areas, marshes, roadsides, backyards; Avoids woods and shaded areas",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Will readily lay eggs on parsley planted in your garden",
+        "Like all swallowtails, the caterpillar has a hidden organ that looks like a snake’s tongue. It comes out when the caterpillar is disturbed and emits a foul odor to deter predators",
+        "Mimics toxic Pipevine Swallowtail to avoid predators"
+      ],
+      "image": "butterflies/butterfly_2.jpg"
+    },
+    {
+      "name": "Spicebush Swallowtail",
+      "wingspan": "3.8 - 4.8 inches",
+      "hostplant": "Spicebush, sassafras",
+      "habitat": "Open sunny areas, marshes, roadsides, backyards, open woodlands, woodland edges",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Continuously flutters while feeding",
+        "Has a series of pale blue half-moons near edge of hindwings",
+        "Mimics toxic Pipevine Swallowtail to avoid predators",
+        "During the day, caterpillars live in shelters of folded-over leaves and come out at night to f"
+      ],
+      "image": "butterflies/butterfly_3.jpg"
+    },
+    {
+      "name": "Pipevine Swallowtail",
+      "wingspan": "2.8 - 5 inches",
+      "hostplant": "Virginia snakeroot, pipevines",
+      "habitat": "A variety of open habitats, open woodland, woodland edges",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Obtains moisture and nutrients at puddles, mud, or animal manure",
+        "One of the few butterflies that lays its eggs in clusters",
+        "Poisonous to predators because as caterpillars, they eat toxic pipevine",
+        "Other non-poisonous butterflies copy (mimic) the Pipeline Swallowtail to deter predators"
+      ],
+      "image": "butterflies/butterfly_4.jpg"
+    },
+    {
+      "name": "Zebra Swallowtail",
+      "wingspan": "2.5 - 4 inches",
+      "hostplant": "Pawpaw",
+      "habitat": "Moist woodlands and surrounding open areas near pawpaw",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Males often visit puddles to drink",
+        "flightis swift",
+        "Longest “tails” of our swallowtails",
+        "Short proboscis so can’t nectar on long tubular flowers",
+        "Named for zebra-like stripes"
+      ],
+      "image": "butterflies/butterfly_5.jpg"
+    },
+    {
+      "name": "Falcate Orangetip",
+      "wingspan": "1.4 - 1.8 inches",
+      "hostplant": "Plants in the mustard family including toothwort, rock cress",
+      "habitat": "Open moist woodlands and woodland edges, bottomlands",
+      "flightperiod": "March - May",
+      "funfacts": [
+        "One of the earliest fliers - a sign that spring is near",
+        "Very short flight period in early spring",
+        "Female lacks orange wing tips"
+      ],
+      "image": "butterflies/butterfly_6.jpg"
+    },
+    {
+      "name": "Cabbage White & Sleepy Orange",
+      "wingspan": "Cabbage White: 1.3 - 1.9 inches; Sleepy Orange: 1.4 - 2.3” inches",
+      "hostplant": "Cabbage White: Plants in mustard family, cabbage; Sleepy Orange: Members of the pea family",
+      "habitat": "Sunny open habitats, especially with flowers; roadsides; backyards",
+      "flightperiod": "February - November",
+      "funfacts": [
+        "Cabbage White: One of the earliest butterflies to emerge",
+        "Cabbage White: Females can lay 1,000 eggs in a lifetime",
+        "Sleepy Orange: Called “sleepy” because it lacks underwing eyespots seen on other similar species",
+        "Sleepy Orange: Migrates south in winter"
+      ],
+      "image": "butterflies/butterfly_7.3.jpg"
+    },
+    {
+      "name": "Orange Sulphur & Cloudless Sulphur",
+      "wingspan": "Orange Sulphur: 1.4 - 2.8 inches; Cloudless Sulphur: 2.3 - 3.2 inches",
+      "hostplant": "Plants in the pea family such as clover, alfalfa, vetch",
+      "habitat": "Open sunny areas, backyards, roadsides",
+      "flightperiod": "March - November, but may be seen any month",
+      "funfacts": [
+        "Orange Sulphur: Orange on upper wings shows in flight",
+        "Orange Sulphur: Female can be yellow or nearly white",
+        "Cloudless Sulphur: Larger and paler than other sulphurs in our area",
+        "Cloudless Sulphur: Caterpillars are camouflaged by what they eat, turning green from green leaves and yellow from yellow blooms"
+      ],
+      "image": "butterflies/butterfly_8.3.jpg"
+
+    },
+    {
+      "name": "Gray & Red-banded Hairstreak",
+      "wingspan": "0.9 - 1.4 inches",
+      "hostplant": "Gray: Many plants, often from pea and mallow families; Red-banded: Fallen leaves of sumacs, oaks, wax myrtle",
+      "habitat": "Gray: Open, dry sunny areas, backyards; Red-banded: Anywhere, but prefers wet wooded areas",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Hairstreaks have false eye spots and false antennae on hindwings to fool would-be predators",
+        "Gray: The most commonly seen hairstreak",
+        "Red-banded: Unique in that caterpillar eats dead leaves"
+      ],
+      "image": "butterflies/butterfly_9.3.jpg"
+    },
+    {
+      "name": "Eastern Tailed-Blue",
+      "wingspan": "0.8 - 1.1 inches",
+      "hostplant": "Plants in the pea family, such as clover, alfalfa, vetch",
+      "habitat": "Open, dry sunny areas; backyards",
+      "flightperiod": "March - November",
+      "funfacts": [
+        "Commonly seen drinking from puddles or mud",
+        "When wings are closed, appears grey with orange false eyespots",
+        "When nectaring, tails beneath the false eyespots twitch, making it look more like a head than a tail to distract predators"
+      ],
+      "image": "butterflies/butterfly_10.jpg"
+    },
+    {
+      "name": "American Snout",
+      "wingspan": "1.4 - 2 inches",
+      "hostplant": "Hackberries",
+      "habitat": "In or near hardwood forests with hackberries",
+      "flightperiod": "April - September",
+      "funfacts": [
+        "Named for long labial palps that look like a snout",
+        "Has a fast, erratic style of flight",
+        "Adults overwinter and may be seen on warm winter days",
+        "When at rest, looks like a dead leaf"
+      ],
+      "image": "butterflies/butterfly_11.jpg"
+    },
+    {
+      "name": "Great Spangled Fritillary",
+      "wingspan": "2.5 - 4 inches",
+      "hostplant": "Violets",
+      "habitat": "Sunny open habitats, especially wet areas; pastures",
+      "flightperiod": "May - October",
+      "funfacts": [
+        "Named for silvery white “spangles” on underside of hindwing (seen in photo)",
+        "Largest of all North American fritillarie",
+        "Females lay eggs on violets and can find them even after they have wilted and blown away"
+      ],
+      "image": "butterflies/butterfly_12.jpg"
+    },
+    {
+      "name": "Variegated Fritillary",
+      "wingspan": "1.8 - 3.1 inches",
+      "hostplant": "Many - including violets, pansies, passion-flowers, mayapples",
+      "habitat": "Sunny open habitats, roadsides, backyards, pastures",
+      "flightperiod": "March - December",
+      "funfacts": [
+        "Underside lacks the silver “spangles” of Great Spangled Fritillary",
+        "Eggs laid singly on stems and leaves; caterpillars eat leaves and flowers",
+        "Like all butterflies, it can see ultraviolet light and the colors red, green, and yellow"
+      ],
+      "image": "butterflies/butterfly_13.jpg"
+    },
+    {
+      "name": "Gulf Fritillary",
+      "wingspan": "2.5 - 3.8 inches",
+      "hostplant": "Passion flowers",
+      "habitat": "Sunny open habitats, roadsides, backyards, pastures",
+      "flightperiod": "August - November; only a migrant in our area",
+      "funfacts": [
+        "Fairly common in late summer and fall as individuals migrate north",
+        "Cannot tolerate cold and therefore does not survive the winter here",
+        "Females lay as many as 2,000 eggs in a lifetime"
+      ],
+      "image": "butterflies/butterfly_14.jpg"
+    },
+    {
+      "name": "Pearl Crescent",
+      "wingspan": "1.3 - 1.8 inches",
+      "hostplant": "Asters",
+      "habitat": "Sunny open habitats, roadsides, backyards",
+      "flightperiod": "March - November",
+      "funfacts": [
+        "One of our most common butterflies",
+        "Named for silvery crescent on underside of hindwing",
+        "Typically lands with wings spread",
+        "Despite small size, it defends its territory by attacking intruders",
+        "Courtship involves a chase and wing fluttering ritual"
+      ],
+      "image": "butterflies/butterfly_15.jpg"
+    },
+    {
+      "name": "Question Mark & Eastern Comma",
+      "wingspan": "Question Mark: 2.3 - 3 inches; Eastern Comma 1.8 - 2.5” inches",
+      "hostplant": "Question Mark: Elms, hackberries, nettles; Comma: Nettles, elms",
+      "habitat": "Wooded areas with some open space, woodland edges, moist areas",
+      "flightperiod": "February - November, warm winter days",
+      "funfacts": [
+        "Names come from silvery-white “question mark” or “comma” markings on hindwings",
+        "Don't visit flowers, but drinks from rotten fruit, tree sap, dung",
+        "Mimic dead leaves when wings are folded",
+        "Spring forms are reddish; fall forms are brown"
+      ],
+      "image": "butterflies/butterfly_16.3.jpg"
+    },
+    {
+      "name": "American Lady & Painted Lady",
+      "wingspan": "American Lady: 1.8 - 2.6 inches; Painted Lady: 2.0 - 2.9 inches",
+      "hostplant": "American: Members of the sunflower family; Painted: Many, including thistle, mallow, hollyhock",
+      "habitat": "Sunny open areas often with low vegetation, roadsides, backyards, parks",
+      "flightperiod": "February - November",
+      "funfacts": [
+        "Both feed on flower nectar and rotting fruit",
+        "American Lady has two large eyespots on hindwing. Painted Lady has 4-5 smaller eyespots on hindwing",
+        "Painted Lady populations don’t last through the winter; must be recolonized each year from individuals migrating from south"
+      ],
+      "image": "butterflies/butterfly_17.3.jpg"
+    },
+    {
+      "name": "Common Buckeye",
+      "wingspan": "1.6 - 2.8 inches",
+      "hostplant": "Plantains, snapdragon, gerardia",
+      "habitat": "Sunny open habitats with low vegetation, some bare ground preferred; backyards; roadsides",
+      "flightperiod": "March - December",
+      "funfacts": [
+        "Large false eyespots to scare away predators",
+        "Migrates south, often in large flocks, cannot tolerate freezing temperatures",
+        "Caterpillars build up toxins from eating their host plants which protects them from predatory ants"
+      ],
+      "image": "butterflies/butterfly_18.jpg"
+    },
+    {
+      "name": "Red-spotted Purple",
+      "wingspan": "2.3 - 4 inches",
+      "hostplant": "Leaves of hardwood trees: cherry, cottonwood, oak, etc.",
+      "habitat": "In or near hardwood forests, woodland edges",
+      "flightperiod": "April - October",
+      "funfacts": [
+        "May visit flowers but prefers sap, rotting fruit, carrion, dung",
+        "Often seen on the ground puddling or basking in the sun",
+        "Mimics the poisonous Pipevine Swallowtail in color and flight but lacks the tail",
+        "The brown and cream caterpillar mimics a bird dropping, protecting it from predators"
+      ],
+      "image": "butterflies/butterfly_19.jpg"
+    },
+    {
+      "name": "Viceroy",
+      "wingspan": "2.5 - 3.4 inches",
+      "hostplant": "Trees in the willow family: willows, poplars, cottonwoods",
+      "habitat": "Moist open, shrubby areas often near willows",
+      "flightperiod": "April - November",
+      "funfacts": [
+        "Mimics poisonous Monarch butterfly to avoid predation",
+        "Curved black line in hindwing distinguishes it from Monarch",
+        "Often feeds on dung and decaying matter in addition to flowers",
+        "Both the caterpillar and chrysalis mimic bird droppings to protect them from predators"
+      ],
+      "image": "butterflies/butterfly_20.jpg"
+    },
+    {
+      "name": "Hackberry Emperor",
+      "wingspan": "1.3 - 2.5 inches",
+      "hostplant": "Hackberries, sugarberries",
+      "habitat": "Wooded roadsides, wooded streams, usually near host plant",
+      "flightperiod": "May - September",
+      "funfacts": [
+        "Doesn’t visit flowers, but feeds on sap, rotting fruit, carrion",
+        "Likes to land on people to drink perspiration",
+        "Often perches on trees trunks, typically head down (see photo)",
+        "Males perch for hours on trees in sunny areas looking for females"
+      ],
+      "image": "butterflies/butterfly_21.jpg"
+    },
+    {
+      "name": "Carolina Satyr",
+      "wingspan": "1.3 - 1.5 inches",
+      "hostplant": "Grasses, including invasive Japanese stilt grass",
+      "habitat": "Hardwood and mixed forests, especially woods with open areas or paths with grasses; also seen at woodland edges",
+      "flightperiod": "May - October",
+      "funfacts": [
+        "Doesn’t visit flowers, but feeds on sap and rotting fruit",
+        "Stays low to ground with bouncy flight",
+        "Very common butterfly in shaded woods with grassy paths",
+        "Adult life expectancy only 6.25 days in mid-summer in the wild"
+      ],
+      "image": "butterflies/butterfly_22.jpg"
+    },
+    {
+      "name": "Monarch",
+      "wingspan": "3.7 - 4.1 inches",
+      "hostplant": "Exclusively milkweed species",
+      "habitat": "Anywhere during migration; other times usually near milkweed, fields, woodland borders, power strips",
+      "flightperiod": "April - December",
+      "funfacts": [
+        "Migrates south to Mexico in the fall, flying up to 250 miles per day, longest insect migration on Earth",
+        "Poisonous to birds and other predators due to milkweed poisons",
+        "Orange and black color pattern warns predators, “Don’t eat me, I’m poisonous!”",
+        "Males have black scent pouches on hind wings (see photo)"
+      ],
+      "image": "butterflies/butterfly_23.jpg"
+    },
+    {
+      "name": "Juvenal’s & Horace’s Duskywing",
+      "wingspan": "1.4 - 1.9 inches",
+      "hostplant": "Oaks",
+      "habitat": "Almost anywhere but prefers woodland edges and openings, roadsides",
+      "flightperiod": "Juvenal’s: March - May; Horace’s: June - October",
+      "funfacts": [
+        "Very similar, common, and related species; best told apart by time of year. Flight: Juvenal’s only in spring, Horace’s later",
+        "Juvenal’s often land on bare ground",
+        "Horace’s more likely to venture into backyards"
+      ],
+      "image": "butterflies/butterfly_24.3.jpg"
+    },
+    {
+      "name": "Silver-spotted Skipper",
+      "wingspan": "1.8 - 2.6 inches",
+      "hostplant": "Woody legumes such as locusts, sennas, wisteria",
+      "habitat": "Woodland edges, clearings, fields, roadsides, backyards",
+      "flightperiod": "March - November",
+      "funfacts": [
+        "Named for large silver spot on hindwing (more white than silver)",
+        "Largest skipper in our area; has fast, zippy flight",
+        "Perches upside down under leaves at night and on hot or cloudy days",
+        "Unlike other butterflies, the chrysalis is encased in a loose cocoon among the leaf litter"
+      ],
+      "image": "butterflies/butterfly_25.jpg"
+    },
+    {
+      "name": "Common Checkered-Skipper",
+      "wingspan": "1.0 - 1.5 inches",
+      "hostplant": "Plants in the mallow family, such as hollyhock, hibiscus",
+      "habitat": "Sunny open places with low vegetation, roadsides, backyards, pastures",
+      "flightperiod": "March - December, more common September - November",
+      "funfacts": [
+        "Stays close to ground, prefers flowers like clover",
+        "Typically holds wings open when landed",
+        "Hair-like scales cover body, casting a lovely bluish hue in sunlight",
+        "Like all skippers, flies so fast it can outpace a horse"
+      ],
+      "image": "butterflies/butterfly_26.jpg"
+    },
+    {
+      "name": "Fiery Skipper",
+      "wingspan": "1.3 - 1.8 inches",
+      "hostplant": "Grasses",
+      "habitat": "Open sunny areas, roadsides, backyards",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Often perch with wings partially open",
+        "Large eyes, short antennae, stout bodies",
+        "Named for fiery pattern on upper hindwing",
+        "Males and females similar"
+      ],
+      "image": "butterflies/butterfly_27.1.jpg"
+    },
+    {
+      "name": "Zabulon Male Skipper",
+      "wingspan": "1.3 - 1.8 inches",
+      "hostplant": "Grasses",
+      "habitat": "Damp areas near woodlands, streamside paths",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Often perch with wings partially open",
+        "Large eyes, short antennae, stout bodies",
+        "Zabulon females are all dark"
+      ],
+      "image": "butterflies/butterfly_27.2.jpg"
+    },
+    {
+      "name": "Sachem Female Skipper",
+      "wingspan": "1.3 - 1.8 inches",
+      "hostplant": "Grasses",
+      "habitat": "Open sunny areas, roadsides, backyards",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Often perch with wings partially open",
+        "Large eyes, short antennae, stout bodies",
+        "Sachem males are mostly orange"
+      ],
+      "image": "butterflies/butterfly_27.3.jpg"
+    },
+    {
+      "name": "Clouded Skipper",
+      "wingspan": "1.3 - 1.8 inches",
+      "hostplant": "Grasses",
+      "habitat": "Open sunny areas, roadsides, backyards",
+      "flightperiod": "March - October",
+      "funfacts": [
+        "Often perch with wings partially open",
+        "Large eyes, short antennae, stout bodies",
+        "Males and females similar"
+      ],
+      "image": "butterflies/butterfly_27.4.jpg"
+    }
+  ]
+}

@@ -48,12 +48,18 @@ function theme_enqueue_styles()
     $template_name = get_page_template_slug( $id );
 
 
+    // enque for map
     if ($template_name == "page-explore-map.php"){
         wp_enqueue_style('cwd-leaflet-styles', get_stylesheet_directory_uri() . '/explore-nature-map/leaflet/leaflet.css', $the_theme->get('Version'));
         wp_enqueue_script('cwd-leaflet-script', get_stylesheet_directory_uri() . '/explore-nature-map/leaflet/leaflet.js', array(), $the_theme->get('Version'), true);
         wp_enqueue_script('cwd-explore-nature-map-script', get_stylesheet_directory_uri() . '/explore-nature-map/explore-nature-map.js', array(), $the_theme->get('Version'), true);
     }
-
+    // enque for quiz
+    if ($template_name == "page-explore-quiz.php"){
+        wp_enqueue_style('cwd-quiz-styles', get_stylesheet_directory_uri() . '/explore-nature-quiz/explore-nature-quiz.css', $the_theme->get('Version'));
+        wp_enqueue_script('cwd-explore-nature-quiz-script', get_stylesheet_directory_uri() . '/explore-nature-quiz/explore-nature-quiz.js', array(), $the_theme->get('Version'), true);
+        wp_enqueue_script('cwd-explore-nature-quiz-confetti', get_stylesheet_directory_uri() . '/explore-nature-quiz/confetti.js', array(), $the_theme->get('Version'), true);
+    }
 
 
 

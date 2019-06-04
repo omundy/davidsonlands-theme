@@ -1,1 +1,377 @@
-stuff
+{
+  "num_entries": "28",
+  "data": [
+    {
+      "name": "Black Ant",
+      "size": "1/10 - 1/2 inch depending on species",
+      "food": "Not picky eaters: food includes insects, nectar, fruit, dead animals, human garbage",
+      "habitat": "Ant hills in the ground or rotted logs",
+      "funfacts": [
+        "Leave a scent trail that leads other ants to a food source",
+        "Can lift 20 times its own body weight",
+        "Produce chemical alarms when threatened by an intruder ",
+        "Live in organized social colonies with 3 kinds of ants: queen, female workers, and male drones",
+        "Queen is the only one that can lay eggs",
+        "Males have wings; the queen has wings only until she mates and establishes a colony; workers don’t have wings"
+      ],
+      "image": "insects/insect_1.jpg"
+    },
+    {
+      "name": "Fire Ant",
+      "size": "1/10 - 1/4 inch",
+      "food": "Omnivorous, will eat almost any plant or animal, alive or dead",
+      "habitat": "Often in disturbed areas such as roadsides and recent forest clearings",
+      "funfacts": [
+        "Live in large colonies of up to 250,000 worker ants",
+        "Create tunnels extending up to 25 feet from the mound",
+        "Small, very aggressive, repeatedly stinging anything that intrudes into their colonies",
+        "Grip by biting, then sting, injecting a toxin that feels like fire",
+        "Dozens, even hundreds, sting in unison",
+        "Can strip a carcass clean overnight"
+      ],
+      "image": "insects/insect_2.3.jpg"
+    },
+    {
+      "name": "Bumble Bee",
+      "size": "1/2 - 1 inch",
+      "food": "Flower nectar and pollen",
+      "habitat": "Anywhere with abundant flowers",
+      "funfacts": [
+        "Vibrate wing muscles so fast that flowers release their pollen (buzz pollination)",
+        "Have pollen baskets on hind legs for carrying pollen",
+        "Will scent-mark flowers so other bumble bees know the nectar is gone and not waste time looking",
+        "Efficient pollinators of crops such as blueberries and strawberries",
+        "Typically make new nests in or near the ground each spring. Only queen overwinters"
+      ],
+      "image": "insects/insect_3.jpg"
+    },
+    {
+      "name": "Eastern Carpenter Bee",
+      "size": "1/2 - 1 inch",
+      "food": "Nectar from many different flower species",
+      "habitat": "Anywhere with abundant flowers",
+      "funfacts": [
+        "Solitary, not social bees, so don’t have hives",
+        "Females chew through wood making tunnels to lay eggs ",
+        "Females rarely sting; males can’t sting",
+        "Males are territorial. If you throw a rock of similar size close to them, they chase it as if a rival male",
+        "Sometimes chew through base of flowers to obtain nectar, thereby “cheating” the flower of pollination"
+      ],
+      "image": "insects/insect_4.jpg"
+    },
+    {
+      "name": "Honey Bee",
+      "size": "1/2 inch",
+      "food": "Nectar, pollen, honey",
+      "habitat": "Anywhere with abundant flowers",
+      "funfacts": [
+        "Perform a 'waggle' dance to instruct the rest of hive where to find food",
+        "Gather nectar to make honey. One teaspoon of honey takes about 154 bee trips from flowers to hive",
+        "Mix honey with pollen to make food for the larva. This sub-stance determines whether females develop into queens or workers",
+        "Barbed stinger remains attached to victim so the bee dies after stinging, unlike yellowjacket wasps"
+      ],
+      "image": "insects/insect_5.jpg"
+    },
+    {
+      "name": "June Bug Beetle",
+      "size": "Up to 1 inch",
+      "food": "Adults eat fruit and leaves; larvae eat plant roots",
+      "habitat": "Grassy fields and yards",
+      "funfacts": [
+        "Much bigger than Japanese Beetle",
+        "Attracted to lights at night",
+        "Can take up to 3 years to mature into adults",
+        "Clumsy fliers that often collide with people and objects",
+        "Don't sting or bite"
+      ],
+      "image": "insects/insect_6.jpg"
+    },
+    {
+      "name": "Japanese Beetle",
+      "size": "1/2 inch",
+      "food": "Adults eat leaves, flowers, and fruits of many plants, even poison ivy. Larvae eat plant roots",
+      "habitat": "Parks, gardens, crop fields",
+      "funfacts": [
+        "Major pest of garden plants and crops",
+        "Feed by 'skeletonizing' leaves, eating only the parts between the veins",
+        "Damaged plants release chemicals that attract more beetles; wind can carry odor several hundred yards ",
+        "Group can strip a fruit tree of its leaves in 15 minutes"
+      ],
+      "image": "insects/insect_7.jpg"
+    },
+    {
+      "name": "Ladybug Beetle",
+      "size": "1/8 - 1/4 inch",
+      "food": "Smaller soft-bodied insects, such as aphids, scale insects, mites",
+      "habitat": "Low-growing plants, wherever suitable prey is found",
+      "funfacts": [
+        "Secrete a foul-smelling fluid from its leg joints when startled, scaring away predators",
+        "Larvae resemble tiny alligators",
+        "Many local ladybugs are an invasive Asian species originally imported for garden pest control",
+        "Native ladybugs overwinter under bark or leaves; Asian species may seek shelter by the thousands in your house"
+      ],
+      "image": "insects/insect_8.jpg"
+    },
+    {
+      "name": "Firefly Beetle",
+      "size": "1/2 inch",
+      "food": "Most adults do not feed. Larvae eat worms, snails, and slugs",
+      "habitat": "Adults fly in open areas during the summer",
+      "funfacts": [
+        "Signal each other with light flashes",
+        "Males signal while flying; females answer from the ground",
+        "Their light is nearly 100% light, not heat -- amazingly efficient",
+        "Larvae also glow, warning that they are not tasty and may be toxic"
+      ],
+      "image": "insects/insect_9.jpg"
+    },
+    {
+      "name": "Tiger Beetle",
+      "size": "Average 1/2 inch",
+      "food": "Insects and spiders",
+      "habitat": "Stream and lake edges and woodland paths",
+      "funfacts": [
+        "Eat other insects, many of which harm crops",
+        "Adults are fast runners; some can run 5 mph",
+        "Larvae live in vertical tunnels, waiting for a meal. When an insect walks over the tunnel, the larva clamps its jaws on it, drags it down the hole, and eats it"
+      ],
+      "image": "insects/insect_10.jpg"
+    },
+    {
+      "name": "Leaf-footed Bug & Stink Bug",
+      "size": "Leaf-footed Bug: 1 - 1.3 inch; Stink Bug: 1/2 inch",
+      "food": "Juices from various plants, including fruit and vegetable crops",
+      "habitat": "Agricultural fields and gardens",
+      "funfacts": [
+        "Both release a foul-smelling liquid if attacked or squashed, protecting them from predators",
+        "Both have sucking and piercing mouth-parts to suck plant juice ",
+        "Leaf-footed bugs are named for their large, widened hind legs that resemble leaves",
+        "The Brown marmorated stink bug, an invasive species from Asia, has become common and may winter in houses"
+      ],
+      "image": "insects/insect_11.3.jpg"
+    },
+    {
+      "name": "Cicada",
+      "size": "Up to 2 inch",
+      "food": "Adults feed on plant juices; nymphs on tree roots",
+      "habitat": "Juveniles live underground; adults live in the tops of trees",
+      "funfacts": [
+        "Cicada nymphs live underground. Some emerge and shed their shells after 13 or 17 years; others emerge every year",
+        "Clumsy fliers, often bump into things, but don’t bite or sting",
+        "A chorus of cicadas can roar as loud as heavy duty power equipment, sometimes confusing cicadas who may swarm around people using lawn mowers and leaf blowers"
+      ],
+      "image": "insects/insect_12.3.jpg"
+    },
+    {
+      "name": "Cockroach",
+      "size": "Up to 2 inch depending on species",
+      "food": "In homes: dead insects, food, paper, cloth, just about anything. In woods: decaying matter",
+      "habitat": "Frequently found in homes, but most species live in the woods",
+      "funfacts": [
+        "Believed to have evolved more than 280 million years ago",
+        "Can live for a week without its head",
+        "Can fly but rarely bother, going fastest when they run on their two hind legs ",
+        "Each of their 6 legs has 3 sets of 'knees' that sense vibrations and serve as an early warning system"
+      ],
+      "image": "insects/insect_13.jpg"
+    },
+    {
+      "name": "Cricket",
+      "size": "1/2 - 1 inch",
+      "food": "Various organic matter",
+      "habitat": "Most species live in grass; others live in bushes or trees",
+      "funfacts": [
+        "Rub wings together, creating a song to attract mates",
+        "'Ears' are located on front legs",
+        "Can jump 20 to 30 times their height",
+        "Use jumping as main mode of transportation even though they have wings"
+      ],
+      "image": "insects/insect_14.jpg"
+    },
+    {
+      "name": "Damselfly",
+      "size": "(Double-striped Bluet above: 1 inch), 1 - 2.5 inch range for all species",
+      "food": "Small soft-bodied insects including aphids, mosquitoes, and gnats",
+      "habitat": "Near water",
+      "funfacts": [
+        "Unlike dragonflies, damselflies are thinner and hold wings together over their bodies when at rest",
+        "Have four wings almost equal in size and shape",
+        "Stay close to water, often resting on surface vegetation",
+        "Like dragonflies, they cannot walk, but only fly and land"
+      ],
+      "image": "insects/insect_15.jpg"
+    },
+    {
+      "name": "Dragonfly",
+      "size": "(Common Whitetail above: 2 inch), 1.5 - 5 inch range for all species",
+      "food": "Adults eat other flying insects, particularly mosquitoes. The larvae eat almost anything smaller than themselves, such as tadpoles",
+      "habitat": "Usually near ponds and rivers",
+      "funfacts": [
+        "Can fly up or down, backwards or forwards, stop and hover -- like a helicopter ",
+        "Only eat prey caught while in mid-air. Without flying, they would starve ",
+        "Have incredible vision since nearly all of its head is eye",
+        "One dragonfly can eat 30 to hundreds of mosquitoes per day"
+      ],
+      "image": "insects/insect_16.jpg"
+    },
+    {
+      "name": "Horse Fly",
+      "size": "1/3 - 1 inch",
+      "food": "Females drink blood; males drink nectar",
+      "habitat": "Meadows and pastures with food sources",
+      "funfacts": [
+        "Females feed on blood of mammals to support egg development",
+        "Once eggs hatch, the larva spend 1-2 years growing; adult horse flies only live for a few days",
+        "20-30 horse flies can drain almost 20 teaspoons of blood from victim in a single feeding",
+        "Many species have beautiful, multi-colored eyes"
+      ],
+      "image": "insects/insect_17.jpg"
+    },
+    {
+      "name": "House Fly",
+      "size": "1/4 inch",
+      "food": "Garbage, human food scraps, dead animals, anything edible",
+      "habitat": "Anywhere humans live",
+      "funfacts": [
+        "Can’t bite or chew so they vomit stomach juices on food to liquefy it, then slurp up",
+        "Lay eggs on fruit, food, other animals, and rotting flesh to provide a food source for larvae",
+        "Larvae (maggots) look like bits of rice and have no legs",
+        "Feet are 10 million times more sensitive to taste of sugar than human tongue"
+      ],
+      "image": "insects/insect_18.jpg"
+    },
+    {
+      "name": "Hover Fly",
+      "size": "1/4 - 3/4 inch",
+      "food": "Flower nectar or pollen",
+      "habitat": "Anywhere with abundant flowers",
+      "funfacts": [
+        "Mimic the coloring of bees or wasps to avoid predators. Example in photo mimics the yellowjacket",
+        "Some species sneak into bumble bee nests and lay eggs. Once hatched, larvae feed on dead bees ",
+        "Can fly backwards; do not sting or bite",
+        "One hover fly larva can consume the body fluids of hundreds of aphids (common garden pests)"
+      ],
+      "image": "insects/insect_19.jpg"
+    },
+    {
+      "name": "Grasshopper",
+      "size": "(American Birdwing above: 2.8 inch), 1 - 5 inch range for all species",
+      "food": "Crop plants, grasses, and weeds",
+      "habitat": "Dry open spaces",
+      "funfacts": [
+        "Rub hind legs against forewings to make a singing sound",
+        "'Ears' are on their bellies",
+        "Back legs act like miniature catapults enabling them to leap long distances",
+        "Existed long before dinosaurs",
+        "Sometimes spit brown liquid to defend themselves"
+      ],
+      "image": "insects/insect_20.jpg"
+    },
+    {
+      "name": "Katydid",
+      "size": "1.5 - 2 inch",
+      "food": "Mainly tree leaves. Some also eat other insects",
+      "habitat": "Bushes and tops of deciduous trees, especially oaks",
+      "funfacts": [
+        "Named for night call, which sounds like 'Ka-ty-did'",
+        "Mimic leaves with green color and wing veins",
+        "Sing to each other by rubbing front wings together",
+        "Hear with 'ears' on front legs that move to hear in any direction",
+        "Can jump up to 20 times their body length"
+      ],
+      "image": "insects/insect_21.jpg"
+    },
+    {
+      "name": "Praying Mantis",
+      "size": "(Chinese Mantis above: 3 - 4.5 inch), 2 - 4.5 inch range for all species",
+      "food": "Insects, spiders, frogs, lizards, small birds, and each other",
+      "habitat": "Open fields, forest edges, and gardens",
+      "funfacts": [
+        "Capable of turning its head 180 degrees around its body",
+        "Females sometimes eat the male after mating",
+        "Named for their front legs, which they hold in a way that resembles praying",
+        "Commonly seen species have been introduced for pest control but are now outcompeting native praying mantises"
+      ],
+      "image": "insects/insect_22.jpg"
+    },
+    {
+      "name": "Mosquito",
+      "size": "Up to 1/2 inch",
+      "food": "Males and females feed on plant nectar; females of many species drink blood to produce eggs",
+      "habitat": "Varies, but never far from water where they lay eggs",
+      "funfacts": [
+        "Can carry diseases that cause more human deaths than any other animal",
+        "Only females bite. Abdomens can expand with blood up to 3 times their body weight",
+        "Locate blood by detecting carbon dioxide exhaled by humans and animals from up to 100 feet away",
+        "Eggs can survive for up to 5 years before hatching"
+      ],
+      "image": "insects/insect_23.jpg"
+    },
+    {
+      "name": "Hummingbird Clearwing Moth",
+      "size": "1.5 - 2 inch wingspan as adults",
+      "food": "Caterpillars feed on dogbane, honeysuckle, and snowberry. Adults feed on nectar",
+      "habitat": "Meadows, parks, and gardens",
+      "funfacts": [
+        "Smaller by 1 - 2 inches than hummingbirds with six, long visible legs",
+        "Mimic small hummingbirds; can move forwards, sideways, and backwards",
+        "Hover by moving their wings in a figure 8 pattern at 85 wingbeats per second, creating an audible hum",
+        "One of the few moths that flies during the day"
+      ],
+      "image": "insects/insect_24.jpg"
+    },
+    {
+      "name": "Luna Moth",
+      "size": "3-4 inch wingspan as adults",
+      "food": "Adults do not feed. Caterpillars eat the leaves of many trees",
+      "habitat": "Hardwood trees in forests, suburbs, and parks",
+      "funfacts": [
+        "Adults can’t feed because they lack a mouth. Only live about one week",
+        "Females lay as many as 200 eggs on the undersides of leaves",
+        "Favorite snack for bats. Moths’ constant twirling disorients bats, helping moths escape ",
+        "Active only at night"
+      ],
+      "image": "insects/insect_25.jpg"
+    },
+    {
+      "name": "Paper Wasp",
+      "size": "1/2 - 1 inch",
+      "food": "Grasshoppers, aphids, flies, bees, nectar, tree sap, fruit",
+      "habitat": "Forest edges, meadows. Often build their nests on wooden structures like houses",
+      "funfacts": [
+        "Make nests by chewing up strips of bark, spitting it out to make a rough paper",
+        "Colonies contain 20 - 75 adults",
+        "Hunt and eat almost every insect pest that harms crops",
+        "Can sting repeatedly with barbless stinger",
+        "All die in the fall except for a few new queens"
+      ],
+      "image": "insects/insect_26.jpg"
+    },
+    {
+      "name": "Yellowjacket Wasp",
+      "size": "1/2 inch",
+      "food": "Nectar, other insects, meat, garbage, fruit",
+      "habitat": "Nests mainly underground",
+      "funfacts": [
+        "Only queens survive the winter ",
+        "Aggressive; barbless stinger allows them to sting multiple times, unlike honey bees",
+        "If attacked or killed, releases odor alerting other wasps to come to its aid ",
+        "Many insects mimic their color and pattern to scare predators"
+      ],
+      "image": "insects/insect_27.jpg"
+    },
+    {
+      "name": "Water Strider",
+      "size": "1/2 inch",
+      "food": "Insects on the surface of water",
+      "habitat": "The surface of ponds, lakes, edges of rivers, and streams",
+      "funfacts": [
+        "Can 'walk' on the surface of water",
+        "Rear legs are used for steering and braking; middle legs act like paddles; short front legs grab prey",
+        "Use water surface tension to keep from sinking",
+        "Ripples on the surface of water help locate insect meals"
+      ],
+      "image": "insects/insect_28.jpg"
+    }
+  ]
+}

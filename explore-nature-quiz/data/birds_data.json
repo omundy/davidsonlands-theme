@@ -1,0 +1,399 @@
+{
+  "num_entries": "28",
+  "data": [
+    {
+      "name": "Eastern Bluebird",
+      "size": "6 - 8 inches",
+      "food": "Berries, fruit, spiders, beetles, caterpillars, grasshoppers, crickets",
+      "habitat": "Open grassy areas, parks, backyards, farmlands, woodlands",
+      "funfacts": [
+        "Females are duller and grayer",
+        "Females build nest and incubate eggs",
+        "Nest in tree cavities or nest boxes",
+        "Attracted to mealworms and shelled sunflower seeds at feeder",
+        "Enjoy birdbaths"
+      ],
+      "image": "birds/bird_1.jpg"
+    },
+    {
+      "name": "Northern Cardinal",
+      "size": "8.5 - 9 inches",
+      "food": "Fruit, seeds, beetles, crickets, spiders, flies, moths, cicadas",
+      "habitat": "Forests, fields, parks, backyards",
+      "funfacts": [
+        "State bird of N.C. and six other states",
+        "Males (red) and females (brown) have same red beak",
+        "Can crack hard seeds with large bill",
+        "Often seen feeding female in early spring",
+        "Go bald as part of molting cycle"
+      ],
+      "image": "birds/bird_2.jpg"
+    },
+    {
+      "name": "Carolina Chickadee",
+      "size": "4 - 4.5 inches",
+      "food": "Insects, fruit, seeds, spiders",
+      "habitat": "Fields, marshes, backyards, woodlands, parks",
+      "funfacts": [
+        "May nest in tree cavity or bird house",
+        "Fly to a feeder, grab a seed, and then carry it to a branch",
+        "Will eat upside down clinging to a branch",
+        "Call is a high fast “chicka-dee-dee-dee”",
+        "Live in flocks of up to 8 birds in winter"
+      ],
+      "image": "birds/bird_3.jpg"
+    },
+    {
+      "name": "American Crow",
+      "size": "16 - 21 inches",
+      "food": "Insects, small animals, fruit, nuts, garbage",
+      "habitat": "Open areas with access to trees",
+      "funfacts": [
+        "Often mate for life",
+        "Are among the most intelligent birds",
+        "Inquisitive and good problem solvers",
+        "Able to hide food in many places and remember location",
+        "May form flocks in the thousands"
+      ],
+      "image": "birds/bird_4.jpg"
+    },
+    {
+      "name": "Mourning Dove",
+      "size": "9 - 13 inches",
+      "food": "Grains, peanuts, millet, berries, seeds of wild grasses and weeds",
+      "habitat": "Grasslands, woodlands, farmlands, backyards",
+      "funfacts": [
+        "Named for mournful call",
+        "May nest in gutters or eaves of houses",
+        "Feed their chicks “crop milk,” a milky substance produced in their crop",
+        "Frequently found perched on telephone wires",
+        "Unusual in that they drink by sucking up water"
+      ],
+      "image": "birds/bird_5.jpg"
+    },
+    {
+      "name": "Bald Eagle",
+      "size": "28 - 38 inches",
+      "food": "Primarily fish; also birds, reptiles, crabs, rabbits, muskrats",
+      "habitat": "Forests, near large bodies of water",
+      "funfacts": [
+        "U.S. national bird",
+        "Steal food from ospreys",
+        "Prefer tall trees with wide view",
+        "Nest is 2 to 4 feet tall and 5 to 6 feet in diameter",
+        "Once on endangered species list, have made a comeback due to protection of habitat and banning of the pesticide DDT"
+      ],
+      "image": "birds/bird_6.jpg"
+    },
+    {
+      "name": "House Finch",
+      "size": "5 - 5.5 inches",
+      "food": "Seeds, buds, millet, fruit",
+      "habitat": "Wooded areas, farmlands, lawns, parks, backyards",
+      "funfacts": [
+        "Males may have red, orange, or yellow breast",
+        "Color of males derived from diet",
+        "Females are brown",
+        "Like nesting in hanging flower baskets",
+        "Highly social birds, often seen in flocks"
+      ],
+      "image": "birds/bird_7.jpg"
+    },
+    {
+      "name": "American Goldfinch",
+      "size": "4 - 5 inches",
+      "food": "Seeds from grasses, flowers, thistles, and trees",
+      "habitat": "Orchards, fields, backyards",
+      "funfacts": [
+        "Males bright yellow only in the spring and summer",
+        "After molting in the fall, males and females look similar",
+        "Attracted to Black-eyed Susans and coneflowers",
+        "Especially fond of nyjer seeds",
+        "Appear roller-coaster like in flight"
+      ],
+      "image": "birds/bird_8.jpg"
+    },
+    {
+      "name": "Canada Goose",
+      "size": "30 - 43 inches",
+      "food": "Grasses, agricultural grains, berries, aquatic plants",
+      "habitat": "Near water, grassy fields, grain fields",
+      "funfacts": [
+        "Female is called goose, male a gander, babies goslings",
+        "Have a wingspan of 4.2 to 5.6 feet",
+        "Like open fields so they can easily see predators",
+        "Fly in large groups in a V-formation",
+        "Can be heard honking in flight"
+      ],
+      "image": "birds/bird_9.jpg"
+    },
+    {
+      "name": "Common Grackle",
+      "size": "11 - 13.5 inches",
+      "food": "Fish, worms, seeds, garbage, corn, other crops",
+      "habitat": "Farms, parks, backyards, woodlands, meadows, marshes",
+      "funfacts": [
+        "May sit in groups atop trees and telephone poles",
+        "Walk on lawns and fields making raucous chatter",
+        "Number one threat to cornfields",
+        "Sometimes nest in groups of 75 or more pairs"
+      ],
+      "image": "birds/bird_10.jpg"
+    },
+    {
+      "name": "Red-shouldered Hawk",
+      "size": "16.5 - 24 inches",
+      "food": "Mice, frogs, snakes, lizards, toads, crayfish",
+      "habitat": "Forests, woodlands, swamps",
+      "funfacts": [
+        "Both males and females build the nest",
+        "Often reuse last year’s nest",
+        "Call a repetitive “kee-aah”",
+        "Often seen soaring, searching for prey",
+        "Stay in same territory for many years"
+      ],
+      "image": "birds/bird_11.jpg"
+    },
+    {
+      "name": "Great Blue Heron",
+      "size": "3 - 4.5 feet",
+      "food": "Mostly fish; also frogs, salamanders, turtles, snakes, insects, rodents",
+      "habitat": "Marshes, swamps, flooded fields, ditches, lake edges",
+      "funfacts": [
+        "Can hunt food both day and night",
+        "Swallow their prey whole",
+        "Can choke to death if prey too large",
+        "Wingspan can be up to 6.5 feet",
+        "Despite large size, weigh only 5 to 6 pounds"
+      ],
+      "image": "birds/bird_12.jpg"
+    },
+    {
+      "name": "Ruby-throated Hummingbird",
+      "size": "2.5 - 3.5 inches",
+      "food": "Insects; nectar of tubular flowers, especially orange or red",
+      "habitat": "Woodlands, meadows, orchards, backyards, stream borders",
+      "funfacts": [
+        "Nest is size of thimble and may include spider webs",
+        "Weigh eighth of an ounce",
+        "Beat wings 53 times a second",
+        "Can fly backwards",
+        "Short legs prevent walking or hopping",
+        "Migrate across the Gulf of Mexico"
+      ],
+      "image": "birds/bird_13.jpg"
+    },
+    {
+      "name": "Blue Jay",
+      "size": "9.5 - 11.5 inches",
+      "food": "Insects, nuts, seeds, greens, small vertebrates",
+      "habitat": "Woodlands, backyards, cities, parks",
+      "funfacts": [
+        "Prefer tray feeders to hanging feeders",
+        "Spread oak trees through fondness for acorns",
+        "Known for family bonds and intelligence",
+        "Can imitate call of Red-shouldered Hawk",
+        "The higher its crest is raised, the more agitated it is"
+      ],
+      "image": "birds/bird_14.jpg"
+    },
+    {
+      "name": "Dark-eyed Junco",
+      "size": "5 - 6 inches",
+      "food": "Mostly seeds and insects",
+      "habitat": "Woodland edges, bushes",
+      "funfacts": [
+        "Usually hop along the ground looking for seeds",
+        "Females tend to migrate farther south than males",
+        "Often called snowbirds",
+        "Travel in flocks in the winter",
+        "Often called snowbirds",
+        "Only found in Davidson in the winter"
+      ],
+      "image": "birds/bird_15.jpg"
+    },
+    {
+      "name": "Mallard",
+      "size": "20 - 26 inches",
+      "food": "Plants, worms, snails, insect larvae, seeds",
+      "habitat": "Lakes, ponds, marshes",
+      "funfacts": [
+        "Estimated to be the world’s most abundant duck",
+        "Males have green heads, females have brown",
+        "Find food by tipping head underwater and tail in the air",
+        "Only females quack; males make a quiet rasping call",
+        "Ducklings can leave the nest within a day, swim, and feed themselves"
+      ],
+      "image": "birds/bird_16.jpg"
+    },
+    {
+      "name": "Northern Mockingbird",
+      "size": "8.5 - 10 inches",
+      "food": "Berries, beetles, earthworms, moths, ants, bees, grasshoppers",
+      "habitat": "Backyards, parks, farmlands",
+      "funfacts": [
+        "Imitate whistles, alarms, and songs of other birds",
+        "May sing continuously at night as well as in the day",
+        "Males may learn up to 200 songs",
+        "Aggressively chase off intruders to their territory",
+        "Winter territories are centered on berry bushes"
+      ],
+      "image": "birds/bird_17.jpg"
+    },
+    {
+      "name": "Brown-headed Nuthatch",
+      "size": "4 - 4.5 inches",
+      "food": "Insects, pine seeds",
+      "habitat": "Pine forests, backyards",
+      "funfacts": [
+        "Sound like a rubber duckie when vocalizing",
+        "Live in family groups; last year’s young may care for this year’s chicks",
+        "Unlike most birds, can use tools to pry away tree bark to obtain insects",
+        "Often walk headfirst down tree-trunks",
+        "Declining, due to loss of trees needed for nest cavities",
+        "Will nest in bird boxes if you provide a 1⅛ inch hole"
+      ],
+      "image": "birds/bird_18.jpg"
+    },
+    {
+      "name": "American Robin",
+      "size": "8 - 11 inches",
+      "food": "Fruit, berries, caterpillars, earthworms, snails, insects",
+      "habitat": "Woodlands, fields, backyards, parks, lawns, forests",
+      "funfacts": [
+        "Reddish-orange chest, blue eggs",
+        "Listen, rather than look, for worms on lawns and",
+        "Vulnerable to pesticide poisoning on lawns",
+        "Playful song says “cheerily, cheer up, cheer up, cheerily, cheer up”",
+        "Like birdbaths and sprinklers"
+      ],
+      "image": "birds/bird_19.jpg"
+    },
+    {
+      "name": "Song Sparrow",
+      "size": "4.5 - 6.5 inches",
+      "food": "Seeds, fruit, beetles, caterpillars, grasshoppers, earthworms, spiders",
+      "habitat": "Marshes, farmlands, lake edges, woodlands, backyards, forests",
+      "funfacts": [
+        "May nest close to houses, in shrubs, or flower beds",
+        "Return to a similar area each year, defending their territory by singing",
+        "Males sing from exposed perches",
+        "Repeat their clear song every couple of minutes",
+        "Rarely flock together"
+      ],
+      "image": "birds/bird_20.jpg"
+    },
+    {
+      "name": "White-throated Sparrow",
+      "size": "6 - 7 inches",
+      "food": "Seeds, insects, berries",
+      "habitat": "Thickets and woodland undergrowth",
+      "funfacts": [
+        "Have two color forms: white-head stripes or tan-head stripes",
+        "White-head striped birds are more aggressive",
+        "Individuals almost always mate with a bird of opposite color form",
+        "Known for their clear whistle song, even at night",
+        "Only found in Davidson in the winter"
+      ],
+      "image": "birds/bird_21.jpg"
+    },
+    {
+      "name": "Brown Thrasher",
+      "size": "9 - 12 inches",
+      "food": "Mostly insects, some fruit, seeds",
+      "habitat": "Thickets, forest edges",
+      "funfacts": [
+        "Sing from exposed perches at the top of trees",
+        "Mimic other bird calls",
+        "Know more than 1,000 songs",
+        "Feed by thrashing through leaf litter to find food",
+        "Aggressively defend nest"
+      ],
+      "image": "birds/bird_22.jpg"
+    },
+    {
+      "name": "Tufted Titmouse",
+      "size": "5.5 - 6.5 inches",
+      "food": "Seeds, nuts, berries, caterpillars, beetles, ants, wasps, spiders, snails",
+      "habitat": "Woodlands, parks, backyards, orchards, forests",
+      "funfacts": [
+        "Frequent visitor to feeders",
+        "Store seeds in bark crevices during fall and winter",
+        "Use nest holes and cavities left by woodpeckers",
+        "Young often remain with parents throughout their first winter",
+        "Can use their feet to hold seeds while breaking them open"
+      ],
+      "image": "birds/bird_23.jpg"
+    },
+    {
+      "name": "Eastern Towhee",
+      "size": "7 - 9 inches",
+      "food": "Mostly insects, seeds, berries",
+      "habitat": "Forest edges, undergrowth, shrubby backyards",
+      "funfacts": [
+        "Males (pictured) have a black head, upper body, and tail",
+        "Females have brown head, upper body, and tail",
+        "Song is a short “drink your teeeeea” or says “chewink”",
+        "Kick back both feet in the leaves when looking for food",
+        "Often victim of parasitic cowbirds that lay eggs in other birds’ nests"
+      ],
+      "image": "birds/bird_24.jpg"
+    },
+    {
+      "name": "Black & Turkey Vultures",
+      "size": "Black: 24 - 27 inches, Turkey: 25 - 32 inches",
+      "food": "Dead animals, preferably fresh",
+      "habitat": "Roost in wooded areas, forage over open fields, roadsides, landfills",
+      "funfacts": [
+        "Black vultures have black heads; Turkey vultures have red heads",
+        "Turkey vultures one of few birds that use sense of smell to find food",
+        "Black vultures lack a good sense of smell and often follow turkey vultures",
+        "Have stomach acid strong enough to eat rotting meat that would make us sick",
+        "Important to our ecosystem, removing diseased and decaying animals"
+      ],
+      "image": "birds/bird_25.3.jpg"
+    },
+    {
+      "name": "Downy Woodpecker",
+      "size": "5.5 - 6.5 inches",
+      "food": "Insects, berries, acorns, grains",
+      "habitat": "Parks, backyards, woodlands",
+      "funfacts": [
+        "Most likely woodpecker species to visit backyard feeder",
+        "Help trees by feeding on harmful insects",
+        "Drum on wood instead of singing",
+        "May forage in mixed-species flocks",
+        "Attracted to suet, sunflower seeds, and peanuts at feeder"
+      ],
+      "image": "birds/bird_26.jpg"
+    },
+    {
+      "name": "Red-bellied Woodpecker",
+      "size": "9.5 inches",
+      "food": "Insects, acorns, fruit, spiders, nuts, pinecone seeds",
+      "habitat": "Backyards, forests, woodlands, wetlands",
+      "funfacts": [
+        "Can extend tongue 2 inches past beak to snatch prey from deep crevices",
+        "Drum on wood to claim territory",
+        "Red belly often faint and hard to see",
+        "Hammer acorns and berries into tree crevices for winter food",
+        "Attracted to suet, sunflower seeds, and peanuts at feeder"
+      ],
+      "image": "birds/bird_27.jpg"
+    },
+    {
+      "name": "Carolina Wren",
+      "size": "5 - 5.5 inches",
+      "food": "Fruit, seeds, spiders, caterpillars, moths, beetles, crickets",
+      "habitat": "Backyards, swampy areas, farmlands, wooded areas",
+      "funfacts": [
+        "May nest in discarded flower pots and mailboxes",
+        "Males build multiple nests; females choose nest",
+        "Song a loud repetitive “teakettle-teakettle”",
+        "Unlike most songbirds, male and female defend a year-round territory",
+        "Often cock their tail upward when looking for food, down when singing"
+      ],
+      "image": "birds/bird_28.jpg"
+    }
+  ]
+}
