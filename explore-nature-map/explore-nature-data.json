@@ -442,16 +442,16 @@
         {
             "website":
             {
-                "name": "Ault Property",
-                "slug": "ault-property",
-                "link": "",
-                "image": "",
-                "unique": "",
+                "name": "Thompson Street Easement",
+                "slug": "thompson-street-easement",
+                "link": "/explore-nature/map-of-conserved-lands/thompson-street-easement/",
+                "image": "/wp/wp-content/uploads/2019/06/ThompsonStreet_Easement-768x594.jpg",
+                "unique": "[Placeholder]",
                 "access": "Not publicly accessible",
-                "year": "",
-                "size": "",
+                "year": "2018",
+                "size": "9.1 acres",
                 "location": "Davidson",
-                "conservation": "",
+                "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                 "text": ""
             },
             "OBJECTID": 1,
@@ -549,16 +549,16 @@
         {
             "website":
             {
-                "name": "Ault Property",
-                "slug": "ault-property",
-                "link": "",
-                "image": "/wp/wp-content/uploads/2019/01/Archer-Lady-Slippers.jpg",
-                "unique": "",
+                "name": "Thompson Street Easement",
+                "slug": "thompson-street-easement",
+                "link": "/explore-nature/map-of-conserved-lands/thompson-street-easement/",
+                "image": "/wp/wp-content/uploads/2019/06/ThompsonStreet_Easement-768x594.jpg",
+                "unique": "[Placeholder]",
                 "access": "Not publicly accessible",
-                "year": "",
-                "size": "",
+                "year": "2018",
+                "size": "9.1 acres",
                 "location": "Davidson",
-                "conservation": "",
+                "conservation": "Conservation Easement held by Davidson Lands Conservancy",
                 "text": ""
             },
             "OBJECTID": 2,
@@ -668,7 +668,7 @@
                 "slug": "batchelor-easement",
                 "link": "/explore-nature/map-of-conserved-lands/batchelor-easement/",
                 "image": "/wp/wp-content/uploads/2012/12/Batchelor-Easement-Tree.jpg",
-                "unique": "upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
+                "unique": "Upland sloping toward the Rocky River and adjoining the Runnymede neighborhood. Includes woodland and water-quality buffer.",
                 "access": "Not publicly accessible",
                 "year": "2012",
                 "size": "6.8 acres",
