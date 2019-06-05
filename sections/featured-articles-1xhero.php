@@ -42,7 +42,7 @@ if(count($recent_posts) > 0):
 ?> 
 
             <?php echo '<a class="btn btn-info" href="' . get_permalink($recent['ID']) . '">CONTINUE READING</a>'; ?>
-            <?php echo '<a class="btn btn-info" href="' . get_site_url() . '/?post_type=post">MORE NEWS</a>'; ?>
+            <?php echo '<a class="btn btn-info" href="' . esc_url( home_url() ) . '/category/news">MORE NEWS</a>'; ?>
 
 
             </div>
