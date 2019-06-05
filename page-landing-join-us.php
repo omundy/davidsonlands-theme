@@ -20,7 +20,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
         <div class="row">
             <div class="col-md-10 offset-md-1 text-center wrapper-sm hero-content">
                 <h1 class="hero-title">Davidson Lands Conservancy is protecting the natural environments you love. With your help, we can do more!</h1>
-				<a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/join-us/give_today/">GIVE TODAY</a>
+				<a class="btn btn-info hero-title-btn" href="<?php echo home_url(); ?>/join-us/give-today/">GIVE TODAY</a>
             </div>
         </div>
     </div>
