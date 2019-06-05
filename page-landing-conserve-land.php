@@ -42,7 +42,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
             <div class="col-12 col-md-4 vertical-center-parent">
                 <h2>We’ve conserved more than 400 acres of land in the Davidson area.</h2>
-                <a href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands/" class="btn btn-primary mx-2">Explore each property</a>
+                <a href="<?php echo home_url(); ?>/explore-nature/map-of-conserved-lands" class="btn btn-primary mx-2">Explore each property</a>
             </div>
         </div>
     </div>
