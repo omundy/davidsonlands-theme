@@ -78,7 +78,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 .site .btn, button, input, .form-control {
     border-radius: 0;
 }
-.site .btn-primary {
+.site .btn-primary, .site .btn-primary:visited {
     background-color: #347458 !important;
     border-color: #347458 !important;
     color: #fff !important;
@@ -88,7 +88,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-color: #29634a !important;
     color: #fff !important;
 }
-.site .btn-secondary {
+.site .btn-secondary, .site .btn-secondary:visited {
     background-color: #6d9f71 !important;
     border-color: #6d9f71 !important;
     color: #fff !important;
@@ -98,7 +98,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     border-color: #5b9060 !important;
     color: #fff !important;
 }
-.site .btn-info {
+.site .btn-info, .site .btn-info:visited {
     background-color: transparent !important;
     color: #fff !important;
     border: 3px solid #fff !important;
@@ -108,7 +108,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #eee !important;
     border: 3px solid #ddd !important;
 }
-.site .btn-info-dark-green {
+.site .btn-info-dark-green, .site .btn-info-dark-green:visited {
     background-color: transparent !important;
     color: #347458 !important;
     border: 3px solid #347458 !important;
@@ -118,7 +118,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: #29634a !important;
     border: 3px solid #29634a !important;
 }
-.site .btn-danger {
+.site .btn-danger, .site .btn-primary:danger {
     background-color: #dc3545 !important;
     border-color: #dc3545 !important;
     color: #fff !important;
