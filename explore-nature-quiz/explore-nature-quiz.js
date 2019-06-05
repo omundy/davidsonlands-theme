@@ -44,7 +44,7 @@ var butterfliesQuestionObj = {
     },
     "hard": {
         "name":"What is the name of this butterfly?",
-        "hostplant":"Which of the following is a host plant of this butterfly",
+        "hostplant":"Which of the following is a host plant of this butterfly?",
         // "flightperiod":"What is the flight period of this butterfly?",
         "true":"Which of the following is true about this butterfly?"
     }
