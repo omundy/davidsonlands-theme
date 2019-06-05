@@ -91,7 +91,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
         				</a>
             </div>
             <div class="col-sm-3 col-xs-6 text-center mt-4">
-        				<a class="link-on-dk-green" href="http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/2017-Financial-Review.pdf">
+        				<a class="link-on-dk-green" href="/wp/wp-content/uploads/2019/06/2018-DLC-US-Tax-Return-1.pdf">
                   <div class="circle-callout-image">
                       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/about-callout-two-women-and-a-tree.jpg" alt="Wildlife & Habitats">
                   </div>

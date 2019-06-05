@@ -141,7 +141,7 @@ PO Box 1952, Davidson, NC 28036<br>704-892-1910 | <a href="<?php echo esc_url(ho
 
 <p>© <?php echo date("Y"); ?> Davidson Lands Conservancy</p>
 
-<p>Davidson Lands Conservancy is a 501 ( c ) ( 3 ) organization holding NC Charitable Solicitation License #SLOO4342. <a href="http://davidsonlands.dreamhosters.com/wp/wp-content/uploads/2019/01/2017-Financial-Review.pdf">Read our most recent Reviewed Financial Statements</a>.</p>
+<p>Davidson Lands Conservancy is a 501 ( c ) ( 3 ) organization holding NC Charitable Solicitation License #SLOO4342. <a href="/wp/wp-content/uploads/2019/06/2018-DLC-US-Tax-Return-1.pdf">Read our most recent Reviewed Financial Statements</a>.</p>
 
 <p>Website designed and developed by <a href="https://owenmundy.com/site/critical-web-design" target="_blank">Critical Web Design</a> at Davidson College</p>
 
