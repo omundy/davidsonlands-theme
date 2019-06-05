@@ -76,13 +76,13 @@ $data_params_3x = array(
     array(
         'image' => get_stylesheet_directory_uri() . "/../../uploads/2019/01/2019-Board-Retreat-Group-Shot.jpg", 
         'text' => "With your help we can do more",
-        'btn-link' => '/join-us/become-a-member/',
-        'btn-text' => 'BECOME A MEMBER'
+        'btn-link' => '/join-us/give-today',
+        'btn-text' => 'GIVE TODAY'
     ),
     array(
         'image' => get_stylesheet_directory_uri() . "/img/conserve-page-tree-planting.jpg", 
         'text' => "Dig deep and get involved",
-        'btn-link' => '/join-us/volunteer/',
+        'btn-link' => '/join-us/volunteer',
         'btn-text' => 'VOLUNTEER TODAY'
     ),
     array(
