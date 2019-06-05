@@ -35,15 +35,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 <meta name="twitter:title" content="<?php bloginfo( 'name' ); ?>">
 <meta name="twitter:description" content="<?php bloginfo( 'description' ); ?>">
 <meta name="twitter:creator" content="@owenmundy">
-<meta name="twitter:image" content="https://reducinguncertainty.org/assets/img/share-600x600.png">
+<meta name="twitter:image" content="<?php echo esc_url( home_url( '/' ) ); ?>wp/wp-content/themes/davidsonlands-theme/_identity/logos/png/dlc-tree-dk-green-transparent-600w.png">
 
 <!-- Open Graph data -->
-<meta property="og:title" content="Reducing Uncertainty" />
+<meta property="og:title" content="<?php bloginfo( 'name' ); ?>" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://davidsonlands.org/" />
-<meta property="og:image" content="https://reducinguncertainty.org/assets/img/share-600x600.png" />
-<meta property="og:image:width" content="300" />
-<meta property="og:image:height" content="300" />
+<meta property="og:url" content="<?php echo esc_url( home_url( '/' ) ); ?>" />
+<meta property="og:image" content="<?php echo esc_url( home_url( '/' ) ); ?>wp/wp-content/themes/davidsonlands-theme/_identity/logos/png/dlc-tree-dk-green-transparent-600w.png" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="600" />
 <meta property="og:description" content="<?php bloginfo( 'description' ); ?>" />
 <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>" />
 
