@@ -106,17 +106,15 @@ $container = get_theme_mod('understrap_container_type');
 
 				<div class="footer-email-signup clearfix">
 
-
 					<p>Get our latest news and find out how we’re protecting land in Davidson, NC</p>
 
-					<form class="form-inline" action="post">
+					<!-- <form class="form-inline" action="post">
 						<div class="form-group mr-2 mb-2">
 							<label for="emailSignupFooter" class="sr-only">Email</label>
 							<input type="text" class="form-control" id="emailSignupFooter" placeholder="EMAIL ADDRESS">
-						</div>
-						<button type="submit" class="btn btn-primary mb-2">SIGNUP</button>
-					</form>
-
+						</div> -->
+						<button type="submit" class="btn btn-primary mb-2" onclick="location.href='/join-us/get-news/'">SIGNUP</button>
+					<!-- </form> -->
 
 				</div>
 
