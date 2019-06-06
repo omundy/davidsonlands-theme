@@ -112,7 +112,7 @@ $container = get_theme_mod('understrap_container_type');
 					<form class="form-inline" action="post">
 						<div class="form-group mr-2 mb-2">
 							<label for="emailSignupFooter" class="sr-only">Email</label>
-							<input type="text" class="form-control" id="emailSignupFooter" value="EMAIL ADDRESS">
+							<input type="text" class="form-control" id="emailSignupFooter" placeholder="EMAIL ADDRESS">
 						</div>
 						<button type="submit" class="btn btn-primary mb-2">SIGNUP</button>
 					</form>
