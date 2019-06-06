@@ -8,7 +8,7 @@
                 <form class="form-inline" action="post">
                     <div class="form-group mr-2 mb-2">
                         <label for="emailSignupSection" class="sr-only">Email</label>
-                        <input type="text" class="form-control" id="emailSignupSection" value="EMAIL ADDRESS">
+                        <input type="text" class="form-control" id="emailSignupSection" placeholder="EMAIL ADDRESS">
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">SIGNUP</button>
                 </form>
