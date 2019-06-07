@@ -35,8 +35,13 @@ if(count($recent_posts) > 0):
             <div class="col-8">
 
             <?php echo '<h3><a href="' . get_permalink($recent['ID']) . '">'. $recent['post_title'] .'</a></h3>'; ?>
-            <?php echo '<p>'. sentenceTrim($recent['post_excerpt']) .'</p>'; ?>
-
+            <?php
+                if ($recent['post_excerpt'] == '') {
+                    echo '<p>'. sentenceTrim($recent['post_content']) .'</p>';
+                } else {
+                    echo '<p>'. sentenceTrim($recent['post_excerpt']) .'</p>';
+                }
+            ?>
             <?php echo '<a class="btn btn-info" href="' . get_permalink($recent['ID']) . '">CONTINUE READING</a>'; ?>
             <?php echo '<a class="btn btn-info" href="' . esc_url( home_url() ) . '/category/news">MORE NEWS</a>'; ?>
 
