@@ -56,9 +56,7 @@ if(count($recent_posts) >= 3):
             } else {
                 $data_params_3x[$i]['text'] = '<p>'. sentenceTrim($recent['post_excerpt']) .'</p>';
             }
-            
 
-            //$data_params_3x[$i]['text'] = sentenceTrim($recent['post_title'],40);
             $data_params_3x[$i]['btn-link'] = get_permalink($recent['ID']);
             $data_params_3x[$i]['btn-text'] = "CONTINUE READING";
 
