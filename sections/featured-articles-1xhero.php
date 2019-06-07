@@ -35,7 +35,7 @@ if(count($recent_posts) > 0):
             <div class="col-8">
 
             <?php echo '<h3><a href="' . get_permalink($recent['ID']) . '">'. $recent['post_title'] .'</a></h3>'; ?>
-            <?php echo '<p>'. sentenceTrim($recent['post_content']) .'</p>'; ?>
+            <?php echo '<p>'. sentenceTrim($recent['post_excerpt']) .'</p>'; ?>
 
 <?php 
 //echo get_the_excerpt() 
