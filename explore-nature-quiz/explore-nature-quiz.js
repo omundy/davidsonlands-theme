@@ -305,7 +305,7 @@ function showQuestion(index) {
         // mark correct
         if (a == "answer"){
            $('#choice'+ i).attr("data-correct",1);
-           $('#choice'+ i).html("<i>"+ current.questions[index].possibleAnswers[a] +"</i>");
+           $('#choice'+ i).html(current.questions[index].possibleAnswers[a]);
         } else {
           $('#choice'+ i).attr("data-correct",0);
           $('#choice'+ i).html(current.questions[index].possibleAnswers[a]);
