@@ -65,7 +65,13 @@ if (count($posts) > 0){ ?>
                                     <?php the_title(); ?>
                                 </div>
                                 <div class="event-content">
-                                    <?php echo sentenceTrim($post->post_content,100); ?>
+                                    <?php
+                                        if ($post->post_excerpt == '') {
+                                            echo '<p>'. sentenceTrim($post->post_content,100) .'</p>';
+                                        } else {
+                                           echo '<p>'. sentenceTrim($post->post_excerpt,100) .'</p>';
+                                        }
+                                    ?>
                                 </div>
                                 <?php /*echo print_r($post);*/ ?>
                             </div>
