@@ -80,7 +80,7 @@ $data_params_3x = array(
         'btn-text' => 'GIVE TODAY'
     ),
     array(
-        'image' => get_stylesheet_directory_uri() . "/img/conserve-page-tree-planting.jpg", 
+        'image' => get_stylesheet_directory_uri() . "/../../uploads/2019/06/conserve-page-tree-planting-resized.jpg", 
         'text' => "Dig deep and get involved",
         'btn-link' => '/join-us/volunteer',
         'btn-text' => 'VOLUNTEER TODAY'
