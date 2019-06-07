@@ -50,7 +50,15 @@ if(count($recent_posts) >= 3):
             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $recent['ID'] ), 'single-post-thumbnail' );
             //print_r($image);
             $data_params_3x[$i]['image'] = $image[0];
-            $data_params_3x[$i]['text'] = sentenceTrim($recent['post_title'],40);
+
+            if ($recent['post_excerpt'] == '') {
+                $data_params_3x[$i]['text'] = '<p>'. sentenceTrim($recent['post_title']) .'</p>';
+            } else {
+                $data_params_3x[$i]['text'] = '<p>'. sentenceTrim($recent['post_excerpt']) .'</p>';
+            }
+            
+
+            //$data_params_3x[$i]['text'] = sentenceTrim($recent['post_title'],40);
             $data_params_3x[$i]['btn-link'] = get_permalink($recent['ID']);
             $data_params_3x[$i]['btn-text'] = "CONTINUE READING";
 
