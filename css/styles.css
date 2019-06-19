@@ -659,3 +659,22 @@ li.footer-menu-item { line-height: 1.35rem; margin-top: 6px;}
     color: #000;
     padding: 12px;
 }
+
+.rfg-button {
+  background-color: #E4E3D3;
+  color: #337357;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  position: fixed;
+  right: calc(50% - 140px);
+  bottom: 23px;
+  width: 280px;
+  z-index: 100 }
+
+@media (min-width: 600px) {
+    .rfg-button {
+        right: 28px;
+    }
+}

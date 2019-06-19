@@ -170,6 +170,8 @@ write_3x_callouts($data_params_3x, $display_params_3x);
 
 ?>
 
+<input class="rfg-button" type="button" onclick="location.href='https://runsignup.com/Race/NC/Davidson/RunForGreen';" value="Run for Green 2019 Sign Ups">
+
 
 
 
