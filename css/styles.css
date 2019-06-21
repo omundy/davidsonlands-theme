@@ -671,7 +671,8 @@ li.footer-menu-item { line-height: 1.35rem; margin-top: 6px;}
   right: calc(50% - 140px);
   bottom: 23px;
   width: 280px;
-  z-index: 100 }
+  z-index: 100;
+  opacity: 0.85; }
 
 @media (min-width: 600px) {
     .rfg-button {
