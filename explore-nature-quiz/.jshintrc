@@ -1,0 +1,13 @@
+{
+    "esversion": 6,
+    "browser": true,
+    "jquery": true,
+    "devel": true,
+    "globalstrict": true,
+    "globals": {
+        "window": true,
+        "document": true,
+        "console": true,
+        "alert": true
+    }
+}

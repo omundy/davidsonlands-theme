@@ -3,11 +3,12 @@
 
 "use strict";
 
-
 /*  GLOBAL
  ******************************************************************************/
 
 let baseUrl = "/wp/wp-content/themes/davidsonlands-theme/explore-nature-quiz/",
+    // imgUrl = 'http://drewmkromer.com/SID-Project/images/',
+    imgUrl = baseUrl + 'img/',
     current = {},
     quizData = {};
 
@@ -59,13 +60,13 @@ var questionObj = {
     "funFact": "",
     "image":"",
     "correct":0,
-}
+};
 var possibleAnswers = {
     "answer":"",
     "a2":"",
     "a3":"",
     "a4":"",
-}
+};
 let currentQuestionIndex = 0;
 
 
@@ -204,16 +205,16 @@ function selectQuestions(count) {
 
 
 
-        console.log("\n###############################################"); 
-        console.log("INDEX =",i); 
+        console.log("\n###############################################");
+        console.log("INDEX =",i);
         console.log("NAME =",q.data.name);
 
         // *** ANSWERS ***
-        // 
+        //
         // pick 3 other animals to build other (random) answers
-        let otherAnimals = returnRandomUniqueNumbersArray(randomAnimals.length,4,i)
+        let otherAnimals = returnRandomUniqueNumbersArray(randomAnimals.length,4,i);
         // console.log("returnRandomUniqueNumbersArray",otherAnimals)
-        
+
         // names of other animals (ALL ANIMALS)
         if (q.questionKey === "name"){
             // set answer, then others
@@ -221,7 +222,7 @@ function selectQuestions(count) {
             q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].name;
             q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].name;
             q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].name;
-        } 
+        }
         // foods from other animals (ALL EXCEPT BUTTERFLIES)
         else if (q.questionKey === "food"){
             // set answer, then others
@@ -229,7 +230,7 @@ function selectQuestions(count) {
             q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].food;
             q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].food;
             q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].food;
-        } 
+        }
         // plants from other animals (BUTTERFLIES ONLY)
         else if (q.questionKey === "hostplant"){
             // set answer, then others
@@ -237,7 +238,7 @@ function selectQuestions(count) {
             q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].hostplant;
             q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].hostplant;
             q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].hostplant;
-        } 
+        }
         // flight from other animals (BUTTERFLIES ONLY)
         else if (q.questionKey === "flightperiod"){
             // set answer, then others
@@ -245,7 +246,7 @@ function selectQuestions(count) {
             q.possibleAnswers.a2 = randomAnimals[otherAnimals[1]].flightperiod;
             q.possibleAnswers.a3 = randomAnimals[otherAnimals[2]].flightperiod;
             q.possibleAnswers.a4 = randomAnimals[otherAnimals[3]].flightperiod;
-        } 
+        }
         // funfacts of other animals (ALL ANIMALS)
         else if (q.questionKey === "true"){
             // set answer, then others
@@ -256,7 +257,7 @@ function selectQuestions(count) {
         }
         // randomize answers
         q.possibleAnswers = shuffleObject(q.possibleAnswers);
-      
+
         // set answer
         q.answer = getRandomIndexFromArray(q.possibleAnswers);
         // set funFact
@@ -268,27 +269,27 @@ function selectQuestions(count) {
         current.questions[i] = q;
 
         console.log("%cQUESTION = " + q.question + " ( questionKey=" + q.questionKey + ")</b>", 'font-weight: bold; color: #327357');
-        console.log("q.possibleAnswers.answer",JSON.stringify(q.possibleAnswers.answer));    
-        console.log("q.possibleAnswers.a2",JSON.stringify(q.possibleAnswers.a2));    
-        console.log("q.possibleAnswers.a3",JSON.stringify(q.possibleAnswers.a3));    
-        console.log("q.possibleAnswers.a4",JSON.stringify(q.possibleAnswers.a4));   
+        console.log("q.possibleAnswers.answer",JSON.stringify(q.possibleAnswers.answer));
+        console.log("q.possibleAnswers.a2",JSON.stringify(q.possibleAnswers.a2));
+        console.log("q.possibleAnswers.a3",JSON.stringify(q.possibleAnswers.a3));
+        console.log("q.possibleAnswers.a4",JSON.stringify(q.possibleAnswers.a4));
 
         // all data
-        // console.log("current.questions",JSON.stringify(current.questions[i]));    
-    }    
+        // console.log("current.questions",JSON.stringify(current.questions[i]));
+    }
     showQuestion(0);
 }
 
 function showQuestion(index) {
     // update global index
     currentQuestionIndex = index;
-    // display 
+    // display
     $('#progress').html("Question " + (index+1) + " of " + current.questions.length);
     $('#choice1,#choice2,#choice3,#choice4').removeClass("btn-primary btn-danger").addClass("btn-secondary");
     $('#confetti').hide();
     // scroll to top
     $('html,body').animate({
-        scrollTop: $('.quiz-image').position().top 
+        scrollTop: $('.quiz-image').position().top
     }, 'slow');
     // messages
     updateMsg(null);
@@ -296,7 +297,7 @@ function showQuestion(index) {
 
     //console.log(JSON.stringify(current));
     // console.log(JSON.stringify(JSON.parse(current),null,2));
-    console.log("showQuestion()", index, current.questions[index])
+    console.log("showQuestion()", index, current.questions[index]);
 
     // data for question
     $('#question').html(current.questions[index].question);
@@ -313,7 +314,7 @@ function showQuestion(index) {
         i++;
     }
     // image
-    $('.quiz-image').attr('src','http://drewmkromer.com/SID-Project/images/'+ current.questions[index].image);
+    $('.quiz-image').attr('src',imgUrl+ current.questions[index].image);
 }
 
 $(document).on('click','.quiz-choice',function(){
@@ -361,8 +362,8 @@ function restartQuiz() {
     // show intro
     showIntro();
 }
-// reset all and start new one 
-restartQuiz(); 
+// reset all and start new one
+restartQuiz();
 
 
 
@@ -375,7 +376,7 @@ function updateDisplay(){
     $('#score').html(current.totalCorrect );
 }
 function updateMsg(type, text) {
-    console.log("updateMsg()",type,text)
+    console.log("updateMsg()",type,text);
     // set all others hidden
     $('.alert-success').html('');
     $('.alert-success').hide();
@@ -393,10 +394,10 @@ function updateMsg(type, text) {
 function updateFunFact(index=null){
     if (index == null){
         $('.alert-info').html('');
-        $('.alert-info').hide();  
+        $('.alert-info').hide();
     } else {
         $('.alert-info').html("<b>Fun fact:</b> "+ current.questions[index].data.funfacts[getRandomIndexFromArray(current.questions[index].data.funfacts)]);
-        $('.alert-info').show();  
+        $('.alert-info').show();
     }
 }
 
@@ -488,9 +489,9 @@ function getRandomUniqueFromObj(obj, n) {
 }
 // get 1 random key from an object
 function getRandomKeyFromObj(obj) {
-    var keys = Object.keys(obj)
+    var keys = Object.keys(obj);
     return keys[ keys.length * Math.random() << 0];
-};
+}
 
 // get n random elements from array
 function getRandomIndexFromArray(arr) {
@@ -502,7 +503,7 @@ function getRandomUniqueIndexesFromArray(arr,ignoreIndexes) {
     var tempArr = arr.slice();
     for (let i=0; i<ignoreIndexes.length; i++){
         // remove the index to ignore
-        tempArr.splice(ignoreIndexes[i],1); 
+        tempArr.splice(ignoreIndexes[i],1);
     }
     // select random
     return Math.floor(Math.random()*tempArr.length);
@@ -512,7 +513,7 @@ function r(max){
     return Math.floor(Math.random()*max);
 }
 // return array of random numbers with no matches and different than the one given
-function returnRandomUniqueNumbersArray(max,totalLength=4,ignoreIndex){
+function returnRandomUniqueNumbersArray(max,totalLength=4,ignoreIndex=0){
     // early escape
     let e =0,
         // new arr with index to ignore
@@ -549,4 +550,3 @@ function shuffleObject(obj){
     });
     return newObj;
 }
-
