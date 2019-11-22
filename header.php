@@ -74,6 +74,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 </head>
 
 <body <?php body_class(); ?>>
+	
+	
+<!--
+<input class="rfg-button" type="button" onclick="window.open('https://davidsonlands.org/wp/rfg-signup');" value="Run for Green 2019 Sign Ups">
+-->
+	
 
 <div class="hfeed site" id="page">
 
